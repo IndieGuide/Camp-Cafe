@@ -262,6 +262,12 @@
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>I:/unity_Path/Camp Cafe/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>D:/Unity3d2018/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>D:/Unity3d2018/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\Unity3d2018\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
     </Reference>
@@ -631,13 +637,34 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Act\BranchAct.cs" />
+    <Compile Include="Assets\Scripts\Act\ImageAct.cs" />
+    <Compile Include="Assets\Scripts\Act\IScriptAct.cs" />
+    <Compile Include="Assets\Scripts\Act\ItemAct.cs" />
+    <Compile Include="Assets\Scripts\Act\TalkAct.cs" />
+    <Compile Include="Assets\Scripts\DevTools\InstanceLoad.cs" />
+    <Compile Include="Assets\Scripts\DrinksCode\DrinkData.cs" />
+    <Compile Include="Assets\Scripts\DrinksCode\ItemData.cs" />
+    <Compile Include="Assets\Scripts\DrinksCode\ItemGroupButton.cs" />
+    <Compile Include="Assets\Scripts\DrinksCode\ItemManager.cs" />
+    <Compile Include="Assets\Scripts\DrinksCode\MakeDrink.cs" />
     <Compile Include="Assets\Scripts\FaceImage.cs" />
     <Compile Include="Assets\Scripts\GameCamera.cs" />
-    <Compile Include="Assets\Scripts\OptionText.cs" />
+    <Compile Include="Assets\Scripts\OptionManager.cs" />
+    <Compile Include="Assets\Scripts\SoundControl\TextSound.cs" />
     <Compile Include="Assets\Scripts\TalkShow.cs" />
+    <Compile Include="Assets\Scripts\UI\AmountCacul.cs" />
+    <Compile Include="Assets\Scripts\UI\CraftItem.cs" />
+    <Compile Include="Assets\Scripts\UI\OptionText.cs" />
+    <Compile Include="Assets\Scripts\UI\TalkArea.cs" />
+    <Compile Include="Assets\Scripts\UI\TitleImage.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Resources\Texts\DrinkData.txt" />
+    <None Include="Assets\Resources\Texts\ItemData.txt" />
+    <None Include="Assets\Resources\Texts\TagData.txt" />
     <None Include="Assets\Resources\Texts\script1.txt" />
+    <None Include="Assets\Scripts\Shader\ShaderForTest.shader" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryLight.uss" />

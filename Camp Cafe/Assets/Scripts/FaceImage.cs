@@ -6,12 +6,13 @@ using UnityEngine.UI;
 
 public class FaceImage : MonoBehaviour {
     //图片固定位置
-    protected Vector2[] imgPosData = {new Vector2(-762, 608), new Vector2(-698, 608 ), new Vector2(-436, 608), new Vector2(-187, 608 ), new Vector2(-126, 608) };
+    protected Vector2[] imgPosData = {new Vector2(-794, 608), new Vector2(-698, 608 ), new Vector2(-436, 608), new Vector2(-187, 608 ), new Vector2(-84, 608) };
     public string nameId;
     protected Transform borderTrans;
     Vector2 imgPos;
     void Start() {
         borderTrans =GameObject.Find("Border").transform;
+        //gameobject.transform.localscale = new vector3(3, 3, 3);
     }
     public enum PosEnum{
         Left,
@@ -20,9 +21,12 @@ public class FaceImage : MonoBehaviour {
         LittleRight,
         Right
     }
-    public void changePos(string postring){
+    public void ChangePos(string postring){
+        //先放大图片
         int posInt = int.Parse(postring);
         FaceImage.PosEnum posType = (FaceImage.PosEnum)posInt;
+        Sprite sprite = gameObject.GetComponent<Image>().sprite;
+        imgPos.y = sprite.rect.height * 3 / 2;
         switch (posType){
             case PosEnum.Left:
                 imgPos.x = imgPosData[0].x;
@@ -43,7 +47,7 @@ public class FaceImage : MonoBehaviour {
         RectTransform imgRecTrans = gameObject.transform.GetComponent<RectTransform>();
 
         imgRecTrans.anchoredPosition = imgPos;
-        imgRecTrans.localScale = new Vector3(1, 1, 1);
+        imgRecTrans.localScale = new Vector3(3, 3, 3);
         borderTrans = GameObject.Find("Border").transform;
         gameObject.transform.SetSiblingIndex(borderTrans.GetSiblingIndex() - 1);
     }
@@ -53,8 +57,8 @@ public class FaceImage : MonoBehaviour {
     {
         
     }
-    internal void setImg(string imagename) {
-        string imagePath = "Sprites/Face/" + imagename;
+    internal void SetImg(string imagename) {
+        string imagePath = "Sprites/Roles/" +nameId+"/Face/"+ imagename;
         Sprite faceSpr = Resources.Load<Sprite>(imagePath);
         Image faceImg = gameObject.transform.GetComponent<Image>();
         faceImg.sprite = faceSpr;
