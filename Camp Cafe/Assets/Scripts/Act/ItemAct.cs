@@ -9,10 +9,7 @@ public class ItemAct : MonoBehaviour, IScriptAct {
     string roleName;
     string tipsStr;
     GameObject talkText;
-    MakeDrink makeDrink;
-    private void Start() {
-        makeDrink = GameObject.Find("MakeButton").GetComponent<MakeDrink>();
-    }
+    
     public ItemAct(string[] dataarr) {
         dataArr = dataarr;
     }
@@ -20,11 +17,12 @@ public class ItemAct : MonoBehaviour, IScriptAct {
     public void DoAct() {
         ShowTips();
         ShowToolBoard();
+        GameObject.Find("MakeButton").GetComponent<MakeDrink>().SetData();
         TalkShow.instance.IsPlayingText = false;
     }
 
     private static void ShowToolBoard() {
-        TalkShow.instance.toolBoard.SetActive(true);
+        GameObject.Find("ToolsArea").GetComponent<ToolsManager>().ShowToolsBoard();
     }
 
     private void ShowTips() {

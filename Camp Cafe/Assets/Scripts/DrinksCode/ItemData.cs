@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemData : MonoBehaviour
+public class ItemData
 {
     public ItemData(int itemid, string itemname, string imgname, string itemintro,int itemnumber) {
         itemId = itemid;

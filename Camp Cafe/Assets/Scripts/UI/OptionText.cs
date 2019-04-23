@@ -11,6 +11,7 @@ public class OptionText : MonoBehaviour {
     private bool isInThisSection = false;
     private int rowIndex = 0;
     private TalkShow talkShow;
+    private int textIndex;
     public int RowNumber
     {
         get
@@ -63,18 +64,32 @@ public class OptionText : MonoBehaviour {
         }
     }
 
-    public void Click() {
-        Debug.Log("Button Clicked. TestClick.");
-        if (isAllowClicked) {
-            isInThisSection = true;
+    public int TextIndex
+    {
+        get
+        {
+            return textIndex;
+        }
 
-            talkShow.rowIndex += jumpFrontNumber;
+        set
+        {
+            textIndex = value;
+        }
+    }
+
+    public void Click() {
+        Debug.Log("点击了按钮");
+        if (IsAllowClicked) {
+            //得到分支管理实例
+            BranchManager branchManager = gameObject.GetComponentInParent<OptionManager>().branchManager;
+            //设置进入的分支索引
+            branchManager.SetTargetBranchIndex(TextIndex);
+            //把按钮内容隐藏
             Text[] optionTextArr = talkShow.optionText;
             foreach (Text text in optionTextArr) {
                 text.text = "";
                 text.transform.GetComponent<OptionText>().IsAllowClicked = false;
             }
-            talkShow.ResolveNextText();
         }
     }
     // Start is called before the first frame update
@@ -83,20 +98,4 @@ public class OptionText : MonoBehaviour {
         talkShow = GameObject.Find("Canvas").transform.GetComponent<TalkShow>();
     }
 
-    // Update is called once per frame
-    void LateUpdate()
-    {
-        if (isInThisSection){
-            if (Input.GetMouseButtonDown(0)) {
-                rowIndex++;
-                Debug.Log(rowIndex);
-            }
-            if (rowIndex == rowNumber ) {
-                isInThisSection = false;
-                rowIndex = 0;
-                talkShow.rowIndex += jumpAfterNumber - 1;
-            }
-            
-        }
-    }
 }

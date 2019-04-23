@@ -7,16 +7,58 @@ using UnityEngine.UI;
 public class MakeDrink : MonoBehaviour
 {
     public Image cup1;
+    string drinkName1;
     public string[] dataArr;
+    bool isDrinkReady = false;
+    string makeStr = "制  作";
+    string giveStr = "上  饮  料";
+    Text buttonText;
+    ToolsManager toolsManager;
     private enum DetermineTypeEnum {
         Drink,
         TagAnd,
         TagOr
     }
     DetermineTypeEnum determineType;
+
+
+    // Start is called before the first frame update
+    void Start() {
+        buttonText = gameObject.GetComponentInChildren<Text>();
+        buttonText.text = makeStr;
+        toolsManager = gameObject.GetComponentInParent<ToolsManager>();
+    }
     public void OnClick() {
-        string createDrinkName = GetDrinkFromItem();
-        SetDrinkImg(createDrinkName);
+        if (!isDrinkReady) {
+            drinkName1 = GetDrinkFromItem();
+            SetDrinkImg(drinkName1);
+            isDrinkReady = true;
+            buttonText.text = giveStr;
+        } else {
+            //分支数
+            int optionNumber = dataArr.Length - 4;
+            Debug.Log("饮料分支数量："+optionNumber);
+            //将所有分支对话数据分解，存入列表
+            List<string[]> optionData = new List<string[]>();
+            List<string> branchDrinkNames = new List<string>();
+            for (int i = 0; i < optionNumber; i++) {
+                string[] dataCell = dataArr[4 + i].Trim().Substring(1).Split('\"');
+                optionData.Add(dataCell);
+                branchDrinkNames.Add(dataCell[0]);
+            }
+            int targetIndex = -1;
+            for(int i = 0; i < branchDrinkNames.Count; i++) {
+                if(drinkName1 == branchDrinkNames[i]) {
+                    targetIndex = i;
+                    break;
+                }
+            }
+            toolsManager.ManageBranch(optionData, targetIndex);
+
+            isDrinkReady = false;
+            buttonText.text = makeStr;
+            toolsManager.HiddenToolsBoard();
+        }
         //if (IsItemRight()) {
         //    TalkShow.instance.IsPlayingText = true;
         //} else {
@@ -76,7 +118,7 @@ public class MakeDrink : MonoBehaviour
                 return drink.drinkName;
             }
         }
-        return "错误饮料";
+        return "不可名状";
     }
 
     private static bool IsItemNumberRight(DrinkData.ItemBean itembean) {
@@ -84,18 +126,8 @@ public class MakeDrink : MonoBehaviour
         return itembean.itemNumber == DrinkData.instance.itemData[itembean.itemId].itemNumber;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void OnEnable() {
+    public void SetData() {
         TalkShow inst = TalkShow.instance;
         dataArr = inst.allStr[inst.rowIndex].Split('/');
     }

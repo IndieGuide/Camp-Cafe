@@ -43,7 +43,7 @@ public class DrinkData : MonoBehaviour {
         //柠檬红茶
         drinks[0].itemBeanList.Add(new ItemBean("水", 4));
         drinks[0].itemBeanList.Add(new ItemBean("冰块", 2));
-        drinks[0].itemBeanList.Add(new ItemBean("红茶", 1));
+        drinks[0].itemBeanList.Add(new ItemBean("红茶包", 1));
         drinks[0].itemBeanList.Add(new ItemBean("柠檬片", 2));
         drinks[0].itemBeanList.Add(new ItemBean("果糖", 1));
         drinks[0].tagList.Add(GetTagByName("清爽的")); 

@@ -42,7 +42,6 @@ public class TalkShow : MonoBehaviour {
 
     private void Awake() {
         instance = this;
-        GameObject.Find("ToolsArea").SetActive(false);
     }
     // Start is called before the first frame update
     void Start() {
@@ -97,6 +96,7 @@ public class TalkShow : MonoBehaviour {
         //物品判断操作
         if (scriptType == "2") {
             ItemAct act = new ItemAct(rowText);
+            Debug.Log("物品操作");
             act.DoAct();
         }
         //剧本跳转
