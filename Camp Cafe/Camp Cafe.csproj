@@ -643,6 +643,7 @@
     <Compile Include="Assets\Scripts\Act\ItemAct.cs" />
     <Compile Include="Assets\Scripts\Act\TalkAct.cs" />
     <Compile Include="Assets\Scripts\DevTools\BranchManager.cs" />
+    <Compile Include="Assets\Scripts\DevTools\ColorCollection.cs" />
     <Compile Include="Assets\Scripts\DevTools\InstanceLoad.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\DrinkData.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\ItemData.cs" />
@@ -651,6 +652,7 @@
     <Compile Include="Assets\Scripts\DrinksCode\MakeDrink.cs" />
     <Compile Include="Assets\Scripts\FaceImage.cs" />
     <Compile Include="Assets\Scripts\GameCamera.cs" />
+    <Compile Include="Assets\Scripts\Musics\MusicPlayerControl.cs" />
     <Compile Include="Assets\Scripts\OptionManager.cs" />
     <Compile Include="Assets\Scripts\SoundControl\TextSound.cs" />
     <Compile Include="Assets\Scripts\TalkShow.cs" />

@@ -19,6 +19,7 @@ public class OptionManager : MonoBehaviour
 
 
     public void ManageBranch(List<string[]> optiondata) {
+        branchManager = gameObject.AddComponent<BranchManager>();
         branchManager.GetBranchData(optiondata);
         int optionNumber = optiondata.Count;
         //循环记录每个分支前面有多少行，后面有多少行

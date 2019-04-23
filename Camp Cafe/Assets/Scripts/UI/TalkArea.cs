@@ -5,9 +5,10 @@ using UnityEngine.EventSystems;
 
 public class TalkArea : MonoBehaviour
 {
-    public TalkShow talkShow;
+
     public void OnPointerClick(BaseEventData eventData) {
-        if (!talkShow.IsPlayingText) {
+        TalkShow talkShow = TalkShow.instance;
+        if (!talkShow.IsPlayingText && talkShow.IsAllowClick) {
             talkShow.ResolveNextText();
         }
     }

@@ -18,7 +18,8 @@ public class ItemAct : MonoBehaviour, IScriptAct {
         ShowTips();
         ShowToolBoard();
         GameObject.Find("MakeButton").GetComponent<MakeDrink>().SetData();
-        TalkShow.instance.IsPlayingText = false;
+        //TalkShow.instance.IsPlayingText = false;
+        TalkShow.instance.IsAllowClick = false;
     }
 
     private static void ShowToolBoard() {

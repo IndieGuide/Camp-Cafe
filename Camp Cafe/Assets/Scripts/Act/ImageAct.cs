@@ -68,10 +68,9 @@ public class ImageAct : MonoBehaviour, IScriptAct
     }
 
     private void ImgQuit() {
+        imgObject.GetComponent<FaceImage>().FadeOutAndDelete();
         headImageList.Remove(imgObject);
-        Destroy(imgObject);
-        TalkShow.instance.rowIndex++;
-        TalkShow.instance.ResolveNextText();
+
     }
 
     private void ImgEnter() {

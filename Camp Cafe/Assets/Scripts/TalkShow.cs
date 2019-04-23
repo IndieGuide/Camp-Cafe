@@ -26,6 +26,7 @@ public class TalkShow : MonoBehaviour {
     public int rowIndex = 0;
     private bool isEnd = false;
     private bool isPlayingText = false;
+    bool isAllowClick = true;
 
     public bool IsPlayingText
     {
@@ -37,6 +38,19 @@ public class TalkShow : MonoBehaviour {
         set
         {
             isPlayingText = value;
+        }
+    }
+
+    public bool IsAllowClick
+    {
+        get
+        {
+            return isAllowClick;
+        }
+
+        set
+        {
+            isAllowClick = value;
         }
     }
 

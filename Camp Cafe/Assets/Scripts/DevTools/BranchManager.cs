@@ -15,6 +15,7 @@ public class BranchManager : MonoBehaviour {
     public BranchManager(){
         rowIndex = 0;
         talkShow = TalkShow.instance;
+        isInBranch = true;
     }
 
     // Update is called once per frame
@@ -28,6 +29,8 @@ public class BranchManager : MonoBehaviour {
                 talkShow.rowIndex += branchDatas[targetBranchIndex].jumpAfterNumber - 1;
             }
 
+        } else {
+            Destroy(this);
         }
     }
     class BranchData {
@@ -50,6 +53,7 @@ public class BranchManager : MonoBehaviour {
         rowIndexStart = talkShow.rowIndex;
         rowIndexEnd = rowIndexStart + branchDatas[targetBranchIndex].branchNumber;
         talkShow.ResolveNextText();
+        talkShow.IsAllowClick = true;
     }
     public void GetBranchData(List<string[]> optiondata) {
         int optionNumber = optiondata.Count;

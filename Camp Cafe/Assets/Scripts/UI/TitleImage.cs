@@ -7,15 +7,23 @@ using UnityEngine.UI;
 public class TitleImage : MonoBehaviour
 {
     Image titleImage;
-    Color vecNormal = new Color(255, 255, 255, 255);
-    Color vecClear = new Color(255, 255, 255, 0);
+    Color vecNormal = ColorCollection.GetVecNormal();
+    Color vecClear = ColorCollection.GetVecClear();
+    public GameObject musicPlayer;
     public void OnPointerEnter(BaseEventData eventData) {
         Debug.Log("指针进入");
         titleImage.color = vecClear;
+        foreach(Image image in musicPlayer.GetComponentsInChildren<Image>()) {
+            image.color = vecNormal;
+        }
     }
     public void OnPointerExit(BaseEventData eventData) {
         Debug.Log("指针离开");
         titleImage.color = vecNormal;
+        foreach (Image image in musicPlayer.GetComponentsInChildren<Image>()) {
+            image.color = vecClear;
+        }
+
     }
     // Start is called before the first frame update
     void Start()

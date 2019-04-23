@@ -26,8 +26,11 @@ public class BranchAct : MonoBehaviour,IScriptAct
                 string[] dataCell = dataArr[4 + i].Trim().Substring(1).Split('\"');
                 optionData.Add(dataCell);
             }
+            //设置分支管理实例的数据
             OptionManager optionManager = GameObject.Find("OptionArea").GetComponent<OptionManager>();
             optionManager.ManageBranch(optionData);
+            //关闭点击下一行
+            TalkShow.instance.IsAllowClick = false;
         }
     }
 

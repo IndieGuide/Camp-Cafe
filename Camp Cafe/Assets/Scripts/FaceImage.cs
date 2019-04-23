@@ -67,4 +67,10 @@ public class FaceImage : MonoBehaviour {
         imgPos.y = faceImg.sprite.bounds.size.y * 100 / 2;
         faceImg.color = new Color(255, 255, 255, 255);
     }
+
+    internal void FadeOutAndDelete() {
+        TalkShow.instance.rowIndex++;
+        TalkShow.instance.ResolveNextText();
+        Destroy(this.gameObject);
+    }
 }
