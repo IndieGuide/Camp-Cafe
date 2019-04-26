@@ -12,15 +12,12 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2018.3.0f2</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>6</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
@@ -658,23 +655,24 @@
     <Compile Include="Assets\Scripts\DevTools\InstanceLoad.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\DrinkData.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\ItemData.cs" />
-    <Compile Include="Assets\Scripts\DrinksCode\ItemGroupButton.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\ItemManager.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\MakeDrink.cs" />
-    <Compile Include="Assets\Scripts\FaceImage.cs" />
-    <Compile Include="Assets\Scripts\GameCamera.cs" />
+    <Compile Include="Assets\Scripts\Manager\OptionManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\TalkShow.cs" />
+    <Compile Include="Assets\Scripts\Manager\ToolsManager.cs" />
+    <Compile Include="Assets\Scripts\Menu\ItemGroupButton.cs" />
+    <Compile Include="Assets\Scripts\Menu\TagButton.cs" />
     <Compile Include="Assets\Scripts\Musics\MusicPlayerControl.cs" />
-    <Compile Include="Assets\Scripts\OptionManager.cs" />
     <Compile Include="Assets\Scripts\SoundControl\TextSound.cs" />
-    <Compile Include="Assets\Scripts\TalkShow.cs" />
-    <Compile Include="Assets\Scripts\ToolsManager.cs" />
     <Compile Include="Assets\Scripts\UI\AmountCacul.cs" />
     <Compile Include="Assets\Scripts\UI\CraftItem.cs" />
     <Compile Include="Assets\Scripts\UI\DrinkNameButton.cs" />
+    <Compile Include="Assets\Scripts\UI\FaceImage.cs" />
     <Compile Include="Assets\Scripts\UI\MenuManager.cs" />
     <Compile Include="Assets\Scripts\UI\OptionText.cs" />
     <Compile Include="Assets\Scripts\UI\TalkArea.cs" />
     <Compile Include="Assets\Scripts\UI\TitleImage.cs" />
+    <Compile Include="Assets\Scripts\View\GameCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Texts\DrinkData.txt" />
@@ -697,9 +695,6 @@
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageManagerWindow.uxml" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageSearchToolbar.uxml" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageStatusBar.uxml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

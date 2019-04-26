@@ -25,12 +25,12 @@ public class ItemManager : MonoBehaviour
     public ItemBoardEnum itemBoardType = ItemBoardEnum.Base;
 
     // Start is called before the first frame update
-    void Awake()
+    public void Awake()
     {
         //初始化材料数据
         List<string[]> ItemDataList = InstanceLoad.GetInstanceData("Texts/ItemData");
         foreach (string[] insDataArr in ItemDataList) {
-            ItemData item = new ItemData(int.Parse(insDataArr[0]), insDataArr[1], insDataArr[2],insDataArr[3],int.Parse(insDataArr[4]));
+            ItemData item = new ItemData(int.Parse(insDataArr[0]), insDataArr[1], insDataArr[2],insDataArr[3],insDataArr[4],int.Parse(insDataArr[5]));
             itemData.Add(item);
         }
         try {

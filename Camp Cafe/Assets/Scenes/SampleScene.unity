@@ -1499,7 +1499,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 47
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2019,7 +2019,7 @@ MonoBehaviour:
     type: 3}
   toolBoard: {fileID: 220125375}
   allStr: []
-  rowIndex: 52
+  rowIndex: 0
 --- !u!82 &334182375
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3308,10 +3308,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPreb: {fileID: 7655594875201350352, guid: cda147b4798de1944af1fee1ad26e385,
     type: 3}
+  tagButtonPrefab: {fileID: 8030116381093512438, guid: fc8e8166f4a0b4845befd690f17f4391,
+    type: 3}
   drinkNameText: {fileID: 1502038211}
   drinkIntroText: {fileID: 2031955625}
   drinkHelpText: {fileID: 1419013745}
-  menuScrollContentTrans: {fileID: 1215626638}
+  drinkButtonNode: {fileID: 1215626638}
+  tagButtonNode: {fileID: 1588420854}
 --- !u!1001 &592970682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6234,8 +6237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -202.4, y: 206.88}
-  m_SizeDelta: {x: 221.8, y: 61.35}
+  m_AnchoredPosition: {x: -7.3, y: 206.88}
+  m_SizeDelta: {x: 611.9, y: 61.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1502038211
 MonoBehaviour:
@@ -6743,8 +6746,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.135, y: 0.5}
   m_AnchorMax: {x: 0.135, y: 0.5}
-  m_AnchoredPosition: {x: -327.39102, y: -5.63}
-  m_SizeDelta: {x: 164.74, y: 550.33}
+  m_AnchoredPosition: {x: -326.34, y: -6.69}
+  m_SizeDelta: {x: 166.85, y: 548.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588420855
 MonoBehaviour:
@@ -7841,8 +7844,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 662.3, y: -5.63}
-  m_SizeDelta: {x: 762.5, y: 550.33}
+  m_AnchoredPosition: {x: 662.3, y: -6.6875}
+  m_SizeDelta: {x: 762.5, y: 548.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1846589505
 MonoBehaviour:

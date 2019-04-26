@@ -16,15 +16,18 @@ namespace Tests
             m_obj = new GameObject("TestGameObject");
             drinkData = m_obj.AddComponent<DrinkData>();
             itemManager = m_obj.AddComponent<ItemManager>();
+            itemManager.Awake();
+            drinkData.itemData = itemManager.itemData;
         }
 
         [UnityTest]
         public IEnumerator 饮料说明格式测试()
         {
-            string drinkHelpStr1 = "一杯蜂蜜柚子茶由4份水,2份冰块,2份葡萄柚粒,2份蜂蜜构成。";
+            string drinkHelpStr1 = "一杯蜂蜜柚子茶由<color=#8BBDB5>4份水</color>,<color=#C5D5E3>2份冰块</color>,<color=#E6543C>2份葡萄柚粒</color>,<color=#DFD664>2份蜂蜜</color>构成。";
+            string drinkHelpStr2 = "一杯香草咖啡可乐由<color=#B37A67>3份咖啡</color>,<color=#C5D5E3>2份冰块</color>,<color=#D13A18>3份快乐水</color>,<color=#6483BD>2份方糖</color>构成。";
             yield return null;
-
             Assert.AreEqual(drinkHelpStr1, drinkData.Drinks[1].drinkHelp);
+            Assert.AreEqual(drinkHelpStr2, drinkData.Drinks[6].drinkHelp);
         }
 
         [UnityTest]

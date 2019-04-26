@@ -116,18 +116,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4806973120410201304}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4806973120410201306}
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &4806973120410201306
@@ -144,9 +133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonId: 1
   itemManager: {fileID: 0}
-  vecNormal: {r: 255, g: 255, b: 255, a: 255}
-  vecClear: {r: 255, g: 255, b: 255, a: 0}
-  vecClick: {r: 255, g: 255, b: 255, a: 255}
 --- !u!114 &4806973120410201309
 MonoBehaviour:
   m_ObjectHideFlags: 0
