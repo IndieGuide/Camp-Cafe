@@ -10,6 +10,7 @@ public class TitleImage : MonoBehaviour
     Color vecNormal = ColorCollection.GetVecNormal();
     Color vecClear = ColorCollection.GetVecClear();
     public GameObject musicPlayer;
+    public GameObject viewArea;
     public void OnPointerEnter(BaseEventData eventData) {
         Debug.Log("指针进入");
         titleImage.color = vecClear;
@@ -25,10 +26,20 @@ public class TitleImage : MonoBehaviour
         }
 
     }
+    public void DrinkListOnClick() {
+        if (viewArea.active == false) {
+            viewArea.SetActive(true);
+        } else {
+            viewArea.SetActive(false);
+        }
+        
+
+    }
     // Start is called before the first frame update
     void Start()
     {
         titleImage = gameObject.GetComponent<Image>();
+        viewArea.SetActive(false);
     }
 
     // Update is called once per frame

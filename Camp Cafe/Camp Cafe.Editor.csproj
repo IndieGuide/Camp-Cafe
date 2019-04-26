@@ -707,7 +707,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\DrinkTest.cs" />
+    <Compile Include="Assets\Editor\DrinkHelpTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Texts\DrinkData.txt" />

@@ -33,10 +33,11 @@ public class ItemManager : MonoBehaviour
             ItemData item = new ItemData(int.Parse(insDataArr[0]), insDataArr[1], insDataArr[2],insDataArr[3],int.Parse(insDataArr[4]));
             itemData.Add(item);
         }
-        RenewItemBoard();
-    }
-    private void Update() {
-
+        try {
+            RenewItemBoard();
+        }catch(Exception e) {
+            Debug.Log("材料面板刷新失败");
+        }
     }
     public void RenewItemBoard() {
         if (itemBoardType == ItemBoardEnum.Base ) {
