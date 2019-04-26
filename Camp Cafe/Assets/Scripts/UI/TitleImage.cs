@@ -40,6 +40,10 @@ public class TitleImage : MonoBehaviour
     {
         titleImage = gameObject.GetComponent<Image>();
         viewArea.SetActive(false);
+        //开始时隐藏播放器
+        foreach (Image image in musicPlayer.GetComponentsInChildren<Image>()) {
+            image.color = vecClear;
+        }
     }
 
     // Update is called once per frame

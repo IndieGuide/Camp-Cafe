@@ -19,7 +19,7 @@ namespace Tests
         }
 
         [UnityTest]
-        public IEnumerator DrinkDataTestWithEnumeratorPasses()
+        public IEnumerator 饮料说明格式测试()
         {
             string drinkHelpStr1 = "一杯蜂蜜柚子茶由4份水,2份冰块,2份葡萄柚粒,2份蜂蜜构成。";
             yield return null;
@@ -28,7 +28,7 @@ namespace Tests
         }
 
         [UnityTest]
-        public IEnumerator DrinkDataItemNumberTest() {
+        public IEnumerator 饮料使用材料总数测试() {
 
             yield return null;
 
@@ -41,7 +41,7 @@ namespace Tests
             }
         }
         [UnityTest]
-        public IEnumerator DrinkDataItemInstanceTest() {
+        public IEnumerator 饮料中的材料数据与材料数据库中的材料名是否匹配() {
 
             yield return null;
             
@@ -53,9 +53,6 @@ namespace Tests
                             isBeanExists = true;
                             break;
                         } 
-                    }
-                    if (!isBeanExists) {
-                        Debug.Log(bean.itemName);
                     }
                     Assert.AreEqual(true, isBeanExists);
                 }

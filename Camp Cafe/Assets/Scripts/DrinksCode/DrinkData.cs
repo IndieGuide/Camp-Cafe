@@ -29,13 +29,13 @@ public class DrinkData : MonoBehaviour {
         foreach (string[] insDataArr in tagDataList) {
 
             Tag tag = new Tag(int.Parse(insDataArr[0]), insDataArr[1], insDataArr[2]);
-            Debug.Log(tag.tagName);
+            //Debug.Log(tag.tagName);
             tags.Add(tag);
         }
         List<string[]> drinkDataList = InstanceLoad.GetInstanceData("Texts/DrinkData");
         foreach (string[] insDataArr in drinkDataList) {
             DrinkInfo drink = new DrinkInfo(int.Parse(insDataArr[0]), int.Parse(insDataArr[1]), insDataArr[2], insDataArr[3]);
-            Debug.Log(drink.drinkName);
+            //Debug.Log(drink.drinkName);
             drinks.Add(drink);
         }
         
@@ -177,9 +177,10 @@ public class DrinkData : MonoBehaviour {
                         itemId = item.itemId;
                     }
                 }
-            } catch(Exception e) {
-                Debug.Log("ItemBean未正常读取itemId");
             }
+            catch {
+
+            } 
         }
 
         public ItemBean(int itemId, string itemName, int itemNumber) {

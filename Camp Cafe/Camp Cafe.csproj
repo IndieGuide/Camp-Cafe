@@ -647,6 +647,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PlayModeTests\DrinkDataTest.cs" />
+    <Compile Include="Assets\PlayModeTests\MenuBoardTest.cs" />
     <Compile Include="Assets\Scripts\Act\BranchAct.cs" />
     <Compile Include="Assets\Scripts\Act\ImageAct.cs" />
     <Compile Include="Assets\Scripts\Act\IScriptAct.cs" />
@@ -669,6 +670,8 @@
     <Compile Include="Assets\Scripts\ToolsManager.cs" />
     <Compile Include="Assets\Scripts\UI\AmountCacul.cs" />
     <Compile Include="Assets\Scripts\UI\CraftItem.cs" />
+    <Compile Include="Assets\Scripts\UI\DrinkNameButton.cs" />
+    <Compile Include="Assets\Scripts\UI\MenuManager.cs" />
     <Compile Include="Assets\Scripts\UI\OptionText.cs" />
     <Compile Include="Assets\Scripts\UI\TalkArea.cs" />
     <Compile Include="Assets\Scripts\UI\TitleImage.cs" />
