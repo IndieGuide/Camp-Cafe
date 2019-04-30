@@ -11,6 +11,7 @@ public class CraftItem : MonoBehaviour
     public ItemData itemData;
     public Color vecClear = new Color(255, 255, 255, 0);
     public Color vecNormal = new Color(255, 255, 255, 255);
+    public CraftItemCollider colliderObj;
     //姓名和内容框中原本的文本
     string tempNameStr;
     string tempContentStr;
@@ -31,6 +32,7 @@ public class CraftItem : MonoBehaviour
         nameText.text = tempNameStr;
         introText.text = tempContentStr;
     }
+
     public void ChangeItem(ItemData item) {
         itemData = item;
         if (itemData.itemName != "") {
@@ -38,9 +40,16 @@ public class CraftItem : MonoBehaviour
             Sprite spr = Resources.Load<Sprite>(imagePath);
             gameObject.GetComponent<Image>().sprite = spr;
             gameObject.GetComponent<Image>().color = vecNormal;
+            colliderObj.isAllowDrag = true;
+            colliderObj.ChangeBindItem(this);
         } else {
             gameObject.GetComponent<Image>().sprite = null;
             gameObject.GetComponent<Image>().color = vecClear;
+
+            colliderObj.isAllowDrag = false;
         }
+    }
+    private void Start() {
+
     }
 }

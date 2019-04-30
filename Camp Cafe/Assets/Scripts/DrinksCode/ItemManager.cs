@@ -14,6 +14,7 @@ public class ItemManager : MonoBehaviour
     public Image[] ItemImageArr = new Image[8];
     public AmountCacul[] amountCaculArr = new AmountCacul[8];
     public List<ItemData> itemData = new List<ItemData>();
+    public static ItemManager instance;
 
     public enum ItemBoardEnum {
         Base=0,
@@ -27,6 +28,7 @@ public class ItemManager : MonoBehaviour
     // Start is called before the first frame update
     public void Awake()
     {
+        instance = this;
         //初始化材料数据
         List<string[]> ItemDataList = InstanceLoad.GetInstanceData("Texts/ItemData");
         foreach (string[] insDataArr in ItemDataList) {
@@ -36,6 +38,7 @@ public class ItemManager : MonoBehaviour
         try {
             RenewItemBoard();
         }catch(Exception e) {
+            Debug.Log(e);
             Debug.Log("材料面板刷新失败");
         }
     }

@@ -78,7 +78,9 @@ public class ImageAct : MonoBehaviour, IScriptAct
         GameObject faceImg = Instantiate(TalkShow.instance.headImagePrefabs);
         headImageList.Add(faceImg);
 
-        faceImg.transform.parent = TalkShow.instance.transform;
+        //faceImg.transform.parent = TalkShow.instance.transform;
+        GameObject parent = GameObject.Find("FaceArea");
+        faceImg.transform.SetParent(parent.transform);
 
         //设置识别id
         faceImg.transform.GetComponent<FaceImage>().nameId = name;

@@ -16,6 +16,7 @@ public class AmountCacul : MonoBehaviour
     public Sprite addButtonAlpha;
     public Sprite subButton;
     public Sprite subButtonAlpha;
+    public LiquidImage liquidImage;
 
     Color vecNormal = ColorCollection.GetVecNormal();
     Color vecClear = ColorCollection.GetVecClear();
@@ -23,11 +24,13 @@ public class AmountCacul : MonoBehaviour
     Color vecEnter = ColorCollection.GetVecGreyEnter();
     public void AddOnClick() {
         int itemNumber = bindItem.itemData.itemNumber;
-        if (itemNumber >= 0 && itemNumber < 10) {
+        if (itemNumber >= 0 && itemNumber < 10 && !liquidImage.IsCupFull()) {
             addButtonImage.sprite = addButton;
             subButtonImage.sprite = subButton;
             bindItem.itemData.itemNumber += 1;
             NumberText.text = bindItem.itemData.itemNumber.ToString();
+
+            liquidImage.AddLiquid(bindItem.itemData);
         }else {
             addButtonImage.sprite = addButtonAlpha;
         }
@@ -39,6 +42,8 @@ public class AmountCacul : MonoBehaviour
             subButtonImage.sprite = subButton;
             bindItem.itemData.itemNumber -= 1;
             NumberText.text = bindItem.itemData.itemNumber.ToString();
+
+            liquidImage.SubLiquid(bindItem.itemData);
         } else {
             subButtonImage.sprite = subButtonAlpha;
         }

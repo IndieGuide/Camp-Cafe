@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 374}
+  m_MinSize: {x: 950, y: 350}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -44,10 +44,10 @@ MonoBehaviour:
     y: 30
     width: 2048
     height: 1019
-  m_MinSize: {x: 406, y: 324}
-  m_MaxSize: {x: 12006, y: 8048}
+  m_MinSize: {x: 581, y: 300}
+  m_MaxSize: {x: 12006, y: 8024}
   vertical: 0
-  controlID: 11
+  controlID: 115
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -67,15 +67,15 @@ MonoBehaviour:
     y: 0
     width: 477
     height: 1019
-  m_MinSize: {x: 102, y: 124}
+  m_MinSize: {x: 277, y: 74}
   m_MaxSize: {x: 4002, y: 4024}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 13}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,7 +94,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 435
-    height: 639
+    height: 638
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
@@ -118,11 +118,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 639
+    y: 638
     width: 1571
-    height: 380
-  m_MinSize: {x: 102, y: 124}
-  m_MaxSize: {x: 4002, y: 4024}
+    height: 381
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -151,7 +151,7 @@ MonoBehaviour:
     y: 0
     width: 2048
     height: 1069
-  m_MinSize: {x: 950, y: 374}
+  m_MinSize: {x: 950, y: 350}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -217,10 +217,10 @@ MonoBehaviour:
     y: 0
     width: 1571
     height: 1019
-  m_MinSize: {x: 304, y: 324}
-  m_MaxSize: {x: 8004, y: 8048}
+  m_MinSize: {x: 304, y: 300}
+  m_MaxSize: {x: 8004, y: 8024}
   vertical: 1
-  controlID: 78
+  controlID: 12
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,11 +241,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1571
-    height: 639
+    height: 638
   m_MinSize: {x: 304, y: 200}
   m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
-  controlID: 79
+  controlID: 13
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,7 +264,7 @@ MonoBehaviour:
     x: 435
     y: 0
     width: 1136
-    height: 639
+    height: 638
   m_MinSize: {x: 104, y: 124}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 12}
@@ -299,7 +299,7 @@ MonoBehaviour:
     x: 435.2
     y: 73.6
     width: 1132
-    height: 619
+    height: 618
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 5b5d5148b52d90a47a377d8dcc71fe41
   m_SceneLighting: 1
@@ -307,9 +307,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.16174711, y: -0.18180312, z: 0.025086466}
+    m_Target: {x: -0.010333843, y: 0.02019051, z: 307.24316}
     speed: 2
-    m_Value: {x: -0.16174711, y: -0.18180312, z: 0.025086466}
+    m_Value: {x: -0.010333843, y: 0.02019051, z: 307.24316}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -341,9 +341,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.138774
+    m_Target: 4.6665535
     speed: 2
-    m_Value: 5.138774
+    m_Value: 4.6665535
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -388,7 +388,7 @@ MonoBehaviour:
       name: Camp Cafe
       fullName: Camp Cafe
       resultStatus: 1
-      duration: 0.5433382
+      duration: 0.5642034
       messages: 
       output: 
       stacktrace: 
@@ -402,7 +402,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: I:/Github repository/Camp-Cafe/Camp Cafe/Library/ScriptAssemblies/Assembly-CSharp.dll
       resultStatus: 1
-      duration: 0.4715421
+      duration: 0.4919008
       messages: 
       output: 
       stacktrace: 
@@ -416,7 +416,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.4248361
+      duration: 0.4457931
       messages: 
       output: 
       stacktrace: 
@@ -430,7 +430,7 @@ MonoBehaviour:
       name: DrinkDataTest
       fullName: Tests.DrinkDataTest
       resultStatus: 1
-      duration: 0.2455187
+      duration: 0.2447035
       messages: 
       output: 
       stacktrace: 
@@ -444,7 +444,7 @@ MonoBehaviour:
       name: "\u996E\u6599\u4E2D\u7684\u6750\u6599\u6570\u636E\u4E0E\u6750\u6599\u6570\u636E\u5E93\u4E2D\u7684\u6750\u6599\u540D\u662F\u5426\u5339\u914D"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u4E2D\u7684\u6750\u6599\u6570\u636E\u4E0E\u6750\u6599\u6570\u636E\u5E93\u4E2D\u7684\u6750\u6599\u540D\u662F\u5426\u5339\u914D"
       resultStatus: 1
-      duration: 0.0814779
+      duration: 0.0842982
       messages: 
       output: "\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
       stacktrace: 
@@ -459,7 +459,7 @@ MonoBehaviour:
       name: "\u996E\u6599\u4F7F\u7528\u6750\u6599\u603B\u6570\u6D4B\u8BD5"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u4F7F\u7528\u6750\u6599\u603B\u6570\u6D4B\u8BD5"
       resultStatus: 1
-      duration: 0.0637991
+      duration: 0.0631619
       messages: 
       output: "\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
       stacktrace: 
@@ -474,7 +474,7 @@ MonoBehaviour:
       name: "\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5"
       resultStatus: 1
-      duration: 0.067246
+      duration: 0.065528
       messages: 
       output: "\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
       stacktrace: 
@@ -489,7 +489,7 @@ MonoBehaviour:
       name: MenuBoardTest
       fullName: Tests.MenuBoardTest
       resultStatus: 1
-      duration: 0.1398029
+      duration: 0.1531229
       messages: 
       output: 
       stacktrace: 
@@ -503,7 +503,7 @@ MonoBehaviour:
       name: "\u83DC\u5355\u9762\u677F\u6309\u94AE\u6570\u91CF\u6D4B\u8BD5"
       fullName: "Tests.MenuBoardTest.\u83DC\u5355\u9762\u677F\u6309\u94AE\u6570\u91CF\u6D4B\u8BD5"
       resultStatus: 1
-      duration: 0.1201005
+      duration: 0.1195077
       messages: 
       output: "ItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\nSystem.NullReferenceException:
         Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
@@ -540,7 +540,7 @@ MonoBehaviour:
         to the game object \"MenuBoardObject\". Or your script needs to check if the
         component is attached before using it.\r\n  at (wrapper managed-to-native)
         UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x1f4f8a90 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x5d6867a0 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
@@ -548,7 +548,7 @@ MonoBehaviour:
         probably need to add a RectTransform to the game object \"MenuBoardObject\".
         Or your script needs to check if the component is attached before using it.\r\n
         \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x1f4f8a90 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x5d6867a0 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
@@ -556,7 +556,7 @@ MonoBehaviour:
         probably need to add a RectTransform to the game object \"MenuBoardObject\".
         Or your script needs to check if the component is attached before using it.\r\n
         \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x1f4f8a90 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x5d6867a0 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
@@ -564,7 +564,7 @@ MonoBehaviour:
         probably need to add a RectTransform to the game object \"MenuBoardObject\".
         Or your script needs to check if the component is attached before using it.\r\n
         \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x1f4f8a90 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x5d6867a0 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\n"
@@ -576,7 +576,7 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentID: '[Assembly-CSharp][Tests.MenuBoardTest][suite]'
-    m_ResultText: "\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5 (0.067s)\n---\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6"
+    m_ResultText: "\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5 (0.066s)\n---\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6"
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -756,9 +756,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1491.2001
+    x: 1571.2001
     y: 73.6
-    width: 555
+    width: 475
     height: 999
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &16
@@ -846,10 +846,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 407.2
+    x: 435.2
     y: 73.6
-    width: 1068
-    height: 561
+    width: 1132
+    height: 619
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &18
 MonoBehaviour:
@@ -873,12 +873,12 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 654.4
-    width: 1477
-    height: 418
+    y: 711.2
+    width: 1569
+    height: 361
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: 
+    m_NameFilter: imageact
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -889,20 +889,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Prefabs
+    - Assets/Scripts/UI
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/Resources/Prefabs
+  - Assets/Scripts/UI
   m_LastFoldersGridSize: 60
   m_LastProjectPath: I:\Github repository\Camp-Cafe\Camp Cafe
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: 96290000
-    m_LastClickedID: 10646
-    m_ExpandedIDs: 0000000052260000ac260000c4260000a62700002e280000522800009c280000be280000f6280000182900008829000000ca9a3b
+    scrollPos: {x: 0, y: 504}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 0000000086260000e4260000fc260000fe260000f02700007e280000a2280000f0280000162900005429000078290000ea290000162e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -930,7 +930,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000052260000ac260000c4260000a62700002e280000522800009c280000be280000f62800001829000088290000
+    m_ExpandedIDs: 0000000086260000e4260000fc260000fe260000f02700007e280000a2280000f0280000162900005429000078290000ea290000162e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -955,8 +955,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 80270000
-    m_LastClickedInstanceID: 10112
+    m_SelectedInstanceIDs: 60890000
+    m_LastClickedInstanceID: 35168
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c4fbfbff5a26000092260000aa260000ce2500009825000074250000fc250000162500002025000028260000ba2600004226000000000000f0270000e8280000ac2a0000fab90000d8c10000042a0000
     m_RenameOverlay:
@@ -1009,28 +1009,28 @@ MonoBehaviour:
     x: 0
     y: 73.6
     width: 433
-    height: 619
+    height: 618
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 5e33ffff7433ffffa434ffffa83dffffbe3dfffff23effffac41ffffc241fffff242ffffb245ffffc845fffffc46ffffb649ffffcc49fffffc4affffbc4dffffd24dffff024fffffca6affffe06affff146cffff146fffff2a6fffff5a70ffff6473ffff7a73ffffda73ffff6276ffff7876ffffac77ffff727affff887affffbc7bffff947effffaa7effffde7fffffe082fffff682ffff2a84ffff5a88ffff7088ffffa089ffff6c8cffff828cffffb68dffff3e90ffff5490ffff8491ffff3adcffff50dcffff84ddffffd4fbffffc22a0000f82a0000082b0000162b00002e2b0000422b0000622b0000902b0000ee2b00002e2c0000462c0000602c0000902c0000a82c0000b62c0000484200006e420000a2420000d04200002e430000a0430000d0430000e843000050040100aa04010036050100a805010082370100a8380100
+      m_SelectedIDs: 60890000
+      m_LastClickedID: 35168
+      m_ExpandedIDs: 06acffffd6d8ffffecd8ffff24daffffc2fbfffff02a0000082b0000582b0000922b0000022c00006c2c000020880000708800001a890000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: CraftItemCollider
+        m_OriginalName: CraftItemCollider
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -10682
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -1064,22 +1064,22 @@ MonoBehaviour:
     x: 435.2
     y: 73.6
     width: 1132
-    height: 619
+    height: 618
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 06000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -428
-    m_HBaseRangeMax: 428
-    m_VBaseRangeMin: -240.8
-    m_VBaseRangeMax: 240.8
+    m_HBaseRangeMin: -768
+    m_HBaseRangeMax: 768
+    m_VBaseRangeMin: -432
+    m_VBaseRangeMax: 432
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1098,24 +1098,24 @@ MonoBehaviour:
       x: 0
       y: 17
       width: 1132
-      height: 602
-    m_Scale: {x: 1.25, y: 1.25}
-    m_Translation: {x: 566, y: 301}
+      height: 601
+    m_Scale: {x: 0.6956019, y: 0.6956019}
+    m_Translation: {x: 566, y: 300.49997}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -452.8
-      y: -240.8
-      width: 905.6
-      height: 481.6
+      x: -813.68384
+      y: -431.99994
+      width: 1627.3677
+      height: 863.99994
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.6956019
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1415, y: 773.75}
+  m_LastWindowPixelSize: {x: 1415, y: 772.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 712
+    y: 711.2
     width: 1569
-    height: 360
+    height: 361
   m_PersistentViewDataDictionary: {fileID: 0}

@@ -643,6 +643,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\2D Mesh with Waves\Scripts\Version 2\CircleWaveMeshWithEffect.cs" />
+    <Compile Include="Assets\2D Mesh with Waves\Scripts\Version 2\WaveMeshWithEffect.cs" />
+    <Compile Include="Assets\2D Mesh with Waves\Scripts\WaveCollider.cs" />
+    <Compile Include="Assets\2D Mesh with Waves\Scripts\WaveMesh.cs" />
     <Compile Include="Assets\PlayModeTests\DrinkDataTest.cs" />
     <Compile Include="Assets\PlayModeTests\MenuBoardTest.cs" />
     <Compile Include="Assets\Scripts\Act\BranchAct.cs" />
@@ -656,6 +660,7 @@
     <Compile Include="Assets\Scripts\DrinksCode\DrinkData.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\ItemData.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\ItemManager.cs" />
+    <Compile Include="Assets\Scripts\DrinksCode\LiquidImage.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\MakeDrink.cs" />
     <Compile Include="Assets\Scripts\Manager\OptionManager.cs" />
     <Compile Include="Assets\Scripts\Manager\TalkShow.cs" />
@@ -666,8 +671,10 @@
     <Compile Include="Assets\Scripts\SoundControl\TextSound.cs" />
     <Compile Include="Assets\Scripts\UI\AmountCacul.cs" />
     <Compile Include="Assets\Scripts\UI\CraftItem.cs" />
+    <Compile Include="Assets\Scripts\UI\CraftItemCollider.cs" />
     <Compile Include="Assets\Scripts\UI\DrinkNameButton.cs" />
     <Compile Include="Assets\Scripts\UI\FaceImage.cs" />
+    <Compile Include="Assets\Scripts\UI\MarkCupControl.cs" />
     <Compile Include="Assets\Scripts\UI\MenuManager.cs" />
     <Compile Include="Assets\Scripts\UI\OptionText.cs" />
     <Compile Include="Assets\Scripts\UI\TalkArea.cs" />
@@ -675,10 +682,12 @@
     <Compile Include="Assets\Scripts\View\GameCamera.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\2D Mesh with Waves\Documentation.txt" />
     <None Include="Assets\Resources\Texts\DrinkData.txt" />
     <None Include="Assets\Resources\Texts\ItemData.txt" />
     <None Include="Assets\Resources\Texts\TagData.txt" />
     <None Include="Assets\Resources\Texts\script1.txt" />
+    <None Include="Assets\Scripts\Shader\NewSurfaceShader.shader" />
     <None Include="Assets\Scripts\Shader\ShaderForTest.shader" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />

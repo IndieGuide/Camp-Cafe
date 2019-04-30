@@ -1,0 +1,22 @@
+Thanks for purchasing 2D Mesh with Waves.
+
+
+
+Visit scene called Demo or Demo 2 and hit play. Now you see 4 waves.
+
+For using asset in your project do the following:
+1) Drag one of the prefabs in your scene.
+2) Adjust the script properties to your liking. (If you don't want random effect, set amplitudeEffectRange, periodEffectRange, amplitudeEffectSpeed and periodEffectSpeed to zero)
+3) Assign a material to Mesh Renderer.												 
+
+If you want to add a collider to the wave do the following:							 
+1) Add a WaveCollider.cs to the wave gameobject.									 
+Note: Recreating a collider each frame is causing high cpu usage. Try to lower the pointConcetration for better performance.
+
+What's new in version two?
+-Circular Waves
+-Random effect based on perlin noise
+-Mixing multiple waves into one (If you don't want to mix waves, set waves to one)
+
+If you have any question contact me at support@nexgea.com
+  
