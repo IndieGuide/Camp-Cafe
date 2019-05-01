@@ -68,8 +68,13 @@ public class ImageAct : MonoBehaviour, IScriptAct
     }
 
     private void ImgQuit() {
-        imgObject.GetComponent<FaceImage>().FadeOutAndDelete();
-        headImageList.Remove(imgObject);
+        try {
+            imgObject.GetComponent<FaceImage>().FadeOutAndDelete();
+            headImageList.Remove(imgObject);
+        }catch(Exception e) {
+            Debug.Log(e);
+            Debug.Log("图片退出失败,可能没有人物图片存在于场景？");
+        }
 
     }
 

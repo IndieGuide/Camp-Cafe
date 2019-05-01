@@ -54,7 +54,6 @@ public class MakeDrink : MonoBehaviour
                 }
             }
             toolsManager.ManageBranch(optionData, targetIndex);
-
             isDrinkReady = false;
             buttonText.text = makeStr;
             toolsManager.HiddenToolsBoard();

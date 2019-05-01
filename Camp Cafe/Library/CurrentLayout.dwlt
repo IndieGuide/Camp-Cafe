@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 350}
+  m_MinSize: {x: 950, y: 524}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -44,10 +44,10 @@ MonoBehaviour:
     y: 30
     width: 2048
     height: 1019
-  m_MinSize: {x: 581, y: 300}
-  m_MaxSize: {x: 12006, y: 8024}
+  m_MinSize: {x: 581, y: 474}
+  m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 115
+  controlID: 102
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -121,14 +121,14 @@ MonoBehaviour:
     y: 638
     width: 1571
     height: 381
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
+  m_MinSize: {x: 232, y: 274}
+  m_MaxSize: {x: 10002, y: 10024}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 21}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,7 +151,7 @@ MonoBehaviour:
     y: 0
     width: 2048
     height: 1069
-  m_MinSize: {x: 950, y: 350}
+  m_MinSize: {x: 950, y: 524}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -217,10 +217,10 @@ MonoBehaviour:
     y: 0
     width: 1571
     height: 1019
-  m_MinSize: {x: 304, y: 300}
-  m_MaxSize: {x: 8004, y: 8024}
+  m_MinSize: {x: 304, y: 474}
+  m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 12
+  controlID: 45
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 304, y: 200}
   m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
-  controlID: 13
+  controlID: 46
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -291,8 +291,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Image: {fileID: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -307,9 +306,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.010333843, y: 0.02019051, z: 307.24316}
+    m_Target: {x: 0.2742256, y: 0.042338643, z: 304.74884}
     speed: 2
-    m_Value: {x: -0.010333843, y: 0.02019051, z: 307.24316}
+    m_Value: {x: 0.2742256, y: 0.042338643, z: 304.74884}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -341,9 +340,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.6665535
+    m_Target: 4.6015944
     speed: 2
-    m_Value: 4.6665535
+    m_Value: 4.6015944
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -388,7 +387,7 @@ MonoBehaviour:
       name: Camp Cafe
       fullName: Camp Cafe
       resultStatus: 1
-      duration: 0.5642034
+      duration: 0.5785844
       messages: 
       output: 
       stacktrace: 
@@ -402,7 +401,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: I:/Github repository/Camp-Cafe/Camp Cafe/Library/ScriptAssemblies/Assembly-CSharp.dll
       resultStatus: 1
-      duration: 0.4919008
+      duration: 0.4977642
       messages: 
       output: 
       stacktrace: 
@@ -416,7 +415,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.4457931
+      duration: 0.4290774
       messages: 
       output: 
       stacktrace: 
@@ -430,7 +429,7 @@ MonoBehaviour:
       name: DrinkDataTest
       fullName: Tests.DrinkDataTest
       resultStatus: 1
-      duration: 0.2447035
+      duration: 0.2468397
       messages: 
       output: 
       stacktrace: 
@@ -444,9 +443,17 @@ MonoBehaviour:
       name: "\u996E\u6599\u4E2D\u7684\u6750\u6599\u6570\u636E\u4E0E\u6750\u6599\u6570\u636E\u5E93\u4E2D\u7684\u6750\u6599\u540D\u662F\u5426\u5339\u914D"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u4E2D\u7684\u6750\u6599\u6570\u636E\u4E0E\u6750\u6599\u6570\u636E\u5E93\u4E2D\u7684\u6750\u6599\u540D\u662F\u5426\u5339\u914D"
       resultStatus: 1
-      duration: 0.0842982
+      duration: 0.0825895
       messages: 
-      output: "\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
+      output: "System.NullReferenceException: Object reference not set to an instance
+        of an object\r\n  at ItemManager.RenewItemBoard () [0x00014] in I:\\Github
+        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:48
+        \r\n  at ItemManager.Awake () [0x00071] in I:\\Github repository\\Camp-Cafe\\Camp
+        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:39 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nSystem.NullReferenceException:
+        Object reference not set to an instance of an object\r\n  at ItemManager.RenewItemBoard
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:48
+        \r\n  at ItemManager.Awake () [0x00071] in I:\\Github repository\\Camp-Cafe\\Camp
+        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:39 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -459,9 +466,17 @@ MonoBehaviour:
       name: "\u996E\u6599\u4F7F\u7528\u6750\u6599\u603B\u6570\u6D4B\u8BD5"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u4F7F\u7528\u6750\u6599\u603B\u6570\u6D4B\u8BD5"
       resultStatus: 1
-      duration: 0.0631619
+      duration: 0.0643524
       messages: 
-      output: "\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
+      output: "System.NullReferenceException: Object reference not set to an instance
+        of an object\r\n  at ItemManager.RenewItemBoard () [0x00014] in I:\\Github
+        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:48
+        \r\n  at ItemManager.Awake () [0x00071] in I:\\Github repository\\Camp-Cafe\\Camp
+        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:39 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nSystem.NullReferenceException:
+        Object reference not set to an instance of an object\r\n  at ItemManager.RenewItemBoard
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:48
+        \r\n  at ItemManager.Awake () [0x00071] in I:\\Github repository\\Camp-Cafe\\Camp
+        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:39 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -474,9 +489,17 @@ MonoBehaviour:
       name: "\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5"
       resultStatus: 1
-      duration: 0.065528
+      duration: 0.0660387
       messages: 
-      output: "\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
+      output: "System.NullReferenceException: Object reference not set to an instance
+        of an object\r\n  at ItemManager.RenewItemBoard () [0x00014] in I:\\Github
+        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:48
+        \r\n  at ItemManager.Awake () [0x00071] in I:\\Github repository\\Camp-Cafe\\Camp
+        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:39 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nSystem.NullReferenceException:
+        Object reference not set to an instance of an object\r\n  at ItemManager.RenewItemBoard
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:48
+        \r\n  at ItemManager.Awake () [0x00071] in I:\\Github repository\\Camp-Cafe\\Camp
+        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:39 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -489,7 +512,7 @@ MonoBehaviour:
       name: MenuBoardTest
       fullName: Tests.MenuBoardTest
       resultStatus: 1
-      duration: 0.1531229
+      duration: 0.1359105
       messages: 
       output: 
       stacktrace: 
@@ -503,32 +526,32 @@ MonoBehaviour:
       name: "\u83DC\u5355\u9762\u677F\u6309\u94AE\u6570\u91CF\u6D4B\u8BD5"
       fullName: "Tests.MenuBoardTest.\u83DC\u5355\u9762\u677F\u6309\u94AE\u6570\u91CF\u6D4B\u8BD5"
       resultStatus: 1
-      duration: 0.1195077
+      duration: 0.11819
       messages: 
-      output: "ItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\nSystem.NullReferenceException:
+      output: "ItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
         Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
-        () [0x00026] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:172
-        \r\nSystem.NullReferenceException: Object reference not set to an instance
-        of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp () [0x00026] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:172
-        \r\nSystem.NullReferenceException: Object reference not set to an instance
-        of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp () [0x00026] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:172
-        \r\nSystem.NullReferenceException: Object reference not set to an instance
-        of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp () [0x00026] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:172
-        \r\nSystem.NullReferenceException: Object reference not set to an instance
-        of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp () [0x00026] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:172
-        \r\nSystem.NullReferenceException: Object reference not set to an instance
-        of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp () [0x00026] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:172
-        \r\nSystem.NullReferenceException: Object reference not set to an instance
-        of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp () [0x00026] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:172
-        \r\nSystem.NullReferenceException: Object reference not set to an instance
-        of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp () [0x00026] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:172
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:190
+        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
+        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:190
+        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
+        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:190
+        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
+        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:190
+        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
+        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:190
+        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
+        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:190
+        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
+        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:190
+        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
+        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
+        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:190
         \r\nTag\u5217\u8868\u6570\u636E\u83B7\u53D6\u9519\u8BEF\r\nSystem.ArgumentException:
         The Object you want to instantiate is null.\r\n  at UnityEngine.Object.CheckNullArgument
         (System.Object arg, System.String message) [0x00008] in C:\\buildslave\\unity\\build\\Runtime\\Export\\UnityEngineObject.bindings.cs:383
@@ -540,7 +563,7 @@ MonoBehaviour:
         to the game object \"MenuBoardObject\". Or your script needs to check if the
         component is attached before using it.\r\n  at (wrapper managed-to-native)
         UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x5d6867a0 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x1dbfc850 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
@@ -548,7 +571,7 @@ MonoBehaviour:
         probably need to add a RectTransform to the game object \"MenuBoardObject\".
         Or your script needs to check if the component is attached before using it.\r\n
         \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x5d6867a0 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x1dbfc850 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
@@ -556,7 +579,7 @@ MonoBehaviour:
         probably need to add a RectTransform to the game object \"MenuBoardObject\".
         Or your script needs to check if the component is attached before using it.\r\n
         \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x5d6867a0 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x1dbfc850 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
@@ -564,7 +587,7 @@ MonoBehaviour:
         probably need to add a RectTransform to the game object \"MenuBoardObject\".
         Or your script needs to check if the component is attached before using it.\r\n
         \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x5d6867a0 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x1dbfc850 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\n"
@@ -576,7 +599,15 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentID: '[Assembly-CSharp][Tests.MenuBoardTest][suite]'
-    m_ResultText: "\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5 (0.066s)\n---\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6"
+    m_ResultText: "\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5 (0.066s)\n---\nSystem.NullReferenceException:
+      Object reference not set to an instance of an object\r\n  at ItemManager.RenewItemBoard
+      () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:48
+      \r\n  at ItemManager.Awake () [0x00071] in I:\\Github repository\\Camp-Cafe\\Camp
+      Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:39 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nSystem.NullReferenceException:
+      Object reference not set to an instance of an object\r\n  at ItemManager.RenewItemBoard
+      () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:48
+      \r\n  at ItemManager.Awake () [0x00071] in I:\\Github repository\\Camp-Cafe\\Camp
+      Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:39 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6"
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -878,7 +909,7 @@ MonoBehaviour:
     height: 361
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: imageact
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -889,20 +920,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/UI
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/Scripts/UI
+  - Assets/Scenes
   m_LastFoldersGridSize: 60
   m_LastProjectPath: I:\Github repository\Camp-Cafe\Camp Cafe
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 504}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086260000e4260000fc260000fe260000f02700007e280000a2280000f0280000162900005429000078290000ea290000162e000000ca9a3b
+    scrollPos: {x: 0, y: 312}
+    m_SelectedIDs: 4e0c0000
+    m_LastClickedID: 3150
+    m_ExpandedIDs: 00000000d2090000300a0000480a00004a0a00003c0b0000ca0b0000ee0b00003c0c0000620c0000a00c0000c40c0000360d0000802e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -930,7 +961,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086260000e4260000fc260000fe260000f02700007e280000a2280000f0280000162900005429000078290000ea290000162e0000
+    m_ExpandedIDs: 00000000d2090000300a0000480a00004a0a00003c0b0000ca0b0000ee0b00003c0c0000620c0000a00c0000c40c0000360d0000802e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -955,8 +986,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 60890000
-    m_LastClickedInstanceID: 35168
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c4fbfbff5a26000092260000aa260000ce2500009825000074250000fc250000162500002025000028260000ba2600004226000000000000f0270000e8280000ac2a0000fab90000d8c10000042a0000
     m_RenameOverlay:
@@ -1014,23 +1045,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 60890000
-      m_LastClickedID: 35168
-      m_ExpandedIDs: 06acffffd6d8ffffecd8ffff24daffffc2fbfffff02a0000082b0000582b0000922b0000022c00006c2c000020880000708800001a890000
+      m_SelectedIDs: 78890000
+      m_LastClickedID: 35192
+      m_ExpandedIDs: 089dffff369dffff4aa0ffff5aa0ffff58a7ffff6ea7ffff9ea8ffffdaabfffff0abffff24adffff5ab0ffff70b0ffffa0b1ffffe0b4fffff6b4ffff2ab6ffff6ab9ffff80b9ffffb0baffffb6beffffccbefffffcbfffff14c5ffff2ac5ffff5ec6ffff4ecaffff64caffff98cbffff8aceffffa0ceffffd4cfffff0ad3ffff20d3ffff50d4ffff2ad8ffff40d8ffff74d9ffff26dfffff3cdfffff6ce0ffffbce3ffffd2e3ffff32e4ffff2ae7ffff40e7ffff74e8ffffd4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: CraftItemCollider
-        m_OriginalName: CraftItemCollider
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -10682
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
