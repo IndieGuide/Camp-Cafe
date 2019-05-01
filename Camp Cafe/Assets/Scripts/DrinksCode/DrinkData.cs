@@ -8,7 +8,8 @@ public class DrinkData : MonoBehaviour {
     public List<Tag> tags = new List<Tag>();
     private List<DrinkInfo> drinks = new List<DrinkInfo>();
     public List<ItemData> itemData;
-
+    public List<ItemData> itemSelectedList = new List<ItemData>();
+    
     public List<DrinkInfo> Drinks
     {
         get
@@ -21,23 +22,32 @@ public class DrinkData : MonoBehaviour {
             drinks = value;
         }
     }
+    Dictionary<int, Func<int, bool>> dic;
+    public void InitTagFunc() {
+        dic = new Dictionary<int, Func<int, bool>> {
+            [0] = Func0,
+            [1] = Func0
+        };
+    }
+    static bool Func0(int itemid) {
+        return DrinkData.instance.itemData[itemid].itemNumber >= 0;
+    }
+    public class DrinkTag {
+        int tagId;
+        string tagName;
 
+    }
     private void Awake() {
 
         instance = this;
         List<string[]> tagDataList = InstanceLoad.GetInstanceData("Texts/TagData");
         foreach (string[] insDataArr in tagDataList) {
-
             Tag tag = new Tag(int.Parse(insDataArr[0]), insDataArr[1],insDataArr[2]);
-            //Debug.Log(tag.tagName);
-            //Debug.Log(tag.tagId);
-            //Debug.Log(tag.tagType);
             tags.Add(tag);
         }
         List<string[]> drinkDataList = InstanceLoad.GetInstanceData("Texts/DrinkData");
         foreach (string[] insDataArr in drinkDataList) {
             DrinkInfo drink = new DrinkInfo(int.Parse(insDataArr[0]), int.Parse(insDataArr[1]), insDataArr[2], insDataArr[3]);
-            //Debug.Log(drink.drinkName);
             drinks.Add(drink);
         }
         
@@ -142,6 +152,7 @@ public class DrinkData : MonoBehaviour {
         } catch (System.Exception e) {
             Debug.Log("饮料设置失败");
         }
+        InitTagFunc();
     }
 
     public class DrinkInfo {

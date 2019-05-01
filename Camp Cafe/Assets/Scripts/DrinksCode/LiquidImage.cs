@@ -8,16 +8,39 @@ public class LiquidImage : MonoBehaviour
     int heightMax = 320;
     RectTransform m_rect;
     Image m_image;
+
     private void Start() {
         m_rect = GetComponent<RectTransform>();
         m_image = GetComponent<Image>();
     }
     public void AddLiquid(ItemData itemdata) {
-        Debug.Log("杯子液体增加");
-        m_rect.sizeDelta = new Vector2(m_rect.rect.width , m_rect.rect.height + heightMax / 10);
+        ChangeItemSelectedList(itemdata,true);
+        m_rect.sizeDelta = new Vector2(m_rect.rect.width, m_rect.rect.height + heightMax / 10);
         ChangeLiquidColor(itemdata);
     }
+
+    private static void ChangeItemSelectedList(ItemData itemdata,bool isAdd) {
+        if (isAdd) {
+            bool isItemInList = false;
+            foreach (ItemData item in DrinkData.instance.itemSelectedList) {
+                if (item.itemId == itemdata.itemId) {
+                    isItemInList = true;
+                    break;
+                }
+            }
+            if (!isItemInList) {
+                DrinkData.instance.itemSelectedList.Add(itemdata);
+            }
+        } else {
+            if (itemdata.itemNumber == 0) {
+                DrinkData.instance.itemSelectedList.Remove(itemdata);
+            }
+        }
+
+    }
+
     public void SubLiquid(ItemData itemdata) {
+        ChangeItemSelectedList(itemdata,false);
         m_rect.sizeDelta = new Vector2(m_rect.rect.width , m_rect.rect.height - heightMax / 10);
         ChangeLiquidColor(itemdata);
     }

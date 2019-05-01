@@ -72,7 +72,10 @@
     <Compile Include="Assets\Scripts\DevTools\BranchManager.cs" />
     <Compile Include="Assets\Scripts\DevTools\ColorCollection.cs" />
     <Compile Include="Assets\Scripts\DevTools\InstanceLoad.cs" />
+    <Compile Include="Assets\Scripts\DrinkMenu\ItemGroupButton.cs" />
+    <Compile Include="Assets\Scripts\DrinkMenu\TagButton.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\DrinkData.cs" />
+    <Compile Include="Assets\Scripts\DrinksCode\DrinkOutputManager.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\ItemData.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\ItemManager.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\LiquidImage.cs" />
@@ -80,8 +83,8 @@
     <Compile Include="Assets\Scripts\Manager\OptionManager.cs" />
     <Compile Include="Assets\Scripts\Manager\TalkShow.cs" />
     <Compile Include="Assets\Scripts\Manager\ToolsManager.cs" />
-    <Compile Include="Assets\Scripts\Menu\ItemGroupButton.cs" />
-    <Compile Include="Assets\Scripts\Menu\TagButton.cs" />
+    <Compile Include="Assets\Scripts\MenuScene\MainMenuButtonControl.cs" />
+    <Compile Include="Assets\Scripts\MenuScene\TriggerButton.cs" />
     <Compile Include="Assets\Scripts\Musics\MusicPlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\DrinkDataTest.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\MenuBoardTest.cs" />

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MakeDrink : MonoBehaviour
 {
     public Image cup1;
+    public DrinkOutputManager drinkManager;
     string drinkName1;
     public string[] dataArr;
     bool isDrinkReady = false;
@@ -14,12 +15,57 @@ public class MakeDrink : MonoBehaviour
     string giveStr = "上  饮  料";
     Text buttonText;
     ToolsManager toolsManager;
-    private enum DetermineTypeEnum {
-        Drink,
-        TagAnd,
-        TagOr
+    //private enum DetermineTypeEnum {
+    //    Drink,
+    //    TagAnd,
+    //    TagOr
+    //}
+    //DetermineTypeEnum determineType;
+    public class DrinkInst {
+        public string drinkName;
+        public List<ItemData> itemList = new List<ItemData>();
+        public List<DrinkData.DrinkTag> tagList = new List<DrinkData.DrinkTag>();
+        public DrinkInst() {
+            itemList = DrinkData.instance.itemSelectedList;
+            SetDrinkName();
+            //SetDrinkTagList();
+        }
+
+        private void SetDrinkTagList() {
+            throw new NotImplementedException();
+        }
+        private static bool IsItemNumberRight(DrinkData.ItemBean itembean) {
+            //Debug.Log(itembean.itemName + "所需数量为：" + itembean.itemNumber + '\n' + DrinkData.instance.itemData[itembean.itemId].itemName + "实际数量为" + DrinkData.instance.itemData[itembean.itemId].itemNumber);
+            return itembean.itemNumber == DrinkData.instance.itemData[itembean.itemId].itemNumber;
+        }
+        private void SetDrinkName() {
+            List<DrinkData.DrinkInfo> drinks = DrinkData.instance.Drinks;
+            foreach (DrinkData.DrinkInfo drink in drinks) {
+                Debug.Log("查询饮料名：" + drink.drinkName);
+                List<DrinkData.ItemBean> itemBeans = drink.mainBeanList;
+                int j = 0;
+                if (itemBeans.Count == 0) {
+                    break;
+                }
+                for (int i = 0; i < itemBeans.Count; i++) {
+                    Debug.Log(itemBeans[i].itemName);
+                    if (IsItemNumberRight(itemBeans[i])) {
+                        j++;
+                    } else {
+                        Debug.Log(itemBeans[i].itemName + "数量错误");
+                        break;
+                    }
+                }
+                if (j == itemBeans.Count) {
+                    Debug.Log(drink.drinkName);
+                    drinkName = drink.drinkName;
+                    return;
+                    
+                }
+            }
+            drinkName = "不可名状";
+        }
     }
-    DetermineTypeEnum determineType;
 
 
     // Start is called before the first frame update
@@ -30,8 +76,11 @@ public class MakeDrink : MonoBehaviour
     }
     public void OnClick() {
         if (!isDrinkReady) {
-            drinkName1 = GetDrinkFromItem();
-            SetDrinkImg(drinkName1);
+            //制作饮料
+            DrinkInst drinkInst = new DrinkInst();
+            //drinkManager.gameObject.SetActive(true);
+            //drinkManager.ShowNewDrink(drinkInst);
+            SetDrinkImg(drinkInst.drinkName);
             isDrinkReady = true;
             buttonText.text = giveStr;
         } else {
@@ -58,12 +107,6 @@ public class MakeDrink : MonoBehaviour
             buttonText.text = makeStr;
             toolsManager.HiddenToolsBoard();
         }
-        //if (IsItemRight()) {
-        //    TalkShow.instance.IsPlayingText = true;
-        //} else {
-        //    TalkShow.instance.IsPlayingText = true;
-        //    SetWrongImg();
-        //}
     }
 
     private void SetDrinkImg(string drinkname) {
@@ -74,56 +117,8 @@ public class MakeDrink : MonoBehaviour
         imgRecTrans.sizeDelta = new Vector2(cup1.sprite.bounds.size.x * 100, cup1.sprite.bounds.size.y * 100);
         //cup1.color = new Color(255, 255, 255, 255);
     }
+    
 
-
-    //private bool IsItemRight() {
-    //    determineType = (DetermineTypeEnum)int.Parse(dataArr[3]);
-    //    if (determineType == DetermineTypeEnum.Drink) {
-    //        //目标饮料
-    //        string targetDrinkName = dataArr[4].Split('\"')[0];
-    //        if (GetDrinkFromItem() == targetDrinkName) {
-
-    //        }
-    //        ////目标饮料包含文本行数
-    //        //int targetDrinkTextNumber = int.Parse(dataArr[4].Split('\"')[1]);
-    //        ////其他有文本反馈的饮料数据
-    //        //List<string[]> otherDrinkData = new List<string[]>();
-    //        //for (int i = 0; i < dataArr.Length - 5; i++) {
-    //        //    otherDrinkData.Add(dataArr[i + 5].Split('\"'));
-    //        //}
-    //    }
-    //}
-
-    private string GetDrinkFromItem() {
-        List<DrinkData.DrinkInfo> drinks= DrinkData.instance.Drinks;
-        foreach(DrinkData.DrinkInfo drink in drinks) {
-            List<DrinkData.ItemBean> itemBeans = drink.itemBeanList;
-            Debug.Log(itemBeans.Count);
-            int j = 0;
-            if (itemBeans.Count == 0) {
-                break;
-            }
-            for(int i = 0;i < itemBeans.Count; i++) {
-                Debug.Log(itemBeans[i].itemName);
-                if (IsItemNumberRight(itemBeans[i])) {
-                    j++;
-                } else {
-                    Debug.Log(itemBeans[i].itemName + "数量错误");
-                    break;
-                }
-            }
-            if (j == itemBeans.Count) {
-                Debug.Log(drink.drinkName);
-                return drink.drinkName;
-            }
-        }
-        return "不可名状";
-    }
-
-    private static bool IsItemNumberRight(DrinkData.ItemBean itembean) {
-        Debug.Log(itembean.itemName + "所需数量为：" + itembean.itemNumber + '\n' + DrinkData.instance.itemData[itembean.itemId].itemName + "实际数量为" + DrinkData.instance.itemData[itembean.itemId].itemNumber);
-        return itembean.itemNumber == DrinkData.instance.itemData[itembean.itemId].itemNumber;
-    }
 
 
     public void SetData() {
