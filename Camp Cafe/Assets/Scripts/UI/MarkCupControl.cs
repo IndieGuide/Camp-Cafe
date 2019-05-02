@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MarkCupControl : MonoBehaviour
@@ -18,10 +19,12 @@ public class MarkCupControl : MonoBehaviour
     {
         
     }
+
     void OnTriggerEnter2D(Collider2D collider) {
         m_outline.enabled = true;
         Debug.Log("开始接触");
     }
+
     void OnTriggerExit2D(Collider2D collider) {
         m_outline.enabled = false;
         if (collider != null) {

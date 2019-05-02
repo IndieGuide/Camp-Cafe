@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\DrinksCode\DrinkData.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\DrinkInst.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\DrinkOutputManager.cs" />
+    <Compile Include="Assets\Scripts\DrinksCode\DrinkTagData.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\ItemData.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\ItemManager.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\LiquidImage.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Scripts\Manager\TalkShow.cs" />
     <Compile Include="Assets\Scripts\Manager\ToolsManager.cs" />
     <Compile Include="Assets\Scripts\MenuScene\MainMenuButtonControl.cs" />
+    <Compile Include="Assets\Scripts\MenuScene\MenuSetting.cs" />
     <Compile Include="Assets\Scripts\MenuScene\TriggerButton.cs" />
     <Compile Include="Assets\Scripts\Musics\MusicPlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\DrinkDataTest.cs" />
@@ -108,6 +110,7 @@
     <None Include="Assets\Scripts\Shader\NewSurfaceShader.shader" />
     <None Include="Assets\Resources\Texts\ItemData.txt" />
     <None Include="Assets\2D Mesh with Waves\Documentation.txt" />
+    <None Include="Assets\Resources\Texts\DrinkTagData.txt" />
     <None Include="Assets\Resources\Texts\DrinkData.txt" />
     <None Include="Assets\Resources\Texts\TagData.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">

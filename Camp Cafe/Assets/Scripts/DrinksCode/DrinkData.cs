@@ -6,6 +6,7 @@ using UnityEngine;
 public class DrinkData : MonoBehaviour {
     public static DrinkData instance;
     public List<Tag> tags = new List<Tag>();
+    public List<DrinkTag> drinkTags = new List<DrinkTag>();
     private List<DrinkInfo> drinks = new List<DrinkInfo>();
     public List<ItemData> itemData;
     public List<ItemData> itemSelectedList = new List<ItemData>();
@@ -22,20 +23,18 @@ public class DrinkData : MonoBehaviour {
             drinks = value;
         }
     }
-    Dictionary<int, Func<int, bool>> dic;
-    public void InitTagFunc() {
-        dic = new Dictionary<int, Func<int, bool>> {
-            [0] = Func0,
-            [1] = Func0
-        };
-    }
-    static bool Func0(int itemid) {
-        return DrinkData.instance.itemData[itemid].itemNumber >= 0;
-    }
-    public class DrinkTag {
-        int tagId;
-        string tagName;
 
+    public class DrinkTag {
+        public int tagId;
+        public string tagName;
+        public string tagQuality;
+        public string tagColor;
+        public DrinkTag(int tagid, string tagname, string tagquality, string tagcolor) {
+            tagId = tagid;
+            tagName = tagname;
+            tagQuality = tagquality;
+            tagColor = tagcolor;
+        }
     }
     private void Awake() {
         instance = this;
@@ -49,7 +48,11 @@ public class DrinkData : MonoBehaviour {
             DrinkInfo drink = new DrinkInfo(int.Parse(insDataArr[0]), int.Parse(insDataArr[1]), insDataArr[2], insDataArr[3]);
             drinks.Add(drink);
         }
-        
+        List<string[]> drinkTagList = InstanceLoad.GetInstanceData("Texts/DrinkTagData");
+        foreach (string[] insDataArr in drinkTagList) {
+            DrinkTag drinkTag = new DrinkTag(int.Parse(insDataArr[0].ToString().Trim()), insDataArr[1], insDataArr[2], insDataArr[3]);
+            drinkTags.Add(drinkTag);
+        }
     }
 
     private void DrinkSetting() {
@@ -151,7 +154,6 @@ public class DrinkData : MonoBehaviour {
         } catch (System.Exception e) {
             Debug.Log("饮料设置失败");
         }
-        InitTagFunc();
     }
 
     public class DrinkInfo {
@@ -259,6 +261,16 @@ public class DrinkData : MonoBehaviour {
             this.tagType = tagType;
             this.tagName = tagName.Trim();
         }
-    }
 
+
+    }
+    public DrinkInfo GetDrinkInfo(string drinkname) {
+        foreach (DrinkInfo item in instance.drinks) {
+            if (item.drinkName == drinkname) {
+                return item;
+            }
+        }
+        Debug.Log("未搜索到名称为" + drinkname + "的饮料。");
+        return null;
+    }
 }

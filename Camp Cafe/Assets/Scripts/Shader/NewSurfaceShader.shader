@@ -55,7 +55,7 @@ Shader "Custom/Edge"
 		fixed x = i.uv.x;
 	fixed y = i.uv.y;
 
-	if ((x < _Edge) || (abs(1 - x) < _Edge) || (y < _Edge) || (abs(1 - y) < _Edge))
+	if ((x < _Edge) // (abs(1 - x) < _Edge) // (y < _Edge) // (abs(1 - y) < _Edge))
 	{
 		//点旋转公式：
 		//假设对图片上任意点(x,y)，绕一个坐标点(rx0,ry0)逆时针旋转a角度后的新的坐标设为(x0,y0)，有公式：

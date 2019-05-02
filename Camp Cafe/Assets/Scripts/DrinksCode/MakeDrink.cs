@@ -7,8 +7,9 @@ using UnityEngine.UI;
 public class MakeDrink : MonoBehaviour
 {
     public Image cupImage;
+    public Sprite originCupSpr;
     public DrinkOutputManager drinkManager;
-    string drinkName;
+    DrinkInst drinkInst;
     public string[] dataArr;
     bool isDrinkReady = false;
     string makeStr = "制  作";
@@ -33,9 +34,10 @@ public class MakeDrink : MonoBehaviour
     public void OnClick() {
         if (!isDrinkReady) {
             //制作饮料
-            DrinkInst drinkInst = new DrinkInst();
+            drinkInst = new DrinkInst();
 
             drinkManager.gameObject.SetActive(true);
+            drinkManager.ChangeBack(drinkInst.qualityType);
             drinkManager.ShowNewDrink(drinkInst);
 
             string imagePath = "Sprites/Drinks/" + drinkInst.drinkName;
@@ -60,7 +62,7 @@ public class MakeDrink : MonoBehaviour
             int errorIndex = -1;
             for(int i = 0; i < branchDrinkNames.Count; i++) {
                 if (branchDrinkNames[i] == "不可名状") { errorIndex = i; }
-                if (drinkName == branchDrinkNames[i]) {
+                if (drinkInst.drinkName == branchDrinkNames[i]) {
                     targetIndex = i;
                     break;
                 } else {
@@ -73,22 +75,27 @@ public class MakeDrink : MonoBehaviour
             isDrinkReady = false;
             buttonText.text = makeStr;
             toolsManager.HiddenToolsBoard();
+
+
+            GameObject viewArea = GameObject.Find("TalkArea").GetComponent<TalkArea>().viewArea;
+            if (viewArea.active) {
+                viewArea.SetActive(false);
+            }
         }
     }
 
-    private void SetDrinkImg(string drinkname) {
-        string imagePath = "Sprites/Drinks/" + drinkname;
-        Sprite drinkSpr = Resources.Load<Sprite>(imagePath);
-        cupImage.sprite = drinkSpr;
-        RectTransform imgRecTrans = cupImage.transform.GetComponent<RectTransform>();
-        imgRecTrans.sizeDelta = new Vector2(cupImage.sprite.bounds.size.x * 100, cupImage.sprite.bounds.size.y * 100);
+    internal void ClearData() {
+        UICollection.SetImage(originCupSpr, cupImage);
+        drinkInst = null;
+        isDrinkReady = false;
+        buttonText.text = makeStr;
+        if(drinkManager.gameObject.active)
+            drinkManager.gameObject.SetActive(false);
     }
     
-
-
-
     public void SetData() {
         TalkShow inst = TalkShow.instance;
-        dataArr = inst.allStr[inst.rowIndex].Split('/');
+        dataArr = inst.allStr[inst.rowIndex].Split('|');
     }
 }
+

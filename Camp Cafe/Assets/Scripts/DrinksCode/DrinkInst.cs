@@ -6,11 +6,16 @@ using UnityEngine.UI;
 
 public class DrinkInst {
     public string drinkName;
-    public string tagStr;
+    public string tagStr="";
     public List<ItemData> itemList = new List<ItemData>();
     public List<DrinkData.DrinkTag> tagList = new List<DrinkData.DrinkTag>();
     public string qualityName;
-
+    public enum BackType {
+        normal,
+        good,
+        perfect
+    }
+    public BackType qualityType;
     public DrinkInst() {
         itemList = DrinkData.instance.itemSelectedList;
         SetDrinkName();
@@ -19,22 +24,31 @@ public class DrinkInst {
     }
 
     private void SetDrinkQuality() {
-        qualityName = "普通";
+        if (tagList.Count <= 1) {
+            qualityName = "普通";
+            qualityType = BackType.normal;
+        }else if(tagList.Count >= 2 && tagList.Count <= 3) {
+            qualityName = "稀有";
+            qualityType = BackType.good;
+        } else if (tagList.Count > 3) {
+            qualityName = "完美";
+            qualityType = BackType.perfect;
+        }
     }
 
     private void SetDrinkTagList() {
-        tagStr = "普通的";
+        foreach(Func<DrinkInst, DrinkData.DrinkTag> tagfunc in DrinkTagData.instance.tagFuncList) {
+            DrinkData.DrinkTag drinkTag = tagfunc(this);
+            if (drinkTag != null) {
+                tagList.Add(drinkTag);
+                tagStr += " " + "<color=#" +drinkTag.tagColor.Trim()+">"+drinkTag.tagName+"</color>"+" ";
+            }
+        }
+        if (tagStr != "") {
+            tagStr += "的";
+        }
     }
-    private static bool IsItemNumberRight(DrinkData.ItemBean itembean) {
-        //Debug.Log(itembean.itemName + "所需数量为：" + itembean.itemNumber + '\n' + DrinkData.instance.itemData[itembean.itemId].itemName + "实际数量为" + DrinkData.instance.itemData[itembean.itemId].itemNumber);
-        return itembean.itemNumber == DrinkData.instance.itemData[itembean.itemId].itemNumber;
-    }
-    private static bool IsItemUsed(DrinkData.ItemBean itembean) {
-        if (itembean.itemNumber != 0)
-            return true;
-        else
-            return false;
-    }
+   
     private void SetDrinkName() {
         List<DrinkData.DrinkInfo> drinks = DrinkData.instance.Drinks;
         int itemNumber = 0;
@@ -82,5 +96,14 @@ public class DrinkInst {
         }
         drinkName = "不可名状";
     }
-
+    private static bool IsItemNumberRight(DrinkData.ItemBean itembean) {
+        //Debug.Log(itembean.itemName + "所需数量为：" + itembean.itemNumber + '\n' + DrinkData.instance.itemData[itembean.itemId].itemName + "实际数量为" + DrinkData.instance.itemData[itembean.itemId].itemNumber);
+        return itembean.itemNumber == DrinkData.instance.itemData[itembean.itemId].itemNumber;
+    }
+    private static bool IsItemUsed(DrinkData.ItemBean itembean) {
+        if (itembean.itemNumber != 0)
+            return true;
+        else
+            return false;
+    }
 }

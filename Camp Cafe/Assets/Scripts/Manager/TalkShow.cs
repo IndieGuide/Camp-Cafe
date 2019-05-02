@@ -94,12 +94,11 @@ public class TalkShow : MonoBehaviour {
 
     public void ResolveNextText() {
         DelNullOrNoteRow();
-        string[] rowText = allStr[rowIndex].Split('/');
+        string[] rowText = allStr[rowIndex].Split('|');
         string scriptType = rowText[0];
         //图片操作
         if (scriptType == "0") {
             ImageAct act = new ImageAct(rowText);
-            Debug.Log(0);
             act.DoAct();
         }
         //对话操作
@@ -124,7 +123,7 @@ public class TalkShow : MonoBehaviour {
     private void DelNullOrNoteRow() {
         string rowStr = allStr[rowIndex];
         string head = rowStr[0].ToString();
-        while (head == "/" || string.IsNullOrWhiteSpace(allStr[rowIndex])) {
+        while (head == "|" || string.IsNullOrWhiteSpace(allStr[rowIndex])) {
             rowIndex++;
             rowStr = allStr[rowIndex];
             head = rowStr[0].ToString();

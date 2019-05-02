@@ -67,7 +67,7 @@ public class ColorCollection
         b = b*255;
         float result = b >= 128 ? Math.Max(a, (b - 128) * 2) : Math.Min(a, b * 2);
         result = result / 255;
-        Debug.Log("result:"+result);
+        //Debug.Log("result:"+result);
         return result;
     }
 

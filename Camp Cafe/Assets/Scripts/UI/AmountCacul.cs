@@ -48,7 +48,11 @@ public class AmountCacul : MonoBehaviour
             subButtonImage.sprite = subButtonAlpha;
         }
     }
-
+    public void ClearData() {
+        NumberText.text = bindItem.itemData.itemNumber.ToString();
+        subButtonImage.sprite = subButtonAlpha;
+        addButtonImage.sprite = addButton;
+    }
     public void OnPointerEnterAdd(BaseEventData eventData) {
         addButtonAreaImage.GetComponentInChildren<Image>().color = vecEnter;
     }
