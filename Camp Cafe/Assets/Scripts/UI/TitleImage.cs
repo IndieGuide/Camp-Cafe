@@ -12,14 +12,14 @@ public class TitleImage : MonoBehaviour
     public GameObject musicPlayer;
     public GameObject viewArea;
     public void OnPointerEnter(BaseEventData eventData) {
-        Debug.Log("指针进入");
+        //Debug.Log("指针进入");
         titleImage.color = vecClear;
         foreach(Image image in musicPlayer.GetComponentsInChildren<Image>()) {
             image.color = vecNormal;
         }
     }
     public void OnPointerExit(BaseEventData eventData) {
-        Debug.Log("指针离开");
+        //Debug.Log("指针离开");
         titleImage.color = vecNormal;
         foreach (Image image in musicPlayer.GetComponentsInChildren<Image>()) {
             image.color = vecClear;

@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class MakeDrink : MonoBehaviour
 {
-    public Image cup1;
+    public Image cupImage;
     public DrinkOutputManager drinkManager;
-    string drinkName1;
+    string drinkName;
     public string[] dataArr;
     bool isDrinkReady = false;
     string makeStr = "制  作";
@@ -21,51 +21,7 @@ public class MakeDrink : MonoBehaviour
     //    TagOr
     //}
     //DetermineTypeEnum determineType;
-    public class DrinkInst {
-        public string drinkName;
-        public List<ItemData> itemList = new List<ItemData>();
-        public List<DrinkData.DrinkTag> tagList = new List<DrinkData.DrinkTag>();
-        public DrinkInst() {
-            itemList = DrinkData.instance.itemSelectedList;
-            SetDrinkName();
-            //SetDrinkTagList();
-        }
-
-        private void SetDrinkTagList() {
-            throw new NotImplementedException();
-        }
-        private static bool IsItemNumberRight(DrinkData.ItemBean itembean) {
-            //Debug.Log(itembean.itemName + "所需数量为：" + itembean.itemNumber + '\n' + DrinkData.instance.itemData[itembean.itemId].itemName + "实际数量为" + DrinkData.instance.itemData[itembean.itemId].itemNumber);
-            return itembean.itemNumber == DrinkData.instance.itemData[itembean.itemId].itemNumber;
-        }
-        private void SetDrinkName() {
-            List<DrinkData.DrinkInfo> drinks = DrinkData.instance.Drinks;
-            foreach (DrinkData.DrinkInfo drink in drinks) {
-                Debug.Log("查询饮料名：" + drink.drinkName);
-                List<DrinkData.ItemBean> itemBeans = drink.mainBeanList;
-                int j = 0;
-                if (itemBeans.Count == 0) {
-                    break;
-                }
-                for (int i = 0; i < itemBeans.Count; i++) {
-                    Debug.Log(itemBeans[i].itemName);
-                    if (IsItemNumberRight(itemBeans[i])) {
-                        j++;
-                    } else {
-                        Debug.Log(itemBeans[i].itemName + "数量错误");
-                        break;
-                    }
-                }
-                if (j == itemBeans.Count) {
-                    Debug.Log(drink.drinkName);
-                    drinkName = drink.drinkName;
-                    return;
-                    
-                }
-            }
-            drinkName = "不可名状";
-        }
-    }
+    
 
 
     // Start is called before the first frame update
@@ -78,9 +34,13 @@ public class MakeDrink : MonoBehaviour
         if (!isDrinkReady) {
             //制作饮料
             DrinkInst drinkInst = new DrinkInst();
-            //drinkManager.gameObject.SetActive(true);
-            //drinkManager.ShowNewDrink(drinkInst);
-            SetDrinkImg(drinkInst.drinkName);
+
+            drinkManager.gameObject.SetActive(true);
+            drinkManager.ShowNewDrink(drinkInst);
+
+            string imagePath = "Sprites/Drinks/" + drinkInst.drinkName;
+            UICollection.SetImage(imagePath, cupImage);
+
             isDrinkReady = true;
             buttonText.text = giveStr;
         } else {
@@ -95,13 +55,20 @@ public class MakeDrink : MonoBehaviour
                 optionData.Add(dataCell);
                 branchDrinkNames.Add(dataCell[0]);
             }
+            //在脚本中的所有关键饮料分支中寻找与当前饮料名匹配的分支
             int targetIndex = -1;
+            int errorIndex = -1;
             for(int i = 0; i < branchDrinkNames.Count; i++) {
-                if(drinkName1 == branchDrinkNames[i]) {
+                if (branchDrinkNames[i] == "不可名状") { errorIndex = i; }
+                if (drinkName == branchDrinkNames[i]) {
                     targetIndex = i;
                     break;
+                } else {
+                    //饮料不在分支中的情况
+                    targetIndex = errorIndex;
                 }
             }
+            Debug.Log("targetIndex:" + targetIndex);
             toolsManager.ManageBranch(optionData, targetIndex);
             isDrinkReady = false;
             buttonText.text = makeStr;
@@ -112,10 +79,9 @@ public class MakeDrink : MonoBehaviour
     private void SetDrinkImg(string drinkname) {
         string imagePath = "Sprites/Drinks/" + drinkname;
         Sprite drinkSpr = Resources.Load<Sprite>(imagePath);
-        cup1.sprite = drinkSpr;
-        RectTransform imgRecTrans = cup1.transform.GetComponent<RectTransform>();
-        imgRecTrans.sizeDelta = new Vector2(cup1.sprite.bounds.size.x * 100, cup1.sprite.bounds.size.y * 100);
-        //cup1.color = new Color(255, 255, 255, 255);
+        cupImage.sprite = drinkSpr;
+        RectTransform imgRecTrans = cupImage.transform.GetComponent<RectTransform>();
+        imgRecTrans.sizeDelta = new Vector2(cupImage.sprite.bounds.size.x * 100, cupImage.sprite.bounds.size.y * 100);
     }
     
 

@@ -43,11 +43,11 @@ public class CraftItemCollider : MonoBehaviour
 
     public void OnPointerDown(BaseEventData eventData) {
         if (!isAllowDrag) return;
-        Debug.Log("被点击了");
-        Debug.Log("鼠标位置：" + Input.mousePosition);
-        Debug.Log("localPosition：" + m_rect.localPosition);
-        Debug.Log("anchoredPosition：" + m_rect.anchoredPosition);
-        Debug.Log("Position：" + m_rect.position);
+        //Debug.Log("被点击了");
+        //Debug.Log("鼠标位置：" + Input.mousePosition);
+        //Debug.Log("localPosition：" + m_rect.localPosition);
+        //Debug.Log("anchoredPosition：" + m_rect.anchoredPosition);
+        //Debug.Log("Position：" + m_rect.position);
         m_image.color = ColorCollection.GetVecNormal();
         m_rect.localScale = smallScale;
         mouseOriginPos = Input.mousePosition;

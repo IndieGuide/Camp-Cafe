@@ -38,7 +38,6 @@ public class DrinkData : MonoBehaviour {
 
     }
     private void Awake() {
-
         instance = this;
         List<string[]> tagDataList = InstanceLoad.GetInstanceData("Texts/TagData");
         foreach (string[] insDataArr in tagDataList) {
@@ -68,7 +67,7 @@ public class DrinkData : MonoBehaviour {
         drinks[1].AddItemBean(new ItemBean("冰块", 2)    , DrinkInfo.BeanType.main);
         drinks[1].AddItemBean(new ItemBean("葡萄柚粒", 2), DrinkInfo.BeanType.support);
         drinks[1].AddItemBean(new ItemBean("蜂蜜", 2)    , DrinkInfo.BeanType.sugar);
-        drinks[1].tagList.Add(GetTagByName("清凉饮品")                      ); 
+        drinks[1].tagList.Add(GetTagByName("清凉饮品")); 
         drinks[1].tagList.Add(GetTagByName("酸味饮品")); 
         drinks[1].tagList.Add(GetTagByName("甜味饮品"));
         drinks[1].GetDrinkHelp();  
@@ -171,7 +170,7 @@ public class DrinkData : MonoBehaviour {
         };
         public List<ItemBean> itemBeanList = new List<ItemBean>();
         public List<ItemBean> mainBeanList = new List<ItemBean>();
-        public List<ItemBean> supportBeanList = new List<ItemBean>();
+        public List<ItemBean> optionBeanList = new List<ItemBean>();
         public ItemBean sugarBean;
         public List<Tag> tagList = new List<Tag>();
         public void AddItemBean(ItemBean item,BeanType type) {
@@ -179,7 +178,7 @@ public class DrinkData : MonoBehaviour {
             if(type == BeanType.main) {
                 mainBeanList.Add(item);
             }else if(type == BeanType.support) {
-                supportBeanList.Add(item);
+                optionBeanList.Add(item);
             } else if(type == BeanType.sugar) {
                 sugarBean = item;
             }
@@ -202,11 +201,11 @@ public class DrinkData : MonoBehaviour {
                 foreach (ItemBean itembean in mainBeanList) {
                     mainItemStr += ("<color=#" + instance.itemData[itembean.itemId].itemColor + ">" + itembean.itemNumber + "份" + itembean.itemName + "</color>" + "，");
                 }
-                foreach (ItemBean itembean in supportBeanList) {
+                foreach (ItemBean itembean in optionBeanList) {
                     supportItemStr += ("<color=#" + instance.itemData[itembean.itemId].itemColor + ">"  + itembean.itemName + "</color>" + "，");
                 }
                 //格式： 一杯蜂蜜柚子茶由<color=#8BBDB5>4份水</color>,<color=#C5D5E3>2份冰块</color>,以及必要的配料<color=#E6543C>葡萄柚粒</color>构成,推荐使用<color=#DFD664>蜂蜜</color>作为甜味剂。
-                if (supportBeanList.Count != 0) {
+                if (optionBeanList.Count != 0) {
                     drinkHelpStr = "一杯" + drinkName + "由" + mainItemStr.Substring(0, mainItemStr.Length - 1) + "，以及必要的配料" + supportItemStr.Substring(0, supportItemStr.Length - 1) + "构成，推荐使用" + sugarStr + "作为甜味剂。";
                 } else {
                     drinkHelpStr = "一杯" + drinkName + "由" + mainItemStr.Substring(0, mainItemStr.Length - 1) + "构成，推荐使用" + sugarStr + "作为甜味剂。";

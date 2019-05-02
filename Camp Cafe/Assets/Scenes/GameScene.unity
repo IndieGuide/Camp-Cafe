@@ -4712,8 +4712,9 @@ GameObject:
   - component: {fileID: 916681850}
   - component: {fileID: 916681852}
   - component: {fileID: 916681851}
+  - component: {fileID: 916681853}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BackImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4775,6 +4776,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916681849}
   m_CullTransparentMesh: 0
+--- !u!114 &916681853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916681849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 916681851}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1684071669}
+        m_MethodName: BackOnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!224 &950233480 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6594415612139643373, guid: 93a3424986ac1044a848210cde1e2c61,
@@ -6964,7 +7018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a30505564c9efe498d8b6cf7ef43769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cup1: {fileID: 283247945}
+  cupImage: {fileID: 283247945}
   drinkManager: {fileID: 1684071669}
   dataArr: []
 --- !u!114 &1557805839
@@ -7805,6 +7859,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f116cb552b95faf4eb136a0f1775dcc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drinkImage: {fileID: 700929823}
+  nameText: {fileID: 837024254}
+  qualityText: {fileID: 1445149002}
 --- !u!1 &1751909175
 GameObject:
   m_ObjectHideFlags: 0
