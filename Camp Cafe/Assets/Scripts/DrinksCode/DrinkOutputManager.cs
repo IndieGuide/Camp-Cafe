@@ -13,17 +13,10 @@ public class DrinkOutputManager : MonoBehaviour
     public Sprite normalBackSpr;
     public Sprite goodBackSpr;
     public Sprite perfectBackSpr;
+    public MakeDrink makeDrink;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnEnable() {
+        UICollection.JumpBorder(gameObject);
     }
 
     internal void ShowNewDrink(DrinkInst drinkInst) {
@@ -32,8 +25,12 @@ public class DrinkOutputManager : MonoBehaviour
         UICollection.SetImage(imagePath, drinkImage,scale);
         nameText.text = drinkInst.tagStr + drinkInst.drinkName;
         qualityText.text = drinkInst.qualityName;
+        //新饮料弹出时不允许点击上饮料
+        makeDrink.isAllowClick = false;
     }
     public void BackOnClick() {
+        //弹窗消失后可以点击上饮料
+        makeDrink.isAllowClick = true;
         gameObject.SetActive(false);
     }
     public void ChangeBack(DrinkInst.BackType type) {

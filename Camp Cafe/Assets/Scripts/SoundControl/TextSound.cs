@@ -8,7 +8,12 @@ public class TextSound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        try {
+            audioSource.volume = GlobalManager.instance.soundVolumn;
+        }
+        catch {
+
+        }
     }
 
     // Update is called once per frame

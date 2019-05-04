@@ -282,4 +282,3 @@ I:\Github repository\Camp-Cafe\Camp Cafe\obj\Debug\Assembly-CSharp.csproj.CoreCo
 I:\Github repository\Camp-Cafe\Camp Cafe\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 I:\Github repository\Camp-Cafe\Camp Cafe\obj\Debug\Assembly-CSharp.dll
 I:\Github repository\Camp-Cafe\Camp Cafe\obj\Debug\Assembly-CSharp.pdb
-I:\Github repository\Camp-Cafe\Camp Cafe\Temp\bin\Debug\Assembly-CSharp.dll.CodeAnalysisLog.xml

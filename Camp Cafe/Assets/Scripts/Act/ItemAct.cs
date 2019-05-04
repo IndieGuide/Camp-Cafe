@@ -15,9 +15,10 @@ public class ItemAct : MonoBehaviour, IScriptAct {
     }
 
     public void DoAct() {
+        LoadOriginData();
         ShowTips();
         ShowToolBoard();
-        GameObject.Find("MakeButton").GetComponent<MakeDrink>().SetData();
+        GameObject.Find("MakeButton").GetComponent<MakeDrink>().SetData(dataArr);
         //TalkShow.instance.IsPlayingText = false;
         TalkShow.instance.IsAllowClick = false;
         GameObject itemAreaCover = GameObject.Find("ItemAreaCover");
@@ -31,6 +32,7 @@ public class ItemAct : MonoBehaviour, IScriptAct {
     private void ShowTips() {
         talkText = GameObject.Find("TalkText");
         talkText.GetComponent<Text>().text = tipsStr;
+        Debug.Log(tipsStr);
     }
 
     public void LoadOriginData() {

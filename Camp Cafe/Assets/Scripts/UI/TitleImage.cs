@@ -32,8 +32,14 @@ public class TitleImage : MonoBehaviour
         } else {
             viewArea.SetActive(false);
         }
-        
-
+    }
+    public void SettingOnClick() {
+        GameObject settingArea = GlobalManager.instance.SettingArea;
+        if (settingArea.active == false) {
+            settingArea.SetActive(true);
+        } else {
+            settingArea.SetActive(false);
+        }
     }
     // Start is called before the first frame update
     void Start()

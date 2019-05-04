@@ -96,6 +96,8 @@ public class DrinkInst {
         }
         drinkName = "不可名状";
     }
+
+
     private static bool IsItemNumberRight(DrinkData.ItemBean itembean) {
         //Debug.Log(itembean.itemName + "所需数量为：" + itembean.itemNumber + '\n' + DrinkData.instance.itemData[itembean.itemId].itemName + "实际数量为" + DrinkData.instance.itemData[itembean.itemId].itemNumber);
         return itembean.itemNumber == DrinkData.instance.itemData[itembean.itemId].itemNumber;

@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButtonControl : MonoBehaviour
 {
-    public GameObject SettingArea;
     public void StartGameClick(BaseEventData e) {
         SceneManager.LoadScene("GameScene");
+        
     }
     public void SettingClick(BaseEventData e) {
-        SettingArea.SetActive(true);
+        GlobalManager.instance.SettingArea.SetActive(true);
     }
     // Start is called before the first frame update
     void Start()

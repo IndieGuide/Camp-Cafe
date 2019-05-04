@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\DrinksCode\ItemManager.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\LiquidImage.cs" />
     <Compile Include="Assets\Scripts\DrinksCode\MakeDrink.cs" />
+    <Compile Include="Assets\Scripts\GlobalManager.cs" />
     <Compile Include="Assets\Scripts\Manager\OptionManager.cs" />
     <Compile Include="Assets\Scripts\Manager\TalkShow.cs" />
     <Compile Include="Assets\Scripts\Manager\ToolsManager.cs" />
@@ -92,6 +93,9 @@
     <Compile Include="Assets\Scripts\Musics\MusicPlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\DrinkDataTest.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\MenuBoardTest.cs" />
+    <Compile Include="Assets\Scripts\Role\RoleData.cs" />
+    <Compile Include="Assets\Scripts\Role\RoleInfo.cs" />
+    <Compile Include="Assets\Scripts\SceneBridge.cs" />
     <Compile Include="Assets\Scripts\SoundControl\TextSound.cs" />
     <Compile Include="Assets\Scripts\UI\AmountCacul.cs" />
     <Compile Include="Assets\Scripts\UI\CraftItem.cs" />
