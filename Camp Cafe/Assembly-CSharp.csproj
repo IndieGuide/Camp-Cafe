@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Manager\OptionManager.cs" />
     <Compile Include="Assets\Scripts\Manager\TalkShow.cs" />
     <Compile Include="Assets\Scripts\Manager\ToolsManager.cs" />
+    <Compile Include="Assets\Scripts\MenuScene\FunAreaControl.cs" />
     <Compile Include="Assets\Scripts\MenuScene\MainMenuButtonControl.cs" />
     <Compile Include="Assets\Scripts\MenuScene\MenuSetting.cs" />
     <Compile Include="Assets\Scripts\MenuScene\TriggerButton.cs" />

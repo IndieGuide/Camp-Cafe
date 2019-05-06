@@ -14,6 +14,7 @@ public class UICollection : MonoBehaviour {
     void Update() {
 
     }
+
     public class JumpBorderControl : MonoBehaviour {
         Transform m_trans;
         float scale = 0.0f;
@@ -36,9 +37,84 @@ public class UICollection : MonoBehaviour {
             m_trans.localScale = newScale;
         }
     }
+    public class AlphaControl : MonoBehaviour {
+        Image[] images;
+        float alpha = 0.0f;
+        float clearAlpha = 0.0f;
+        float normalAlpha = 1.0f;
+        bool isFadeIn;
+        internal void setInOrOut(bool isfadein) {
+            isFadeIn = isfadein;
+            if (isfadein) {
+                alpha = 0.0f;
+            } else {
+                alpha = 1.0f;
+            }
+        }
+        internal void setInOrOut(bool isfadein,float targetalpha) {
+            isFadeIn = isfadein;
+            if (isfadein) {
+                alpha = 0.0f;
+                normalAlpha = targetalpha;
+            } else {
+                alpha = 1.0f;
+                clearAlpha = targetalpha;
+            }
+        }
+        private void Awake() {
+            images= gameObject.GetComponentsInChildren<Image>();
+        }
+        private void Update() {
+            if (isFadeIn) {
+                if (alpha >= normalAlpha - 0.02f) {
+
+                    foreach (Image image in images) {
+                        Color originColor = image.color;
+                        Color normalColor = new Color(originColor.r, originColor.g, originColor.b, normalAlpha);
+                        image.color = normalColor;
+                    }
+                    Destroy(this);
+                    return;
+                }
+                alpha = Mathf.Lerp(alpha, normalAlpha, 0.2f);
+                foreach (Image image in images) {
+                    Color originColor = image.color;
+                    Color newColor = new Color(originColor.r, originColor.g, originColor.b, alpha);
+                    image.color = newColor;
+                }
+            } else {
+                if (alpha <= clearAlpha + 0.02f) {
+
+                    foreach (Image image in images) {
+                        Color originColor = image.color;
+                        Color normalColor = new Color(originColor.r, originColor.g, originColor.b, clearAlpha);
+                        image.color = normalColor;
+                    }
+                    Destroy(this);
+                    return;
+                }
+                alpha = Mathf.Lerp(alpha, clearAlpha, 0.2f);
+                foreach (Image image in images) {
+                    Color originColor = image.color;
+                    Color newColor = new Color(originColor.r, originColor.g, originColor.b, alpha);
+                    image.color = newColor;
+                }
+            }
+        }
+    }
     internal static void JumpBorder(GameObject obj) {
         if (obj.GetComponent<JumpBorderControl>() != null) return;
         obj.AddComponent<JumpBorderControl>();
+    }
+    internal static void AlphaFade(GameObject obj,bool isfadein) {
+        if (obj.GetComponent<AlphaControl>() != null) return;
+        AlphaControl alphaControl = obj.AddComponent<AlphaControl>();
+        alphaControl.setInOrOut(isfadein);
+    }
+    internal static void AlphaFade(GameObject obj, bool isfadein,float targetalpha) {
+        if (obj.GetComponent<AlphaControl>() != null) return;
+        AlphaControl alphaControl = obj.AddComponent<AlphaControl>();
+        alphaControl.setInOrOut(isfadein, targetalpha);
     }
 
     internal static void SetImage(string imagePath, Image targetImage) {

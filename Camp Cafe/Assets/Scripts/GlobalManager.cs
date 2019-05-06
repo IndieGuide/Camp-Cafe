@@ -9,10 +9,20 @@ public class GlobalManager : MonoBehaviour {
     static GlobalManager StaticObject;
     public GameObject SettingArea;
     public MenuSetting menuSetting;
+
+    internal void StartGame() {
+        SceneManager.LoadScene("GameScene");
+    }
+
     public GameObject ReturnMainButton;
     public Text t;
     private bool LastMusicOn = true;
     public float audioVolumn = 0.8f;
+
+    internal void QuitGame() {
+        Application.Quit();
+    }
+
     public float soundVolumn = 0.8f;
     public int screenResType = 0;
 

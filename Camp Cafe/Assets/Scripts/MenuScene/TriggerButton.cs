@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class TriggerButton : MonoBehaviour
-{
+public class TriggerButton : MonoBehaviour {
     public Image m_image;
     public Sprite normalSpr;
     public Sprite enterSpr;
     public Sprite downSpr;
+    public int markNum;
+
     public void PointUp(BaseEventData e) {
         ChangeImage(normalSpr);
     }
@@ -18,6 +19,7 @@ public class TriggerButton : MonoBehaviour
     }
     public void PointEnter(BaseEventData e) {
         ChangeImage(enterSpr);
+        GameObject.Find("FunArea").GetComponent<FunAreaControl>().ChangeContent(markNum);
     }
     public void PointExit(BaseEventData e) {
         ChangeImage(normalSpr);

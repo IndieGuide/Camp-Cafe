@@ -8,21 +8,19 @@ using UnityEngine.SceneManagement;
 public class MainMenuButtonControl : MonoBehaviour
 {
     public void StartGameClick(BaseEventData e) {
-        SceneManager.LoadScene("GameScene");
+        GlobalManager.instance.StartGame();
         
     }
     public void SettingClick(BaseEventData e) {
         GlobalManager.instance.SettingArea.SetActive(true);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
+    public void QuitClick(BaseEventData e) {
+        GlobalManager.instance.QuitGame();
+    }
+    public void CreatorClick(BaseEventData e) {
         
     }
+    public void LoadClick(BaseEventData e) {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
