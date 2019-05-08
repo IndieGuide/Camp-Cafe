@@ -6,7 +6,7 @@
 
 0|Phree|0|普通|3
 1|Phree|0|"欢迎光临Monica"
-0|Soda|0|普通|1
+||0|Soda|0|普通|1
 1|Soda|0|"再大声点"
 0|Phree|0|生气|3
 1|Phree|0|"欢迎光临Monicaaa！"

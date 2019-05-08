@@ -11,8 +11,10 @@ public class TalkShow : MonoBehaviour {
     public Text nameText;
     public Text[] optionText = new Text[4];
     public ArrayList headImageList = new ArrayList();
+    public ArrayList headAniList = new ArrayList();
     public float textSpeed;
     public GameObject headImagePrefabs;
+    public GameObject headAniPrefabs;
     public AudioSource audioSource;
     public GameObject toolBoard;
     //饮料data实例
@@ -98,7 +100,9 @@ public class TalkShow : MonoBehaviour {
         string scriptType = rowText[0];
         //图片操作
         if (scriptType == "0") {
-            ImageAct act = new ImageAct(rowText);
+            //ImageAct act = new ImageAct(rowText);
+            //act.DoAct();
+            AnimationAct act = new AnimationAct(rowText);
             act.DoAct();
         }
         //对话操作

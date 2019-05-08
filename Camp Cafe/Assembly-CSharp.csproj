@@ -64,7 +64,9 @@
     <Compile Include="Assets\2D Mesh with Waves\Scripts\Version 2\WaveMeshWithEffect.cs" />
     <Compile Include="Assets\2D Mesh with Waves\Scripts\WaveCollider.cs" />
     <Compile Include="Assets\2D Mesh with Waves\Scripts\WaveMesh.cs" />
+    <Compile Include="Assets\Scripts\Act\AnimationAct.cs" />
     <Compile Include="Assets\Scripts\Act\BranchAct.cs" />
+    <Compile Include="Assets\Scripts\Act\FaceAni.cs" />
     <Compile Include="Assets\Scripts\Act\ImageAct.cs" />
     <Compile Include="Assets\Scripts\Act\IScriptAct.cs" />
     <Compile Include="Assets\Scripts\Act\ItemAct.cs" />

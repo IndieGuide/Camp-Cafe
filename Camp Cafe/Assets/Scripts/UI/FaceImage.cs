@@ -24,7 +24,7 @@ public class FaceImage : MonoBehaviour {
     public void ChangePos(string postring){
         //先放大图片
         int posInt = int.Parse(postring);
-        FaceImage.PosEnum posType = (FaceImage.PosEnum)posInt;
+        PosEnum posType = (PosEnum)posInt;
         Sprite sprite = gameObject.GetComponent<Image>().sprite;
         imgPos.y = sprite.rect.height * 3 / 2;
         switch (posType){
