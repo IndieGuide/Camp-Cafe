@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 6a074960ada9ced47907d7b91808347f
+guid: 91dc752b2d3188541a2543a0cf7e4736
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "phree-\u666E\u901A-\u8BF4\u8BDD_0"
-    21300002: "phree-\u666E\u901A-\u8BF4\u8BDD_1"
-    21300004: "phree-\u666E\u901A-\u8BF4\u8BDD_2"
-    21300006: "phree-\u666E\u901A-\u8BF4\u8BDD_3"
-    21300008: "phree-\u666E\u901A-\u8BF4\u8BDD_4"
-    21300010: "phree-\u666E\u901A-\u8BF4\u8BDD_5"
-    21300012: "phree-\u666E\u901A-\u8BF4\u8BDD_6"
-    21300014: "phree-\u666E\u901A-\u8BF4\u8BDD_7"
-    21300016: "phree-\u666E\u901A-\u8BF4\u8BDD_8"
-    21300018: "phree-\u666E\u901A-\u8BF4\u8BDD_9"
+    21300000: "\u9119\u59370_0"
+    21300002: "\u9119\u59370_1"
+    21300004: "\u9119\u59370_2"
+    21300006: "\u9119\u59370_3"
+    21300008: "\u9119\u59370_4"
+    21300010: "\u9119\u59370_5"
+    21300012: "\u9119\u59370_6"
+    21300014: "\u9119\u59370_7"
+    21300016: "\u9119\u59370_8"
+    21300018: "\u9119\u59370_9"
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
@@ -83,7 +83,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
@@ -94,7 +94,7 @@ TextureImporter:
     buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
@@ -105,7 +105,7 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
@@ -116,7 +116,7 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
@@ -127,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "phree-\u666E\u901A-\u8BF4\u8BDD_0"
+      name: "\u9119\u59370_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -141,13 +141,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b9c3cc7692ab9b4eb1eda0a9e8e28fe
+      spriteID: dda74157caf62864ab00535fda08328e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "phree-\u666E\u901A-\u8BF4\u8BDD_1"
+      name: "\u9119\u59370_1"
       rect:
         serializedVersion: 2
         x: 150
@@ -161,13 +161,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d086ba58e394d23488448377267a741e
+      spriteID: 21e9e1540474dbf448b78e2401d927f0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "phree-\u666E\u901A-\u8BF4\u8BDD_2"
+      name: "\u9119\u59370_2"
       rect:
         serializedVersion: 2
         x: 300
@@ -181,13 +181,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1522dd59e19507d46ba512b8b24bbd04
+      spriteID: ab87f877d0f1ae3409c72c3a96451a7b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "phree-\u666E\u901A-\u8BF4\u8BDD_3"
+      name: "\u9119\u59370_3"
       rect:
         serializedVersion: 2
         x: 450
@@ -201,13 +201,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f484aa5472eabe74a9fdae63b053b71e
+      spriteID: 429693501d54d514fb6fb1d3879552cc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "phree-\u666E\u901A-\u8BF4\u8BDD_4"
+      name: "\u9119\u59370_4"
       rect:
         serializedVersion: 2
         x: 600
@@ -221,13 +221,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc29a21f82bc18e418a9f1e86254a301
+      spriteID: 2436544e650943b41a0ea663d35adf0b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "phree-\u666E\u901A-\u8BF4\u8BDD_5"
+      name: "\u9119\u59370_5"
       rect:
         serializedVersion: 2
         x: 750
@@ -241,13 +241,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e4f2a9fe3e880b4b90dc3a7f557f6e5
+      spriteID: d427d9661c83f7d4f9302b1a155f8d0a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "phree-\u666E\u901A-\u8BF4\u8BDD_6"
+      name: "\u9119\u59370_6"
       rect:
         serializedVersion: 2
         x: 900
@@ -261,13 +261,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d88f7c6c66957542b0463409273f528
+      spriteID: ac14216b034134e42a31fefbc05e1b3a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "phree-\u666E\u901A-\u8BF4\u8BDD_7"
+      name: "\u9119\u59370_7"
       rect:
         serializedVersion: 2
         x: 1050
@@ -281,13 +281,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8957b7e5d3bf8d141b5eeed180456f82
+      spriteID: aff3ba6718cbbc348816fab78b44d1bb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "phree-\u666E\u901A-\u8BF4\u8BDD_8"
+      name: "\u9119\u59370_8"
       rect:
         serializedVersion: 2
         x: 1200
@@ -301,13 +301,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887da321c80dbe74bbd83f852040f3a0
+      spriteID: 4155d21b61e044e4483efbfe55f90c56
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "phree-\u666E\u901A-\u8BF4\u8BDD_9"
+      name: "\u9119\u59370_9"
       rect:
         serializedVersion: 2
         x: 1350
@@ -321,7 +321,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fa9e2514570e4d42b4363474b7be1af
+      spriteID: 35832011f82fbf647a91559e9cb71833
       vertices: []
       indices: 
       edges: []
@@ -329,7 +329,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b08bf481257fff24aba7cc1ce077f0c2
+    spriteID: 0a32cb25ba523914b9110171376ed2a5
     vertices: []
     indices: 
     edges: []

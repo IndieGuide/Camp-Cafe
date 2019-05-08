@@ -115,8 +115,13 @@ public class MakeDrink : MonoBehaviour {
             toolsManager.ManageBranch(optionData, targetIndex);
             isDrinkReady = false;
             buttonText.text = makeStr;
+
             toolsManager.HiddenToolsBoard();
 
+            GameObject.Find("LiquidImage").GetComponent<LiquidImage>().EmptyCup();
+
+            Sprite spr = originCupSpr;
+            UICollection.SetImage(spr, cupImage);
 
             GameObject viewArea = GameObject.Find("TalkArea").GetComponent<TalkArea>().viewArea;
             if (viewArea.active) {

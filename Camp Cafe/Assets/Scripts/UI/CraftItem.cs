@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System;
 
 public class CraftItem : MonoBehaviour
 {
@@ -41,7 +42,13 @@ public class CraftItem : MonoBehaviour
             gameObject.GetComponent<Image>().sprite = spr;
             gameObject.GetComponent<Image>().color = vecNormal;
             colliderObj.isAllowDrag = true;
-            colliderObj.ChangeBindItem(this);
+            try {
+                colliderObj.ChangeBindItem(this,spr);
+            }
+            catch (Exception e){
+                Debug.Log("刚启动时绑定拖拽物品CraftItemCollider，好像会报错");
+                Debug.Log("报错为：" + e);
+            }
         } else {
             gameObject.GetComponent<Image>().sprite = null;
             gameObject.GetComponent<Image>().color = vecClear;

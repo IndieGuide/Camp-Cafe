@@ -95,7 +95,7 @@ public class OptionText : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-        talkShow = GameObject.Find("Canvas").transform.GetComponent<TalkShow>();
+        talkShow = TalkShow.instance;
     }
 
 }

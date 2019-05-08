@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -29,10 +30,16 @@ public class CraftItemCollider : MonoBehaviour
         itemOriginPos = GetComponent<RectTransform>().localPosition;
         dragPos = itemOriginPos;
     }
-    public void ChangeBindItem(CraftItem binditem) {
+    public void ChangeBindItem(CraftItem binditem,Sprite spr) {
         bindItem = binditem;
-        m_image.sprite = bindItem.GetComponent<Image>().sprite;
-        m_image.color = ColorCollection.GetVecClear();
+        try {
+            m_image.sprite = spr;
+            m_image.color = ColorCollection.GetVecClear();
+        }
+        catch (Exception e){
+            Debug.Log("这里的报错应该是因为Awake事件还未执行造成");
+            Debug.Log(e);
+        }
     }
 
     // Update is called once per frame

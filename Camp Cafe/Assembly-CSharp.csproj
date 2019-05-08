@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Act\TalkAct.cs" />
     <Compile Include="Assets\Scripts\DevTools\BranchManager.cs" />
     <Compile Include="Assets\Scripts\DevTools\ColorCollection.cs" />
+    <Compile Include="Assets\Scripts\DevTools\DelayToInvoke.cs" />
     <Compile Include="Assets\Scripts\DevTools\InstanceLoad.cs" />
     <Compile Include="Assets\Scripts\DevTools\UICollection.cs" />
     <Compile Include="Assets\Scripts\DrinkMenu\ItemGroupButton.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Scripts\MenuScene\MainMenuButtonControl.cs" />
     <Compile Include="Assets\Scripts\MenuScene\MenuSetting.cs" />
     <Compile Include="Assets\Scripts\MenuScene\TriggerButton.cs" />
+    <Compile Include="Assets\Scripts\MenuScene\UIEffectManager.cs" />
     <Compile Include="Assets\Scripts\Musics\MusicPlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\DrinkDataTest.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\MenuBoardTest.cs" />

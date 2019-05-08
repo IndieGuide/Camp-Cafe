@@ -14,6 +14,15 @@ public class LiquidImage : MonoBehaviour
         m_rect = GetComponent<RectTransform>();
         m_image = GetComponent<Image>();
     }
+    public void EmptyCup() {
+        foreach (ItemData item in DrinkData.instance.itemSelectedList) {
+            item.itemNumber = 0;
+        }
+        foreach (AmountCacul item in ItemManager.instance.amountCaculArr) {
+            item.ClearData();
+        }
+        m_rect.sizeDelta = new Vector2(m_rect.rect.width, 0);
+    }
     public void AddLiquid(ItemData itemdata) {
         ChangeItemSelectedList(itemdata,true);
         m_rect.sizeDelta = new Vector2(m_rect.rect.width, m_rect.rect.height + heightMax / 10);

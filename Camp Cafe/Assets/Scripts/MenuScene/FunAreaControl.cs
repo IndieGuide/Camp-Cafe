@@ -51,7 +51,7 @@ public class FunAreaControl : MonoBehaviour
     }
     public void FadeInOrOut(bool isIn) {
         if (isIn) {
-            UICollection.AlphaFade(gameObject, isIn, 0.7f);
+            UICollection.AlphaFadeImg(gameObject, isIn, 0.7f);
         }
     }
     // Start is called before the first frame update

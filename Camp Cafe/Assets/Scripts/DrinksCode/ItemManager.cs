@@ -52,25 +52,25 @@ public class ItemManager : MonoBehaviour
     public void RenewItemBoard() {
         if (itemBoardType == ItemBoardEnum.Base ) {
             for (int i = 0; i < 8; i++) {
-                ItemImageArr[i].GetComponent<CraftItem>().ChangeItem(this.itemData[i]);
+                ItemImageArr[i].GetComponent<CraftItem>().ChangeItem(itemData[i]);
                 amountCaculArr[i].NumberText.text = itemData[i].itemNumber.ToString();
             }
         }
         if (itemBoardType == ItemBoardEnum.Food ) {
             for (int i = 0; i < 8; i++) {
-                ItemImageArr[i].GetComponent<CraftItem>().ChangeItem(this.itemData[i + 8]);
+                ItemImageArr[i].GetComponent<CraftItem>().ChangeItem(itemData[i + 8]);
                 amountCaculArr[i].NumberText.text = itemData[i+8].itemNumber.ToString();
             }
         }
         if (itemBoardType == ItemBoardEnum.Sugar) {
             for (int i = 0; i < 8; i++) {
-                ItemImageArr[i].GetComponent<CraftItem>().ChangeItem(this.itemData[i + 8*2]);
+                ItemImageArr[i].GetComponent<CraftItem>().ChangeItem(itemData[i + 8*2]);
                 amountCaculArr[i].NumberText.text = itemData[i+8*2].itemNumber.ToString();
             }
         }
         if (itemBoardType == ItemBoardEnum.Spice) {
             for (int i = 0; i < 8; i++) {
-                ItemImageArr[i].GetComponent<CraftItem>().ChangeItem(this.itemData[i + 8*3]);
+                ItemImageArr[i].GetComponent<CraftItem>().ChangeItem(itemData[i + 8*3]);
                 amountCaculArr[i].NumberText.text = itemData[i+8*3].itemNumber.ToString();
             }
         }
