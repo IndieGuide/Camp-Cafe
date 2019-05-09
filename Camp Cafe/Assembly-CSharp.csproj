@@ -103,6 +103,7 @@
     <Compile Include="Assets\Scripts\SceneBridge.cs" />
     <Compile Include="Assets\Scripts\SoundControl\TextSound.cs" />
     <Compile Include="Assets\Scripts\UI\AmountCacul.cs" />
+    <Compile Include="Assets\Scripts\UI\BlockText.cs" />
     <Compile Include="Assets\Scripts\UI\CraftItem.cs" />
     <Compile Include="Assets\Scripts\UI\CraftItemCollider.cs" />
     <Compile Include="Assets\Scripts\UI\DrinkNameButton.cs" />

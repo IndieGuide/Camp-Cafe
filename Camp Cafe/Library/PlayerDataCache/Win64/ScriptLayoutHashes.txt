@@ -5,7 +5,7 @@ SceneListBegin?
 Assets/Scenes/MenuScene.unity
 Assets/Scenes/GameScene.unity
 SceneListEnd?
-a9a58e2db0157c97e3df81596b858c34 Assembly-CSharp.dll:.TalkShow
+2b41b5b87d37c49deb2b2e4509d7d9f2 Assembly-CSharp.dll:.TalkShow
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.InstanceLoad
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DrinkData
@@ -150,6 +150,7 @@ f5f7083a2c9759f57dbb7cae4c677e02 Assembly-CSharp.dll:.CircleWaveMeshWithEffect
 7dfc11c8e69573fb2f96f6894cf9e3bc Assembly-CSharp.dll:.SceneBridge
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DrinkNameButton
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.FaceAni
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GameCamera
 04e3a00f6283a6af1e036d752bd5474c Assembly-CSharp.dll:.TitleImage
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -200,6 +201,8 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 cde19ab47c0f627e6c74be8a54cff4bf Assembly-CSharp.dll:.CraftItemCollider
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.AnimationAct
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DrinkTagData
 9b26819c08c61c10afb662ffdb9cd56e Assembly-CSharp.dll:.ItemGroupButton
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BlockText

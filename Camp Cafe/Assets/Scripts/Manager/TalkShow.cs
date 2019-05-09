@@ -137,7 +137,9 @@ public class TalkShow : MonoBehaviour {
 
     public void PlayText(string text) {
         IsPlayingText = true;
+        StartCoroutine(ShowTextShadow(text));
         StartCoroutine(ShowText(text));
+
     }
 
     private IEnumerator ShowText(string text) {
@@ -179,7 +181,7 @@ public class TalkShow : MonoBehaviour {
             }
             //播放音效
             if (i % 2 == 0) {
-                Instantiate(audioSource, this.transform.position, Quaternion.identity);
+                Instantiate(audioSource, transform.position, Quaternion.identity);
                 
             }
             //更新当前文字
@@ -189,10 +191,75 @@ public class TalkShow : MonoBehaviour {
             i++;
             yield return new WaitForSeconds(textSpeed);
         }
-        this.GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().Play();
         rowIndex++;
         IsPlayingText = false;
-        StopAllCoroutines();
+        StopCoroutine("ShowText");
+        
+    }
+    private IEnumerator ShowTextShadow(string text) {
+        text = text.Trim();
+        text = text.Substring(1, text.Length -  2);
+        text = "『" + text + "』";
+        //i为当前显示字符长度
+        int i = 0;
+        int strLength = text.Length;
+        string colHeadStr = "";
+        bool isStringCol = false;
+
+        while (i < strLength) {
+            //识别并不显示颜色代码
+            if (text[i].ToString() == "<" && text[i + 1].ToString() != "/") {
+                isStringCol = true;
+                int j = 1;
+                while (text[i + j].ToString() != ">") {
+                    j++;
+                }
+                colHeadStr = text.Substring(i, j + 1);
+                i += j + 1;
+            } else if (text[i].ToString() == "<" && text[i + 1].ToString() == "/") {
+                i += 8;
+                isStringCol = false;
+            }
+
+            //向显示字符中添加新字符
+            if (isStringCol) {
+                //showStr += colHeadStr + text[i].ToString() + "</color>";
+            } else if (text[i] == '\\') {
+                //忽略转行
+                //showStr += '\n';
+                i++;
+            } else { 
+                //showStr += text[i].ToString();
+
+                GameObject blockTextPrefab = Resources.Load<GameObject>("Prefabs/BlockText");
+                Transform parent = BlockText.blockTextList[0].gameObject.transform.parent;
+
+                if (i == 0) {
+                    GameObject blockTextObj2 = Instantiate(blockTextPrefab, parent);
+                    blockTextObj2.GetComponent<BlockText>().SetText(text[i+1].ToString());
+                    i++;
+                } else {
+                    GameObject blockTextObj = Instantiate(blockTextPrefab, parent);
+                    blockTextObj.GetComponent<BlockText>().SetText(text[i].ToString());
+                }
+            }
+
+            i++;
+            yield return new WaitForSeconds(textSpeed);
+        }
+        StopCoroutine("ShowTextShadow");
+        Debug.Log("结束");
+        BlockText blockText0 = BlockText.blockTextList[0];
+        int index = 0;
+        foreach(BlockText item in BlockText.blockTextList) {
+            if (index != 0) {
+                Destroy(item.gameObject);
+            }
+            index++;
+        }
+        BlockText.blockTextList.Clear();
+        BlockText.blockTextList.Add(blockText0);
     }
 
 }
