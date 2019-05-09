@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9207922549675707750}
   - component: {fileID: 2660075056002898610}
   m_Layer: 5
-  m_Name: FaceAni
+  m_Name: FaceAniPhree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -240, y: -113.7}
-  m_SizeDelta: {x: 35.8, y: 37.7}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 35.8, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9207922549675707749
 CanvasRenderer:
@@ -105,7 +105,7 @@ Animator:
   m_GameObject: {fileID: 9207922549675707768}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 848ec53728bbe304090f2d7df6a8f820, type: 2}
+  m_Controller: {fileID: 9100000, guid: b7e56652745a0ab4ba0592b2d0795bcb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -126,4 +126,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd7bc198cedae14499f0e84fc5d9c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameId: 

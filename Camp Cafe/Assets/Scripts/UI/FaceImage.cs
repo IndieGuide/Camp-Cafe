@@ -71,6 +71,6 @@ public class FaceImage : MonoBehaviour {
     internal void FadeOutAndDelete() {
         TalkShow.instance.rowIndex++;
         TalkShow.instance.ResolveNextText();
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }

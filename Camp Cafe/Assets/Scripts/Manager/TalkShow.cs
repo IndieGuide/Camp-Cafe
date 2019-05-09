@@ -11,7 +11,7 @@ public class TalkShow : MonoBehaviour {
     public Text nameText;
     public Text[] optionText = new Text[4];
     public ArrayList headImageList = new ArrayList();
-    public ArrayList headAniList = new ArrayList();
+    public List<GameObject> headAniList = new List<GameObject>();
     public float textSpeed;
     public GameObject headImagePrefabs;
     public GameObject headAniPrefabs;
@@ -136,6 +136,7 @@ public class TalkShow : MonoBehaviour {
     }
 
     public void PlayText(string text) {
+        IsPlayingText = true;
         StartCoroutine(ShowText(text));
     }
 

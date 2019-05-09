@@ -15,7 +15,7 @@ public class AnimationAct : MonoBehaviour,IScriptAct
     string actType;
     string aniName;
     string pos;
-    protected ArrayList headAniList;
+    protected List<GameObject> headAniList;
     private ActType aniActType;
     GameObject aniObject;
     public AnimationAct(string[] dataarr) {
@@ -29,7 +29,7 @@ public class AnimationAct : MonoBehaviour,IScriptAct
             aniActType = ActType.Quit;
             for (int i = 0; i < headAniList.Count; i++) {
                 GameObject animateObject = headAniList[i] as GameObject;
-                if (animateObject.GetComponent<FaceAni>().nameId.Trim() == dataArr[1].Trim()) {
+                if (animateObject.GetComponent<FaceAni>().NameId.Trim() == dataArr[1].Trim()) {
                     aniObject = animateObject;
                 }
             }
@@ -38,7 +38,7 @@ public class AnimationAct : MonoBehaviour,IScriptAct
         if (dataArr.Length == 5) {
             aniActType = ActType.Enter;
             foreach (GameObject aniobject in headAniList) {
-                if (aniobject.GetComponent<FaceAni>().nameId.Trim() == dataArr[1].Trim()) {
+                if (aniobject.GetComponent<FaceAni>().NameId.Trim() == dataArr[1].Trim()) {
                     aniActType = ActType.Move;
                     aniObject = aniobject;
                 }
@@ -90,11 +90,10 @@ public class AnimationAct : MonoBehaviour,IScriptAct
         facePrefab.transform.SetParent(parent.transform);
 
         FaceAni faceAni = facePrefab.transform.GetComponent<FaceAni>();
-        faceAni.nameId = name;
-        //设置动画
-        faceAni.SetAni(aniName);
-        //设置位置
-        faceAni.ChangePos(pos);
+        //初始化FaceAni时设置NameId
+        faceAni.NameId = name;
+        //设置动画和位置
+        faceAni.SetAniAndPos(aniName, pos);
 
         //下一行递归
         TalkShow.instance.rowIndex++;
@@ -102,8 +101,7 @@ public class AnimationAct : MonoBehaviour,IScriptAct
     }
 
     private void AniChangePos() {
-        aniObject.transform.GetComponent<FaceAni>().SetAni(aniName);
-        aniObject.transform.GetComponent<FaceAni>().ChangePos(pos);
+        aniObject.transform.GetComponent<FaceAni>().SetAniAndPos(aniName,pos);
         //下一行递归
         TalkShow.instance.rowIndex++;
         TalkShow.instance.ResolveNextText();

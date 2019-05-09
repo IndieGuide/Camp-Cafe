@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,9 +14,21 @@ public class TalkAct : MonoBehaviour,IScriptAct
         LoadOriginData();
     }
     public void DoAct() {
-        TalkShow.instance.nameText.text = "【" + name + "】";
+        TalkShow talkShow = TalkShow.instance;
+        talkShow.nameText.text = "【" + name + "】";
         Debug.Log(text);
-        TalkShow.instance.PlayText(text);
+        talkShow.PlayText(text);
+        foreach(GameObject obj in talkShow.headAniList) {
+            FaceAni faceani = obj.GetComponent<FaceAni>();
+            try {
+                if(faceani.NameId == name) {
+                    faceani.PlayTalk();
+                }
+            }catch(Exception e) {
+                Debug.Log("获取人物动画组件失败，请检查脚本文件是否正确");
+                Debug.Log(e);
+            }
+        }
     }
 
     public void LoadOriginData() {
