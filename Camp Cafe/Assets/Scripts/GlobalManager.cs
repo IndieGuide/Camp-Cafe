@@ -35,7 +35,8 @@ public class GlobalManager : MonoBehaviour {
                 try {
                     DontDestroyOnLoad(StaticObject.gameObject);
                 }
-                catch {
+                catch (Exception e){
+                    return null;
                 }
             }
             return StaticObject;

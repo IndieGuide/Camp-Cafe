@@ -13,12 +13,14 @@ public class TitleImage : MonoBehaviour
     public GameObject viewArea;
     public void OnPointerEnter(BaseEventData eventData) {
         //Debug.Log("指针进入");
+        FxCollection.PlayButtonEnterFx();
         titleImage.color = vecClear;
         foreach(Image image in musicPlayer.GetComponentsInChildren<Image>()) {
             image.color = vecNormal;
         }
     }
     public void OnPointerExit(BaseEventData eventData) {
+        FxCollection.PlayButtonUpFx();
         //Debug.Log("指针离开");
         titleImage.color = vecNormal;
         foreach (Image image in musicPlayer.GetComponentsInChildren<Image>()) {
@@ -27,6 +29,7 @@ public class TitleImage : MonoBehaviour
 
     }
     public void DrinkListOnClick() {
+        FxCollection.PlayButtonClickFx();
         if (viewArea.active == false) {
             viewArea.SetActive(true);
         } else {
@@ -34,6 +37,7 @@ public class TitleImage : MonoBehaviour
         }
     }
     public void SettingOnClick() {
+        FxCollection.PlayButtonClickFx();
         GameObject settingArea = GlobalManager.instance.SettingArea;
         if (settingArea.active == false) {
             settingArea.SetActive(true);
@@ -44,6 +48,7 @@ public class TitleImage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         titleImage = gameObject.GetComponent<Image>();
         viewArea.SetActive(false);
         //开始时隐藏播放器

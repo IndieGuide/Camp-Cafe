@@ -23,6 +23,7 @@ public class ItemGroupButton : MonoBehaviour
         }
     }
     public void OnPointerEnter(BaseEventData eventData) {
+
         if (!isSelected) {
             Debug.Log("指针进入");
             buttonBack.color = vecClick;
@@ -35,6 +36,7 @@ public class ItemGroupButton : MonoBehaviour
         }
     }
     public void OnPointerClick(BaseEventData eventData) {
+        FxCollection.PlayButtonClickFx();
         Debug.Log("指针单击");
         GroupSelected();
         buttonBack.color = vecClick;

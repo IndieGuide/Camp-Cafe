@@ -29,6 +29,7 @@ public class MarkCupControl : MonoBehaviour
         m_outline.enabled = false;
         if (collider != null) {
             if (!Input.GetMouseButton(0) && !liquidImage.IsCupFull()) {
+                FxCollection.PlayButtonUpFx();
                 CraftItem craftItem = collider.gameObject.GetComponent<CraftItemCollider>().bindItem;
                 foreach(AmountCacul item in ItemManager.instance.amountCaculArr) {
                     if(item.bindItem == craftItem) {

@@ -79,9 +79,11 @@ public class AmountCacul : MonoBehaviour
     }
 
     public void OnPointerClickSub(BaseEventData eventData) {
+        FxCollection.PlayButtonUpFx();
         SubOnClick();
     }
     public void OnPointerClickAdd(BaseEventData eventData) {
+        FxCollection.PlayButtonEnterFx();
         AddOnClick();
     }
 }

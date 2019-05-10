@@ -18,6 +18,7 @@ public class TriggerButton : MonoBehaviour {
         ChangeImage(downSpr);
     }
     public void PointEnter(BaseEventData e) {
+        FxCollection.PlayButtonEnterFx();
         ChangeImage(enterSpr);
         GameObject.Find("FunArea").GetComponent<FunAreaControl>().ChangeContent(markNum);
     }

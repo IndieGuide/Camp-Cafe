@@ -55,6 +55,7 @@ public class CraftItemCollider : MonoBehaviour
         //Debug.Log("localPosition：" + m_rect.localPosition);
         //Debug.Log("anchoredPosition：" + m_rect.anchoredPosition);
         //Debug.Log("Position：" + m_rect.position);
+        FxCollection.PlayLowFx();
         m_image.color = ColorCollection.GetVecNormal();
         m_rect.localScale = smallScale;
         mouseOriginPos = Input.mousePosition;

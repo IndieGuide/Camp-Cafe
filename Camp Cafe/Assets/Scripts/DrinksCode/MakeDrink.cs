@@ -63,6 +63,7 @@ public class MakeDrink : MonoBehaviour {
         if (!isAllowClick) return;
         if (!isDrinkReady) {
             if (DrinkData.instance.itemSelectedList.Count == 0) return;
+            FxCollection.PlayButtonClickFx();
             //制作饮料
             drinkInst = new DrinkInst();
 
@@ -76,6 +77,7 @@ public class MakeDrink : MonoBehaviour {
             isDrinkReady = true;
             buttonText.text = giveStr;
         } else {
+            FxCollection.PlayButtonEnterFx();
             //分支数
             int optionNumber = dataArr.Length - 4;
             Debug.Log("饮料分支数量：" + optionNumber);

@@ -88,7 +88,7 @@ public class FaceAni : MonoBehaviour {
 
         if (info.normalizedTime >= 1.0f && !isAniEndTriggered) {
             isAniEndTriggered = true;
-            Debug.Log("动画播放完毕");
+            //Debug.Log("动画播放完毕");
 
             if (lastAniType == AniTypeEnum.Talk && UnityEngine.Random.Range(0f, 1f) <= 0.5f) {
                 PlayEyesAni();
@@ -103,7 +103,7 @@ public class FaceAni : MonoBehaviour {
             }
             eyesTimer = Time.time;
         } else if ((info.normalizedTime < 1.0f) && isAniEndTriggered) {
-            Debug.Log("动画播放中");
+            //Debug.Log("动画播放中");
             isAniEndTriggered = false;
         }
         if (Time.time - eyesTimer > eyesTimerLength) {

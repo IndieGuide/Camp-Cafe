@@ -21,30 +21,28 @@ public class MenuSetting : MonoBehaviour {
         UICollection.JumpBorder(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
     public void ReturnOnClick() {
+        FxCollection.PlayButtonClickFx();
         gameObject.SetActive(false);
     }
     public void ReturnMainOnClick() {
+        FxCollection.PlayButtonClickFx();
         GlobalManager.SaveData();
         SceneManager.LoadScene("MenuScene");
     }
     public void AudioSliderChange() {
+        FxCollection.PlayTextOverFx();
         float volume = m_audio_slider.value;
         GlobalManager.instance.audioVolumn = volume;
         musicSource.volume = volume;
     }
     public void SoundSliderChange() {
+        FxCollection.PlayTextOverFx();
         float volume = m_sound_slider.value;
         GlobalManager.instance.soundVolumn = volume;
     }
     public void CanvasLeftButton() {
+        FxCollection.PlayButtonClickFx();
         if (screenResType != 0) {
             screenResType -= 1;
         } else {
@@ -53,6 +51,7 @@ public class MenuSetting : MonoBehaviour {
         screenResText.text = screenResStrArr[screenResType];
     }
     public void CanvasRightButton() {
+        FxCollection.PlayButtonClickFx();
         if (screenResType != 3) {
             screenResType += 1;
         } else {
@@ -61,6 +60,7 @@ public class MenuSetting : MonoBehaviour {
         screenResText.text = screenResStrArr[screenResType];
     }
     public void ChangeScreenOnClick() {
+        FxCollection.PlayButtonClickFx();
         GlobalManager.instance.screenResType = screenResType;
         ChangeScreenResolution(GlobalManager.instance.screenResType);
     }

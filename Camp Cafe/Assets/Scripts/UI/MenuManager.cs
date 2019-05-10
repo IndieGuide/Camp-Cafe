@@ -129,6 +129,7 @@ public class MenuManager : MonoBehaviour
         
     }
     public void ReturnButtonOnClick() {
+        FxCollection.PlayButtonClickFx();
         FocusOnMain();
     }
 

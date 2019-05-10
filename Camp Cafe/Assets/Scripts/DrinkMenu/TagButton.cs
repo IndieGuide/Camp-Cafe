@@ -17,6 +17,7 @@ public class TagButton : MonoBehaviour
         tagNameText.fontStyle = FontStyle.Normal;
     }
     public void OnPointerClick(BaseEventData eventData) {
+        FxCollection.PlayButtonClickFx();
         Debug.Log("指针点击");
         MenuManager.instance.RenderMenuByTag(tag);
 

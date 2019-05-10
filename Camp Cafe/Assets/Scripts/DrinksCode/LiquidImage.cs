@@ -8,11 +8,26 @@ public class LiquidImage : MonoBehaviour
 {
     int heightMax = 320;
     RectTransform m_rect;
+    ParticleSystem m_part;
     Image m_image;
 
     private void Start() {
         m_rect = GetComponent<RectTransform>();
         m_image = GetComponent<Image>();
+        m_part = GetComponentInChildren<ParticleSystem>();
+        m_part.Clear();
+        m_part.Pause();
+    }
+    public void Update() {
+        if (m_rect.rect.height == 0f) {
+            m_part.Clear();
+            m_part.Pause();
+        } else {
+            m_part.Play();
+        }
+    }
+    public void PlayPart() {
+        m_part.Play();
     }
     public void EmptyCup() {
         foreach (ItemData item in DrinkData.instance.itemSelectedList) {

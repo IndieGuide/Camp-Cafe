@@ -40,6 +40,7 @@ public class UIEffectManager : MonoBehaviour
     void Update() {
         if (!isUIViewed) {
             if (Input.GetKeyUp(KeyCode.Mouse0)) {
+                FxCollection.PlayButtonEnterFx();
                 UIGetIn();
                 pressToStart.SetActive(false);
                 isUIViewed = true;

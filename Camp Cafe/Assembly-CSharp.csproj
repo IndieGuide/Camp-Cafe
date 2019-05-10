@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\DevTools\BranchManager.cs" />
     <Compile Include="Assets\Scripts\DevTools\ColorCollection.cs" />
     <Compile Include="Assets\Scripts\DevTools\DelayToInvoke.cs" />
+    <Compile Include="Assets\Scripts\DevTools\FxCollection.cs" />
     <Compile Include="Assets\Scripts\DevTools\InstanceLoad.cs" />
     <Compile Include="Assets\Scripts\DevTools\UICollection.cs" />
     <Compile Include="Assets\Scripts\DrinkMenu\ItemGroupButton.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\Scripts\Role\RoleData.cs" />
     <Compile Include="Assets\Scripts\Role\RoleInfo.cs" />
     <Compile Include="Assets\Scripts\SceneBridge.cs" />
+    <Compile Include="Assets\Scripts\SoundControl\FxControl.cs" />
     <Compile Include="Assets\Scripts\SoundControl\TextSound.cs" />
     <Compile Include="Assets\Scripts\UI\AmountCacul.cs" />
     <Compile Include="Assets\Scripts\UI\BlockText.cs" />

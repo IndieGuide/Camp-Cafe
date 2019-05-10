@@ -15,7 +15,6 @@ public class TalkShow : MonoBehaviour {
     public float textSpeed;
     public GameObject headImagePrefabs;
     public GameObject headAniPrefabs;
-    public AudioSource audioSource;
     public GameObject toolBoard;
     //饮料data实例
     //private DrinkData drinkData= new DrinkData();
@@ -181,8 +180,7 @@ public class TalkShow : MonoBehaviour {
             }
             //播放音效
             if (i % 2 == 0) {
-                Instantiate(audioSource, transform.position, Quaternion.identity);
-                
+                FxCollection.PlayTextFx();
             }
             //更新当前文字
             talkText.text = showStr;
@@ -191,7 +189,7 @@ public class TalkShow : MonoBehaviour {
             i++;
             yield return new WaitForSeconds(textSpeed);
         }
-        GetComponent<AudioSource>().Play();
+        FxCollection.PlayTextOverFx();
         rowIndex++;
         IsPlayingText = false;
         StopCoroutine("ShowText");

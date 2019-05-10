@@ -43,8 +43,8 @@ public class BlockText : MonoBehaviour {
 
         UICollection.MoveToPos(gameObject, newPos, 0.8f);
         UICollection.AlphaFadeText(gameObject, false);
-        Debug.Log("原始坐标位置：" + newPos);
-        Debug.Log("BlockTextList长度：" + blockTextList.Count);
+        //Debug.Log("原始坐标位置：" + newPos);
+        //Debug.Log("BlockTextList长度：" + blockTextList.Count);
     }
 
     private bool IsNeedChangeRow(float posx) {

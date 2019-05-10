@@ -29,7 +29,8 @@ public class ToolsManager : MonoBehaviour
     }
 
     public void MixClearOnClick() {
-        foreach(ItemData item in DrinkData.instance.itemSelectedList) {
+        FxCollection.PlayLowFx();
+        foreach (ItemData item in DrinkData.instance.itemSelectedList) {
             item.itemNumber = 0;
         }
         foreach (AmountCacul item in ItemManager.instance.amountCaculArr) {
@@ -39,9 +40,10 @@ public class ToolsManager : MonoBehaviour
         liquidImageRect.sizeDelta = new Vector2(liquidImageRect.rect.width, 0);
     }
     public void MakeClearOnClick() {
+        FxCollection.PlayLowFx();
         makeDrink.ClearData();
     }
     public void PushClearOnClick() {
-
+        FxCollection.PlayLowFx();
     }
 }
