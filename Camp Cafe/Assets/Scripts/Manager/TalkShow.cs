@@ -206,7 +206,7 @@ public class TalkShow : MonoBehaviour {
         int strLength = text.Length;
         string colHeadStr = "";
         bool isStringCol = false;
-
+        bool isChangeRow = false;
         while (i < strLength) {
             //识别并不显示颜色代码
             if (text[i].ToString() == "<" && text[i + 1].ToString() != "/") {
@@ -221,7 +221,6 @@ public class TalkShow : MonoBehaviour {
                 i += 8;
                 isStringCol = false;
             }
-
             //向显示字符中添加新字符
             if (isStringCol) {
                 //showStr += colHeadStr + text[i].ToString() + "</color>";
@@ -229,6 +228,7 @@ public class TalkShow : MonoBehaviour {
                 //忽略转行
                 //showStr += '\n';
                 i++;
+                isChangeRow = true;
             } else { 
                 //showStr += text[i].ToString();
 
@@ -240,8 +240,14 @@ public class TalkShow : MonoBehaviour {
                     blockTextObj2.GetComponent<BlockText>().SetText(text[i+1].ToString());
                     i++;
                 } else {
+
                     GameObject blockTextObj = Instantiate(blockTextPrefab, parent);
+                    if (isChangeRow) {
+                        blockTextObj.GetComponent<BlockText>().ChangeRow();
+                        isChangeRow = false;
+                    }
                     blockTextObj.GetComponent<BlockText>().SetText(text[i].ToString());
+
                 }
             }
 
