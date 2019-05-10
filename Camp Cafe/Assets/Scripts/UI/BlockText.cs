@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BlockText : MonoBehaviour
-{
+public class BlockText : MonoBehaviour {
     internal static List<BlockText> blockTextList = new List<BlockText>();
     int m_index;
     RectTransform m_rect;
     Text m_text;
-    public void SetText(string str)
-    {
+    public void SetText(string str) {
         m_text.text = str;
     }
     private void Awake() {
@@ -37,5 +35,7 @@ public class BlockText : MonoBehaviour
 
         UICollection.MoveToPos(gameObject, originPos, 0.8f);
         UICollection.AlphaFadeText(gameObject, false);
+        Debug.Log("原始坐标位置：" + originPos);
+        Debug.Log("BlockTextList长度：" + blockTextList.Count);
     }
 }
