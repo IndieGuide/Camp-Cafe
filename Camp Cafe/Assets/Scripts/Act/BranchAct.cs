@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class BranchAct : MonoBehaviour,IScriptAct
 {
-    private string[] dataArr;
-    string name;
-    string branchType;
+    internal string[] dataArr;
+    internal string name;
+    internal string branchType;
 
     public BranchAct(string[] dataarr) {
         dataArr = dataarr;

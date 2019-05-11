@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class TalkAct : MonoBehaviour,IScriptAct
 {
-    string name;
-    string effectType;
-    string text;
-    string[] dataArr;
+    internal string name;
+    internal string effectType;
+    internal string text;
+    internal string[] dataArr;
     public TalkAct(string[] dataarr) {
         dataArr = dataarr;
         LoadOriginData();

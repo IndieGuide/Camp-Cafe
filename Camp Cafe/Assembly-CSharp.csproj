@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scripts\Musics\MusicPlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\DrinkDataTest.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\MenuBoardTest.cs" />
+    <Compile Include="Assets\Scripts\PlayModeTests\ScriptActSystemTest.cs" />
     <Compile Include="Assets\Scripts\Role\RoleData.cs" />
     <Compile Include="Assets\Scripts\Role\RoleInfo.cs" />
     <Compile Include="Assets\Scripts\SceneBridge.cs" />

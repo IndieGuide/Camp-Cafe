@@ -64,18 +64,21 @@ public class TalkShow : MonoBehaviour {
         talkText.text = "";
         nameText.text = "";
 
-        //读取文本
-        string scrPath = "Texts/script1"; 
-        startStr = Resources.Load<TextAsset>(scrPath).text;
-        //去掉空格空行
-        startStr = startStr.Replace(" ", "").Replace("\r\n\r\n", "\r\n").Replace("\r\n\r\n", "\r\n");
         //按行分割
-        allStr = startStr.Split('\n');
-        foreach(Text text in optionText) {
+        allStr = GetScriptInRow("Texts/script1");
+        foreach (Text text in optionText) {
             text.text = "";
         }
     }
-
+    internal static string[] GetScriptInRow(string path) {
+        //读取文本
+        string scrPath = "Texts/script1";
+        string startStr = Resources.Load<TextAsset>(scrPath).text;
+        //去掉空格空行
+        startStr = startStr.Replace(" ", "").Replace("\r\n\r\n", "\r\n").Replace("\r\n\r\n", "\r\n");
+        //按行分割返回
+        return startStr.Split('\n');
+    }
     // Update is called once per frame
     void Update() {
 
@@ -83,12 +86,6 @@ public class TalkShow : MonoBehaviour {
             talkText.text = allStr[rowIndex];
             rowIndex++;
         }
-        //if(Input.GetMouseButtonDown(0) && !IsPlayingText) {
-        //    ResolveNextText();
-        //}
-
-
-
     }
 
 
@@ -127,10 +124,17 @@ public class TalkShow : MonoBehaviour {
         string rowStr = allStr[rowIndex];
         string head = rowStr[0].ToString();
         while (head == "|" || string.IsNullOrWhiteSpace(allStr[rowIndex])) {
-            rowIndex++;
-            rowStr = allStr[rowIndex];
-            head = rowStr[0].ToString();
-            
+            if (rowIndex < allStr.Length - 1) {
+                rowIndex++;
+                rowStr = allStr[rowIndex];
+                if (rowStr.Length > 0)
+                    head = rowStr[0].ToString();
+                else {
+                    Debug.Log(rowIndex + "行为空");
+                }
+            } else {
+                break;
+            }
         }
     }
 

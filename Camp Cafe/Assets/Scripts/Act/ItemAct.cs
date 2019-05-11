@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ItemAct : MonoBehaviour, IScriptAct {
-    private string[] dataArr;
-    string roleName;
-    string tipsStr;
+    internal string[] dataArr;
+    internal string roleName;
+    internal string tipsStr;
     GameObject talkText;
     
     public ItemAct(string[] dataarr) {

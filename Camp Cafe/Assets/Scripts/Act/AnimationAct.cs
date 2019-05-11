@@ -3,25 +3,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationAct : MonoBehaviour,IScriptAct
-{
+public class AnimationAct : MonoBehaviour, IScriptAct {
     enum ActType {
         Quit,
         Enter,
         Move,
     }
-    string[] dataArr;
-    string name;
-    string actType;
-    string aniName;
-    string pos;
+    internal string[] dataArr;
+    internal string name;
+    internal string actType;
+    internal string aniName;
+    internal string pos;
     protected List<GameObject> headAniList;
     private ActType aniActType;
     GameObject aniObject;
     public AnimationAct(string[] dataarr) {
         dataArr = dataarr;
-        headAniList = TalkShow.instance.headAniList;
-        LoadOriginData();
+        try {
+            headAniList = TalkShow.instance.headAniList;
+
+            LoadOriginData();
+        }
+        catch {
+            Debug.Log("AnimationAct初始化数据失败"); 
+        }
     }
     public void LoadOriginData() {
         //如果只有三个信息段，应为图片退出操作
@@ -101,7 +106,7 @@ public class AnimationAct : MonoBehaviour,IScriptAct
     }
 
     private void AniChangePos() {
-        aniObject.transform.GetComponent<FaceAni>().SetAniAndPos(aniName,pos);
+        aniObject.transform.GetComponent<FaceAni>().SetAniAndPos(aniName, pos);
         //下一行递归
         TalkShow.instance.rowIndex++;
         TalkShow.instance.ResolveNextText();
