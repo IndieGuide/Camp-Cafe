@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 324}
   m_MaxSize: {x: 12006, y: 8024}
   vertical: 0
-  controlID: 64
+  controlID: 92
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 324}
   m_MaxSize: {x: 8006, y: 8024}
   vertical: 1
-  controlID: 65
+  controlID: 93
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 66
+  controlID: 94
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -532,7 +532,7 @@ MonoBehaviour:
       name: Camp Cafe
       fullName: Camp Cafe
       resultStatus: 1
-      duration: 1.3935456
+      duration: 1.3114595
       messages: 
       output: 
       stacktrace: 
@@ -546,7 +546,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: I:/Github repository/Camp-Cafe/Camp Cafe/Library/ScriptAssemblies/Assembly-CSharp.dll
       resultStatus: 1
-      duration: 1.1103257
+      duration: 1.0329591
       messages: 
       output: 
       stacktrace: 
@@ -560,7 +560,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.9085797
+      duration: 0.8379612
       messages: 
       output: 
       stacktrace: 
@@ -574,7 +574,7 @@ MonoBehaviour:
       name: DrinkDataTest
       fullName: Tests.DrinkDataTest
       resultStatus: 1
-      duration: 0.2510616
+      duration: 0.2594401
       messages: 
       output: 
       stacktrace: 
@@ -588,7 +588,7 @@ MonoBehaviour:
       name: "\u996E\u6599\u4E2D\u7684\u6750\u6599\u6570\u636E\u4E0E\u6750\u6599\u6570\u636E\u5E93\u4E2D\u7684\u6750\u6599\u540D\u662F\u5426\u5339\u914D"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u4E2D\u7684\u6750\u6599\u6570\u636E\u4E0E\u6750\u6599\u6570\u636E\u5E93\u4E2D\u7684\u6750\u6599\u540D\u662F\u5426\u5339\u914D"
       resultStatus: 1
-      duration: 0.0838988
+      duration: 0.0883768
       messages: 
       output: "System.NullReferenceException: Object reference not set to an instance
         of an object\r\n  at ItemManager.RenewItemBoard () [0x00014] in I:\\Github
@@ -611,7 +611,7 @@ MonoBehaviour:
       name: "\u996E\u6599\u4F7F\u7528\u6750\u6599\u603B\u6570\u6D4B\u8BD5"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u4F7F\u7528\u6750\u6599\u603B\u6570\u6D4B\u8BD5"
       resultStatus: 1
-      duration: 0.0668924
+      duration: 0.072293
       messages: 
       output: "System.NullReferenceException: Object reference not set to an instance
         of an object\r\n  at ItemManager.RenewItemBoard () [0x00014] in I:\\Github
@@ -634,7 +634,7 @@ MonoBehaviour:
       name: "\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5"
       resultStatus: 1
-      duration: 0.0652258
+      duration: 0.0647838
       messages: 
       output: "System.NullReferenceException: Object reference not set to an instance
         of an object\r\n  at ItemManager.RenewItemBoard () [0x00014] in I:\\Github
@@ -657,7 +657,7 @@ MonoBehaviour:
       name: MenuBoardTest
       fullName: Tests.MenuBoardTest
       resultStatus: 1
-      duration: 0.1349516
+      duration: 0.1279603
       messages: 
       output: 
       stacktrace: 
@@ -671,7 +671,7 @@ MonoBehaviour:
       name: "\u83DC\u5355\u9762\u677F\u6309\u94AE\u6570\u91CF\u6D4B\u8BD5"
       fullName: "Tests.MenuBoardTest.\u83DC\u5355\u9762\u677F\u6309\u94AE\u6570\u91CF\u6D4B\u8BD5"
       resultStatus: 1
-      duration: 0.1183957
+      duration: 0.1003974
       messages: 
       output: "ItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
         Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
@@ -708,7 +708,7 @@ MonoBehaviour:
         to the game object \"MenuBoardObject\". Or your script needs to check if the
         component is attached before using it.\r\n  at (wrapper managed-to-native)
         UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x191c0720 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x428d6140 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
@@ -716,7 +716,7 @@ MonoBehaviour:
         probably need to add a RectTransform to the game object \"MenuBoardObject\".
         Or your script needs to check if the component is attached before using it.\r\n
         \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x191c0720 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x428d6140 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
@@ -724,7 +724,7 @@ MonoBehaviour:
         probably need to add a RectTransform to the game object \"MenuBoardObject\".
         Or your script needs to check if the component is attached before using it.\r\n
         \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x191c0720 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x428d6140 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
@@ -732,7 +732,7 @@ MonoBehaviour:
         probably need to add a RectTransform to the game object \"MenuBoardObject\".
         Or your script needs to check if the component is attached before using it.\r\n
         \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x191c0720 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x428d6140 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\n"
@@ -748,14 +748,14 @@ MonoBehaviour:
       name: ScriptActSystemTest
       fullName: Tests.ScriptActSystemTest
       resultStatus: 1
-      duration: 0.3672777
+      duration: 0.3095266
       messages: 
       output: "UnityEngine.MissingComponentException: There is no 'RectTransform'
         attached to the \"MenuBoardObject\" game object, but a script is trying to
         access it.\nYou probably need to add a RectTransform to the game object \"MenuBoardObject\".
         Or your script needs to check if the component is attached before using it.\r\n
         \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x191c0720 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x428d6140 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\n"
@@ -766,11 +766,11 @@ MonoBehaviour:
       isSuite: 1
       categories: []
       parentID: '[Tests][suite]'
-    - id: '[Assembly-CSharp][Tests.ScriptActSystemTest.ScriptActSystemTestSimplePasses]'
-      name: ScriptActSystemTestSimplePasses
-      fullName: Tests.ScriptActSystemTest.ScriptActSystemTestSimplePasses
+    - id: "[Assembly-CSharp][Tests.ScriptActSystemTest.\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5]"
+      name: "\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5"
+      fullName: "Tests.ScriptActSystemTest.\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5"
       resultStatus: 1
-      duration: 0.2331535
+      duration: 0.2450373
       messages: 
       output: "\u5904\u7406\u7684\u811A\u672C\u4E3ATexts/script1\r\nYou are trying
         to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours
@@ -1108,7 +1108,7 @@ MonoBehaviour:
         to the game object \"MenuBoardObject\". Or your script needs to check if the
         component is attached before using it.\r\n  at (wrapper managed-to-native)
         UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x191c0720 + 0x0006a> in
+        \ at UnityEngine.Transform.get_localPosition () <0x428d6140 + 0x0006a> in
         <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
         in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
         \r\n"
@@ -1120,55 +1120,7 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentID: '[Assembly-CSharp][Tests.ScriptActSystemTest][suite]'
-    - id: '[Assembly-CSharp][Tests.ScriptActSystemTest.ScriptActSystemTestWithEnumeratorPasses]'
-      name: ScriptActSystemTestWithEnumeratorPasses
-      fullName: Tests.ScriptActSystemTest.ScriptActSystemTestWithEnumeratorPasses
-      resultStatus: 1
-      duration: 0.068707
-      messages: 
-      output: "\u5904\u7406\u7684\u811A\u672C\u4E3ATexts/script1\r\nUnityEngine.MissingComponentException:
-        There is no 'RectTransform' attached to the \"MenuBoardObject\" game object,
-        but a script is trying to access it.\nYou probably need to add a RectTransform
-        to the game object \"MenuBoardObject\". Or your script needs to check if the
-        component is attached before using it.\r\n  at (wrapper managed-to-native)
-        UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x191c0720 + 0x0006a> in
-        <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
-        in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
-        \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
-        to the \"MenuBoardObject\" game object, but a script is trying to access it.\nYou
-        probably need to add a RectTransform to the game object \"MenuBoardObject\".
-        Or your script needs to check if the component is attached before using it.\r\n
-        \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x191c0720 + 0x0006a> in
-        <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
-        in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
-        \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
-        to the \"MenuBoardObject\" game object, but a script is trying to access it.\nYou
-        probably need to add a RectTransform to the game object \"MenuBoardObject\".
-        Or your script needs to check if the component is attached before using it.\r\n
-        \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x191c0720 + 0x0006a> in
-        <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
-        in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
-        \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
-        to the \"MenuBoardObject\" game object, but a script is trying to access it.\nYou
-        probably need to add a RectTransform to the game object \"MenuBoardObject\".
-        Or your script needs to check if the component is attached before using it.\r\n
-        \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x191c0720 + 0x0006a> in
-        <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
-        in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
-        \r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentID: '[Assembly-CSharp][Tests.ScriptActSystemTest][suite]'
-    m_ResultText: "ScriptActSystemTestSimplePasses (0.233s)\n---\n\u5904\u7406\u7684\u811A\u672C\u4E3ATexts/script1\r\nYou
+    m_ResultText: "\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5 (0.245s)\n---\n\u5904\u7406\u7684\u811A\u672C\u4E3ATexts/script1\r\nYou
       are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
       \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
       script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
@@ -1359,13 +1311,13 @@ MonoBehaviour:
       \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
       script can inherit from ScriptableObject or no base class at all\r\nYou are
       trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using A...\n\n---MESSAGE TRUNCATED AT 15000
-      CHARACTERS---"
+      \ MonoBehaviours can only be added using AddComponent(). Alternat...\n\n---MESSAGE
+      TRUNCATED AT 15000 CHARACTERS---"
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c0a38d5a
-      m_LastClickedID: 1519231936
+      m_SelectedIDs: 90f69941
+      m_LastClickedID: 1100609168
       m_ExpandedIDs: da05789190539dba11d7a8d6971af0e53beef202e16c611a2b6cf91afe2ca640ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1505,9 +1457,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1638.4
+    x: 1636.8
     y: 73.6
-    width: 408
+    width: 409
     height: 999
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -1621,7 +1573,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 755}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa2600002e2700005c2700005e2700004a2900005a2a00006a2a00009e2a0000062b0000342b0000962b0000002c0000262c0000b82c0000de2c0000ee2c00007a2d00000e2e00000231000000ca9a3b
+    m_ExpandedIDs: 00000000ac260000302700005e270000602700004c2900005c2a00006c2a0000a02a0000082b0000362b0000982b0000022c0000282c0000ba2c0000e02c0000f02c00007c2d0000122e000006310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1649,7 +1601,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa2600002e2700005c2700005e2700004a2900005a2a00006a2a00009e2a0000062b0000342b0000962b0000002c0000262c0000b82c0000de2c0000ee2c00007a2d00000e2e000002310000
+    m_ExpandedIDs: 00000000ac260000302700005e270000602700004c2900005c2a00006c2a0000a02a0000082b0000362b0000982b0000022c0000282c0000ba2c0000e02c0000f02c00007c2d0000122e000006310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1735,7 +1687,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: dcb9fffff2b9ffff26bbffff6abbffff80bbffffb8bcffff06bdffff1cbdffff54beffff66beffff7cbeffffb0bfffff32c0ffff48c0ffff80c1ffff90c1ffffa6c1ffffdac2ffff22c3ffff38c3ffff6cc4ffffb2c4ffffc8c4fffffcc5ffff42c6ffff58c6ffff8cc7ffffdac7fffff0c7ffff28c9ffffa0c9ffffb6c9ffffeecaffff42cbffff58cbffff90ccffffa0ccffffb6ccffffeecdffff36ceffff4cceffff84cfffffc2cfffffd8cfffff0cd1ffff56d1ffff6cd1ffffa4d2ffff5ad3ffff70d3ffffa8d4ffff16d5ffff2cd5ffff60d6ffffa8d6ffffbed6fffff2d7ffff3ad8ffff50d8ffff88d9ffff04daffff1adaffff4edbffffdcdbfffff2dbffff2addffffd0ddffffe6ddffff1edfffffa6dfffffbcdffffff4e0ffff3ae1ffff50e1ffff88e2ffff2ae3ffff40e3ffff74e4ffffc2e4ffffd8e4ffff10e6ffff1ce6ffff32e6ffff66e7fffface7ffffc2e7fffff6e8ffff34e9ffff4ae9ffff7eeaffffaaebffffc0ebfffff4ecffff3cedffff52edffff86eeffffcceeffffe2eeffff48efffff4cefffff62efffffa2f0ffff94f9ffffaaf9ffffdefaffffd4fbffff
+      m_ExpandedIDs: 0ef7ffff24f7ffff5af8ffff6ef8ffff84f8ffffb6f9ffffd4f9ffffeaf9ffff24fbffffd4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

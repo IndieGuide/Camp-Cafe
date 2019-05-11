@@ -12,6 +12,7 @@ namespace Tests {
         int rowIndex = 0;
         string[] allStr;
         List<string> roleNameList;
+        Dictionary<string,string[]> roleAniDic = new Dictionary<string, string[]>();
         [SetUp]
         public void SetUp() {
             string path = "Texts/script1";
@@ -20,22 +21,16 @@ namespace Tests {
             roleNameList = new List<string>() {
                 "Phree","Soda","Boss"
             };
+            roleAniDic.Add("Phree", new string[]{ "普通", "微笑", "悲伤", "生气", "鄙夷", "张嘴", "死目" });
+            roleAniDic.Add("Soda", new string[] { "普通", "悲伤", "生气", "微笑", "无语", "打哈欠" });
+            roleAniDic.Add("Boss", new string[] { "普通", "悲伤", "生气", "开口笑", "眯眼笑", "阴险笑" });
 
         }
         // A Test behaves as an ordinary method
         [Test]
-        public void ScriptActSystemTestSimplePasses() {
+        public void 剧情脚本内容检查() {
             ResolveNextText();
             Debug.Log("共处理：" + rowIndex + "行");
-        }
-
-        // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-        // `yield return null;` to skip a frame.
-        [UnityTest]
-        public IEnumerator ScriptActSystemTestWithEnumeratorPasses() {
-            // Use the Assert class to test conditions.
-            // Use yield to skip a frame.
-            yield return null;
         }
 
         public void ResolveNextText() {
@@ -44,20 +39,45 @@ namespace Tests {
 
                 string[] rowText = allStr[rowIndex].Split('|');
                 string scriptType = rowText[0];
-                //图片操作
+                //动画操作
                 if (scriptType == "0") {
 
                     AnimationAct act = new AnimationAct(rowText);
-
+                    bool isAniExists = false;
+                    bool isNameRight = false;
                     bool isNumberRight = true;
+                    //检查行数
                     if (rowText.Length != 5 && rowText.Length != 3) { 
                         isNumberRight = false;
                         Debug.Log("行参数数量错误，错误数量为：" + rowText.Length + "行内容为：" + allStr[rowIndex]);
                     }
                     Assert.AreEqual(true, isNumberRight);
-
-
-
+                    //动画退出事件的检查
+                    if (rowText.Length == 3) {
+                        Assert.AreEqual(1,int.Parse(rowText[2].Trim()));
+                        rowIndex++;
+                        continue;
+                    } 
+                    //一般动画事件的检查（进入，更换）
+                    //检查角色名
+                    foreach (string name in roleNameList) {
+                        if (name == rowText[1].Trim())
+                            isNameRight = true;
+                    }
+                    if (!isNameRight) {
+                        Debug.Log("角色名称错误，行内容为：" + allStr[rowIndex]);
+                    }
+                    Assert.AreEqual(true, isNameRight);
+                    //检查动画名
+                    foreach(string aniname in roleAniDic[rowText[1].Trim()]) {
+                        if (aniname == rowText[3].Trim()) {
+                            isAniExists = true;
+                        }
+                    }
+                    if (!isAniExists) {
+                        Debug.Log("动画名称错误，行内容为：" + allStr[rowIndex]);
+                    }
+                    Assert.AreEqual(true, isAniExists);
                 }
                 //对话操作
                 if (scriptType == "1") {
