@@ -16,6 +16,7 @@ public class TalkShow : MonoBehaviour {
     public GameObject headImagePrefabs;
     public GameObject headAniPrefabs;
     public GameObject toolBoard;
+    public GameObject showArea;
     //饮料data实例
     //private DrinkData drinkData= new DrinkData();
     //存放加载的整个文本
@@ -69,6 +70,7 @@ public class TalkShow : MonoBehaviour {
         foreach (Text text in optionText) {
             text.text = "";
         }
+        ResolveNextText();
     }
     internal static string[] GetScriptInRow(string path) {
         //读取文本
@@ -94,27 +96,28 @@ public class TalkShow : MonoBehaviour {
         DelNullOrNoteRow();
         string[] rowText = allStr[rowIndex].Split('|');
         string scriptType = rowText[0];
-        //图片操作
         if (scriptType == "0") {
+            //图片操作
             //ImageAct act = new ImageAct(rowText);
             //act.DoAct();
             AnimationAct act = new AnimationAct(rowText);
             act.DoAct();
-        }
-        //对话操作
-        if (scriptType == "1") {
+        } else if (scriptType == "1") {
+            //对话操作
             TalkAct act = new TalkAct(rowText);
             act.DoAct();
-        }
-        //物品判断操作
-        if (scriptType == "2") {
+        } else if (scriptType == "2") {
+            //物品判断操作
             ItemAct act = new ItemAct(rowText);
             Debug.Log("物品操作");
             act.DoAct();
-        }
-        //剧本跳转
-        if (scriptType == "3") {
+        } else if (scriptType == "3") {
+            //剧本跳转
             BranchAct act = new BranchAct(rowText);
+            act.DoAct();
+        } else if (scriptType == "4") {
+            //演出操作
+            ShowAct act = new ShowAct(rowText);
             act.DoAct();
         }
 
@@ -147,7 +150,7 @@ public class TalkShow : MonoBehaviour {
 
     private IEnumerator ShowText(string text) {
         text = text.Trim();
-        text = text.Substring(1, text.Length -  2);
+        text = text.Substring(1, text.Length - 2);
         text = "『" + text + "』";
         //i为当前显示字符长度
         int i = 0;
@@ -179,7 +182,7 @@ public class TalkShow : MonoBehaviour {
                 //忽略转行
                 showStr += '\n';
                 i++;
-            } else { 
+            } else {
                 showStr += text[i].ToString();
             }
             //播放音效
@@ -197,11 +200,11 @@ public class TalkShow : MonoBehaviour {
         rowIndex++;
         IsPlayingText = false;
         StopCoroutine("ShowText");
-        
+
     }
     private IEnumerator ShowTextShadow(string text) {
         text = text.Trim();
-        text = text.Substring(1, text.Length -  2);
+        text = text.Substring(1, text.Length - 2);
         text = "『" + text + "』";
         //i为当前显示字符长度
         int i = 0;
@@ -231,7 +234,7 @@ public class TalkShow : MonoBehaviour {
                 //showStr += '\n';
                 i++;
                 isChangeRow = true;
-            } else { 
+            } else {
                 //showStr += text[i].ToString();
 
                 GameObject blockTextPrefab = Resources.Load<GameObject>("Prefabs/BlockText");
@@ -239,7 +242,7 @@ public class TalkShow : MonoBehaviour {
 
                 if (i == 0) {
                     GameObject blockTextObj2 = Instantiate(blockTextPrefab, parent);
-                    blockTextObj2.GetComponent<BlockText>().SetText(text[i+1].ToString());
+                    blockTextObj2.GetComponent<BlockText>().SetText(text[i + 1].ToString());
                     i++;
                 } else {
 
@@ -260,7 +263,7 @@ public class TalkShow : MonoBehaviour {
         Debug.Log("结束");
         BlockText blockText0 = BlockText.blockTextList[0];
         int index = 0;
-        foreach(BlockText item in BlockText.blockTextList) {
+        foreach (BlockText item in BlockText.blockTextList) {
             if (index != 0) {
                 Destroy(item.gameObject);
             }

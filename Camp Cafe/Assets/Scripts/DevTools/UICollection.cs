@@ -156,6 +156,8 @@ public class UICollection : MonoBehaviour {
             isImageExists = v;
         }
     }
+
+
     public class PosControl : MonoBehaviour {
         RectTransform m_trans;
         Vector3 targetPos;
@@ -250,7 +252,7 @@ public class UICollection : MonoBehaviour {
                     foreach (Text text in texts) {
                         Color originColor = text.color;
                     }
-                        isAlphaAdd = !isAlphaAdd;
+                    isAlphaAdd = !isAlphaAdd;
                     return;
                 }
                 alpha = Mathf.Lerp(alpha, targetAlpha, speedLerp);
@@ -273,6 +275,171 @@ public class UICollection : MonoBehaviour {
             isImageActive = v;
             isImageExists = v;
         }
+    }
+    public class TextPlayControl : MonoBehaviour {
+
+        Text targetText;
+        string targetStr;
+        float textSpeed;
+        bool isPlayingText = true;
+
+        public float TextSpeed { get => textSpeed; set => textSpeed = value; }
+
+        private void Awake() {
+            targetText = gameObject.GetComponent<Text>();
+            targetStr = targetText.text;
+            targetText.text = "";
+            
+            StartCoroutine(ShowText(targetStr));
+        }
+        private void Update() {
+            if (!isPlayingText) {
+                Destroy(this);
+            }
+        }
+
+        private IEnumerator ShowText(string text) {
+            text = text.Trim();
+            text = text.Substring(1, text.Length - 2);
+            text = "『" + text + "』";
+            //i为当前显示字符长度
+            int i = 0;
+            int strLength = text.Length;
+            string colHeadStr = "";
+            bool isStringCol = false;
+            string showStr = "";
+            isPlayingText = true;
+            
+            while (i < strLength) {
+                //识别并不显示颜色代码
+                if (text[i].ToString() == "<" && text[i + 1].ToString() != "/") {
+                    isStringCol = true;
+                    int j = 1;
+                    while (text[i + j].ToString() != ">") {
+                        j++;
+                    }
+                    colHeadStr = text.Substring(i, j + 1);
+                    i += j + 1;
+                } else if (text[i].ToString() == "<" && text[i + 1].ToString() == "/") {
+                    i += 8;
+                    isStringCol = false;
+                }
+
+                //向显示字符中添加新字符
+                if (isStringCol) {
+                    showStr += colHeadStr + text[i].ToString() + "</color>";
+                } else if (text[i] == '\\') {
+                    //忽略转行
+                    showStr += '\n';
+                    i++;
+                } else {
+                    showStr += text[i].ToString();
+                }
+                //播放音效
+                if (i % 2 == 0) {
+                    FxCollection.PlayTextFx();
+                }
+                //更新当前文字
+                targetText.text = showStr;
+                //识别换行
+                targetText.text = targetText.text.Replace("\\n", "\n");
+                i++;
+                yield return new WaitForSeconds(TextSpeed);
+            }
+            FxCollection.PlayTextOverFx();
+            isPlayingText = false;
+            StopCoroutine("ShowText");
+        }
+        //还未使用，因为觉得黑场中的文字也许不需要这么花哨，不过如果想使用，BlockText类需要重构，让uicollection来控制，而不是一个static List
+        private IEnumerator ShowTextShadow(string text) {
+
+            List<BlockText> blockTexts = new List<BlockText>();
+
+            GameObject blockTextPrefab = Resources.Load<GameObject>("Prefabs/BlockText");
+            Transform parent = gameObject.transform.parent;
+            GameObject blockTextObjOne = Instantiate(blockTextPrefab, parent);
+            blockTexts.Add(blockTextObjOne.GetComponent<BlockText>());
+            RectTransform firstRect = blockTextObjOne.GetComponent<RectTransform>();
+            RectTransform targetRect = targetText.gameObject.GetComponent<RectTransform>();
+            Vector3 targetPos = new Vector3(targetRect.localPosition.x - targetRect.rect.width/2, targetRect.localPosition.y+targetRect.rect.height/2, targetRect.localPosition.z);
+            firstRect.localPosition = targetPos;
+
+            text = text.Trim();
+            text = text.Substring(1, text.Length - 2);
+            text = "『" + text + "』";
+            //i为当前显示字符长度
+            int i = 0;
+            int strLength = text.Length;
+            string colHeadStr = "";
+            bool isStringCol = false;
+            bool isChangeRow = false;
+            while (i < strLength) {
+                //识别并不显示颜色代码
+                if (text[i].ToString() == "<" && text[i + 1].ToString() != "/") {
+                    isStringCol = true;
+                    int j = 1;
+                    while (text[i + j].ToString() != ">") {
+                        j++;
+                    }
+                    colHeadStr = text.Substring(i, j + 1);
+                    i += j + 1;
+                } else if (text[i].ToString() == "<" && text[i + 1].ToString() == "/") {
+                    i += 8;
+                    isStringCol = false;
+                }
+                //向显示字符中添加新字符
+                if (isStringCol) {
+                    //showStr += colHeadStr + text[i].ToString() + "</color>";
+                } else if (text[i] == '\\') {
+                    //忽略转行
+                    //showStr += '\n';
+                    i++;
+                    isChangeRow = true;
+                } else {
+                    //showStr += text[i].ToString();
+
+                    //GameObject blockTextPrefab = Resources.Load<GameObject>("Prefabs/BlockText");
+                    //Transform parent = BlockText.blockTextList[0].gameObject.transform.parent;
+
+                    if (i == 0) {
+                        GameObject blockTextObj2 = Instantiate(blockTextPrefab, parent);
+                        blockTextObj2.GetComponent<BlockText>().SetText(text[i + 1].ToString());
+                        i++;
+                    } else {
+
+                        GameObject blockTextObj = Instantiate(blockTextPrefab, parent);
+                        if (isChangeRow) {
+                            blockTextObj.GetComponent<BlockText>().ChangeRow();
+                            isChangeRow = false;
+                        }
+                        blockTextObj.GetComponent<BlockText>().SetText(text[i].ToString());
+
+                    }
+                }
+
+                i++;
+                yield return new WaitForSeconds(textSpeed);
+            }
+            StopCoroutine("ShowTextShadow");
+            Debug.Log("结束");
+            BlockText blockText0 = BlockText.blockTextList[0];
+            int index = 0;
+            foreach (BlockText item in BlockText.blockTextList) {
+                if (index != 0) {
+                    Destroy(item.gameObject);
+                }
+                index++;
+            }
+            BlockText.blockTextList.Clear();
+            BlockText.blockTextList.Add(blockText0);
+        }
+    }
+
+    internal static void PlayText(Text showText, string text, float speed) {
+        if (showText.gameObject.GetComponent<TextPlayControl>() != null) return;
+        showText.text = text;
+        TextPlayControl control = showText.gameObject.AddComponent<TextPlayControl>();
+        control.TextSpeed = speed;
     }
     internal static void JumpBorder(GameObject obj) {
         if (obj.GetComponent<JumpBorderControl>() != null) return;

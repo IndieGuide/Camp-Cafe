@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Act\ImageAct.cs" />
     <Compile Include="Assets\Scripts\Act\IScriptAct.cs" />
     <Compile Include="Assets\Scripts\Act\ItemAct.cs" />
+    <Compile Include="Assets\Scripts\Act\ShowAct.cs" />
     <Compile Include="Assets\Scripts\Act\TalkAct.cs" />
     <Compile Include="Assets\Scripts\DevTools\BranchManager.cs" />
     <Compile Include="Assets\Scripts\DevTools\ColorCollection.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="Assets\Scripts\UI\MarkCupControl.cs" />
     <Compile Include="Assets\Scripts\UI\MenuManager.cs" />
     <Compile Include="Assets\Scripts\UI\OptionText.cs" />
+    <Compile Include="Assets\Scripts\UI\ShowAreaControl.cs" />
     <Compile Include="Assets\Scripts\UI\TalkArea.cs" />
     <Compile Include="Assets\Scripts\UI\TitleImage.cs" />
     <Compile Include="Assets\Scripts\View\GameCamera.cs" />
