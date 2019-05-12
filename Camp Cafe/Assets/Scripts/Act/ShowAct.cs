@@ -8,7 +8,8 @@ public class ShowAct : MonoBehaviour, IScriptAct {
     internal ShowActTypeEnum showType;
     //动画演出参数
     internal ShowAnimeTypeEnum animeType;
-    internal float animeParam;
+    internal float animeParam1;
+    internal float animeParam2;
     //音乐演出参数
     internal string musicName;
     //文本演出参数
@@ -58,11 +59,11 @@ public class ShowAct : MonoBehaviour, IScriptAct {
         if (animeType == ShowAnimeTypeEnum.fadein) {
             showArea.SetActive(true);
             ShowAreaControl control = showArea.GetComponent<ShowAreaControl>();
-            control.ShowShut(0.2f);
+            control.ShowShut(animeParam1,animeParam2);
             
         } else if(animeType == ShowAnimeTypeEnum.fadeout) {
             ShowAreaControl control = GameObject.Find("ShowArea").GetComponent<ShowAreaControl>();
-            control.ShowOpen(0.2f);
+            control.ShowOpen(animeParam1,animeParam2);
            
         }
     }
@@ -75,7 +76,6 @@ public class ShowAct : MonoBehaviour, IScriptAct {
             case "Anime":
                 showType = ShowActTypeEnum.anime;
                 GetShowType();
-                animeParam = float.Parse(dataArr[3]);
                 break;
             case "Music":
                 showType = ShowActTypeEnum.music;
@@ -98,9 +98,17 @@ public class ShowAct : MonoBehaviour, IScriptAct {
         switch (dataArr[2]) {
             case "FadeIn":
                 animeType = ShowAnimeTypeEnum.fadein;
+                //动画过场速度
+                animeParam1 = float.Parse(dataArr[3]);
+                //动画alpha
+                animeParam2 = float.Parse(dataArr[4]);
                 break;
             case "FadeOut":
                 animeType = ShowAnimeTypeEnum.fadeout;
+                //动画过场速度
+                animeParam1 = float.Parse(dataArr[3]);
+                //动画alpha
+                animeParam2 = float.Parse(dataArr[4]);
                 break;
         }
     }

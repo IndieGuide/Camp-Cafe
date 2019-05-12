@@ -43,6 +43,7 @@ public class UICollection : MonoBehaviour {
         float alpha = 0.0f;
         float clearAlpha = 0.0f;
         float normalAlpha = 1.0f;
+        float speed = 0.2f;
         bool isFadeIn;
         bool isImageExists;
         bool isTextExists;
@@ -66,6 +67,9 @@ public class UICollection : MonoBehaviour {
                 clearAlpha = targetalpha;
             }
         }
+        internal void setSpeed (float speed){
+            this.speed = speed;
+        }
         private void Awake() {
             images = gameObject.GetComponentsInChildren<Image>();
             texts = gameObject.GetComponentsInChildren<Text>();
@@ -74,7 +78,8 @@ public class UICollection : MonoBehaviour {
         }
         private void Update() {
             if (isFadeIn && isImageExists) {
-                if (alpha >= normalAlpha - 0.02f) {
+                
+                if (Mathf.Abs(alpha - normalAlpha) <= 0.02f) {
 
                     foreach (Image image in images) {
                         Color originColor = image.color;
@@ -84,14 +89,14 @@ public class UICollection : MonoBehaviour {
                     Destroy(this);
                     return;
                 }
-                alpha = Mathf.Lerp(alpha, normalAlpha, 0.2f);
+                alpha = Mathf.Lerp(alpha, normalAlpha, speed);
                 foreach (Image image in images) {
                     Color originColor = image.color;
                     Color newColor = new Color(originColor.r, originColor.g, originColor.b, alpha);
                     image.color = newColor;
                 }
             } else if (!isFadeIn && isImageExists) {
-                if (alpha <= clearAlpha + 0.02f) {
+                if (Mathf.Abs(alpha - clearAlpha) <= 0.02f) {
 
                     foreach (Image image in images) {
                         Color originColor = image.color;
@@ -101,7 +106,7 @@ public class UICollection : MonoBehaviour {
                     Destroy(this);
                     return;
                 }
-                alpha = Mathf.Lerp(alpha, clearAlpha, 0.2f);
+                alpha = Mathf.Lerp(alpha, clearAlpha, speed);
                 foreach (Image image in images) {
                     Color originColor = image.color;
                     Color newColor = new Color(originColor.r, originColor.g, originColor.b, alpha);
@@ -110,7 +115,7 @@ public class UICollection : MonoBehaviour {
             }
 
             if (isFadeIn && isTextExists) {
-                if (alpha >= normalAlpha - 0.02f) {
+                if (Mathf.Abs(alpha - normalAlpha) <= 0.02f) {
 
                     foreach (Text text in texts) {
                         Color originColor = text.color;
@@ -120,15 +125,15 @@ public class UICollection : MonoBehaviour {
                     Destroy(this);
                     return;
                 }
-                alpha = Mathf.Lerp(alpha, normalAlpha, 0.2f);
+                alpha = Mathf.Lerp(alpha, normalAlpha, speed);
                 foreach (Text text in texts) {
                     Color originColor = text.color;
                     Color newColor = new Color(originColor.r, originColor.g, originColor.b, alpha);
                     text.color = newColor;
                 }
             } else if (!isFadeIn && isTextExists) {
-                if (alpha <= clearAlpha + 0.02f) {
-
+                if (Mathf.Abs(alpha - clearAlpha) <= 0.02f) {
+                    
                     foreach (Text text in texts) {
                         Color originColor = text.color;
                         Color normalColor = new Color(originColor.r, originColor.g, originColor.b, clearAlpha);
@@ -137,7 +142,8 @@ public class UICollection : MonoBehaviour {
                     Destroy(this);
                     return;
                 }
-                alpha = Mathf.Lerp(alpha, clearAlpha, 0.2f);
+                alpha = Mathf.Lerp(alpha, clearAlpha, speed);
+                
                 foreach (Text text in texts) {
                     Color originColor = text.color;
                     Color newColor = new Color(originColor.r, originColor.g, originColor.b, alpha);
@@ -436,56 +442,84 @@ public class UICollection : MonoBehaviour {
     }
 
     internal static void PlayText(Text showText, string text, float speed) {
-        if (showText.gameObject.GetComponent<TextPlayControl>() != null) return;
+        if (showText.gameObject.GetComponent<TextPlayControl>() != null) {
+            Destroy(showText.gameObject.GetComponent<TextPlayControl>());
+        }
         showText.text = text;
         TextPlayControl control = showText.gameObject.AddComponent<TextPlayControl>();
         control.TextSpeed = speed;
     }
     internal static void JumpBorder(GameObject obj) {
-        if (obj.GetComponent<JumpBorderControl>() != null) return;
+        if (obj.GetComponent<JumpBorderControl>() != null) {
+            Destroy(obj.GetComponent<JumpBorderControl>());
+        }
         obj.AddComponent<JumpBorderControl>();
     }
     internal static void MoveToPos(GameObject obj, Vector3 targetpos, float speedlerp) {
-        if (obj.GetComponent<PosControl>() != null) return;
+        if (obj.GetComponent<PosControl>() != null) {
+            Destroy(obj.GetComponent<PosControl>());
+        }
         PosControl posControl = obj.AddComponent<PosControl>();
         posControl.SetPosControl(obj.GetComponent<RectTransform>().localPosition, targetpos, speedlerp);
     }
     internal static void AlphaFade(GameObject obj, bool isfadein) {
-        if (obj.GetComponent<AlphaControl>() != null) return;
+        if (obj.GetComponent<AlphaControl>() != null) {
+            Destroy(obj.GetComponent<AlphaControl>());
+        }
         AlphaControl alphaControl = obj.AddComponent<AlphaControl>();
         alphaControl.setInOrOut(isfadein);
     }
+    internal static void AlphaFade(GameObject obj, bool isfadein,float targetalpha,float speed) {
+        if (obj.GetComponent<AlphaControl>() != null) {
+            Destroy(obj.GetComponent<AlphaControl>());
+        }
+        AlphaControl alphaControl = obj.AddComponent<AlphaControl>();
+        alphaControl.setInOrOut(isfadein,targetalpha);
+        alphaControl.setSpeed(speed);
+    }
     internal static void AlphaFade(GameObject obj, bool isfadein, float targetalpha) {
-        if (obj.GetComponent<AlphaControl>() != null) return;
+        if (obj.GetComponent<AlphaControl>() != null) {
+            Destroy(obj.GetComponent<AlphaControl>());
+        }
         AlphaControl alphaControl = obj.AddComponent<AlphaControl>();
         alphaControl.setInOrOut(isfadein, targetalpha);
     }
     internal static void AlphaFadeImg(GameObject obj, bool isfadein) {
-        if (obj.GetComponent<AlphaControl>() != null) return;
+        if (obj.GetComponent<AlphaControl>() != null) {
+            Destroy(obj.GetComponent<AlphaControl>());
+        }
         AlphaControl alphaControl = obj.AddComponent<AlphaControl>();
         alphaControl.setInOrOut(isfadein);
         alphaControl.setTextActive(false);
     }
     internal static void AlphaFadeImg(GameObject obj, bool isfadein, float targetalpha) {
-        if (obj.GetComponent<AlphaControl>() != null) return;
+        if (obj.GetComponent<AlphaControl>() != null) {
+            Destroy(obj.GetComponent<AlphaControl>());
+        }
         AlphaControl alphaControl = obj.AddComponent<AlphaControl>();
         alphaControl.setInOrOut(isfadein, targetalpha);
         alphaControl.setTextActive(false);
     }
     internal static void AlphaFadeText(GameObject obj, bool isfadein) {
-        if (obj.GetComponent<AlphaControl>() != null) return;
+        if (obj.GetComponent<AlphaControl>() != null) {
+            Destroy(obj.GetComponent<AlphaControl>());
+        }
         AlphaControl alphaControl = obj.AddComponent<AlphaControl>();
         alphaControl.setInOrOut(isfadein);
         alphaControl.setImageActive(false);
     }
     internal static void AlphaFadeText(GameObject obj, bool isfadein, float targetalpha) {
-        if (obj.GetComponent<AlphaControl>() != null) return;
+        if (obj.GetComponent<AlphaControl>() != null) {
+            Destroy(obj.GetComponent<AlphaControl>());
+        }
         AlphaControl alphaControl = obj.AddComponent<AlphaControl>();
         alphaControl.setInOrOut(isfadein, targetalpha);
         alphaControl.setImageActive(false);
     }
     internal static void AlphaPingPong(GameObject obj, float alphamin, float alphamax, float speedlerp) {
-        if (obj.GetComponent<AlphaPingPongControl>() != null) return;
+        if (obj.GetComponent<AlphaPingPongControl>() != null) {
+            Destroy(obj.GetComponent<AlphaPingPongControl>());
+        }
         AlphaPingPongControl alphaControl = obj.AddComponent<AlphaPingPongControl>();
         alphaControl.setAlphaRange(alphamin, alphamax, speedlerp);
     }
