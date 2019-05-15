@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\MenuScene\MenuSetting.cs" />
     <Compile Include="Assets\Scripts\MenuScene\TriggerButton.cs" />
     <Compile Include="Assets\Scripts\MenuScene\UIEffectManager.cs" />
+    <Compile Include="Assets\Scripts\Musics\MusicManager.cs" />
     <Compile Include="Assets\Scripts\Musics\MusicPlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\DrinkDataTest.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\MenuBoardTest.cs" />

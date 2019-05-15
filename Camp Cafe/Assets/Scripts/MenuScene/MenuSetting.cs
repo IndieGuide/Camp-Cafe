@@ -11,6 +11,7 @@ public class MenuSetting : MonoBehaviour {
     public Text screenResText;
     int screenResType;
 
+
     public string[] screenResStrArr = new string[]{"窗口", "全屏幕", "1280x720", "1920x1080"};
     private void OnEnable() {
         m_audio_slider.value = GlobalManager.instance.audioVolumn;
@@ -71,21 +72,27 @@ public class MenuSetting : MonoBehaviour {
             case 0:
                 //设置当前分辨率  
                 Screen.SetResolution(resolutions[resolutions.Length - 1].width, resolutions[resolutions.Length - 1].height, false);
+                GlobalManager.instance.windowScale = resolutions[resolutions.Length - 1].width / 1920f;
                 break;
             case 1:
                 //设置当前分辨率  
                 Screen.SetResolution(resolutions[resolutions.Length - 1].width, resolutions[resolutions.Length - 1].height, true);
+                GlobalManager.instance.windowScale = resolutions[resolutions.Length - 1].width / 1920f;
                 Screen.fullScreen = true;  //设置成全屏,  
                 break;
             case 2:
                 Screen.SetResolution(1280, 720, false);
+                GlobalManager.instance.windowScale = 1280.0f / 1920.0f;
                 break;
             case 3:
                 Screen.SetResolution(1920, 1080, false);
+                GlobalManager.instance.windowScale = 1f;
                 break;
             default:
+                GlobalManager.instance.windowScale = resolutions[resolutions.Length - 1].width / 1920f;
                 Screen.SetResolution(resolutions[resolutions.Length - 1].width, resolutions[resolutions.Length - 1].height, false);
                 break;
         }
+        GlobalManager.instance.debugText.text = GlobalManager.instance.windowScale.ToString();
     }
 }

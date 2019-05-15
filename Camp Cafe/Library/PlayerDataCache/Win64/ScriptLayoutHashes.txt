@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/Administrator/Desktop/0.15/Camp Cafe.exe
+C:/Users/Administrator/Downloads/514/Camp Cafe.exe
 SceneListBegin?
 Assets/Scenes/MenuScene.unity
 Assets/Scenes/GameScene.unity
@@ -199,7 +199,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 e34eb418410f496966cf228d8702b1e7 Assembly-CSharp.dll:.OptionManager
 17eb2122acd6d1494a098775f2cec93e Assembly-CSharp.dll:.TagButton
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OptionText
-82229fd3808ae25c630342d2fb95623c Assembly-CSharp.dll:.GlobalManager
+7478967f898f9b307aa2b850de2473b6 Assembly-CSharp.dll:.GlobalManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ShowAct
 6bd9cd6e4bc09bce0f62e85c6aa1538a Assembly-CSharp.dll:.AmountCacul
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
@@ -210,3 +210,4 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DrinkTagData
 9b26819c08c61c10afb662ffdb9cd56e Assembly-CSharp.dll:.ItemGroupButton
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MusicManager

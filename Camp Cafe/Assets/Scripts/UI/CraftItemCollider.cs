@@ -24,16 +24,18 @@ public class CraftItemCollider : MonoBehaviour
         m_rect = GetComponent<RectTransform>();
         m_image = GetComponent<Image>();
         //设置拖动部件初始不可见
-        m_image.sprite = bindItem.GetComponent<Image>().sprite;
+        //m_image.sprite = bindItem.GetComponent<Image>().sprite;
+        UICollection.SetImage(bindItem.GetComponent<Image>().sprite, m_image);
         m_image.color = ColorCollection.GetVecClear();
         //设置用于拖动逻辑的坐标
-        itemOriginPos = GetComponent<RectTransform>().localPosition;
+        itemOriginPos = m_rect.localPosition;
         dragPos = itemOriginPos;
     }
     public void ChangeBindItem(CraftItem binditem,Sprite spr) {
         bindItem = binditem;
         try {
-            m_image.sprite = spr;
+            //m_image.sprite = spr;
+            UICollection.SetImage(bindItem.GetComponent<Image>().sprite, m_image);
             m_image.color = ColorCollection.GetVecClear();
         }
         catch (Exception e){
@@ -72,7 +74,7 @@ public class CraftItemCollider : MonoBehaviour
         if (!isAllowDrag) return;
         Vector3 off = Input.mousePosition - mouseOriginPos;
         mouseOriginPos = Input.mousePosition;
-        dragPos = dragPos + off;
+        dragPos = dragPos + off/GlobalManager.instance.windowScale;
         m_rect.localPosition = dragPos;
     }
 }

@@ -16,7 +16,12 @@ public class BlockText : MonoBehaviour {
         SetPosAndEffect();
     }
     private void Awake() {
-
+        //场景重新加载时，之前的第一个block索引没被删除，造成第二次启动时应该为头的block成了列表中的第二个，而且
+        //第一个是null，所以判断一下
+        if(blockTextList.Count == 1 && blockTextList[0] == null) {
+            blockTextList.Clear();
+        }
+        Debug.Log("执行");
         m_rect = GetComponent<RectTransform>();
         m_text = GetComponent<Text>();
         blockTextList.Add(this);

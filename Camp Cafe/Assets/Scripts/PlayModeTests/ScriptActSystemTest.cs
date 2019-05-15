@@ -102,6 +102,9 @@ namespace Tests {
                         Debug.Log("角色名称错误，行内容为：" + allStr[rowIndex]);
                     }
                     Assert.AreEqual(true, isNameRight);
+                    if (!isTextRight) {
+                        Debug.Log("符号错误，行内容为：" + allStr[rowIndex]);
+                    }
                     Assert.AreEqual(true, isTextRight);
 
                 }

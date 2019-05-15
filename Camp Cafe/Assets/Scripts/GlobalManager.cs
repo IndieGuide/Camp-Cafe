@@ -9,7 +9,8 @@ public class GlobalManager : MonoBehaviour {
     static GlobalManager StaticObject;
     public GameObject SettingArea;
     public MenuSetting menuSetting;
-
+    public Text debugText;
+    public float windowScale;
     internal void StartGame() {
         SceneManager.LoadScene("GameScene");
     }

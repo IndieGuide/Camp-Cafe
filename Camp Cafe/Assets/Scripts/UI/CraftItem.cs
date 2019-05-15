@@ -39,8 +39,8 @@ public class CraftItem : MonoBehaviour
         if (itemData.itemName != "") {
             string imagePath = "Sprites/DrinkItem/" + itemData.imgName;
             Sprite spr = Resources.Load<Sprite>(imagePath);
-            gameObject.GetComponent<Image>().sprite = spr;
-            gameObject.GetComponent<Image>().color = vecNormal;
+            UICollection.SetImage(spr, GetComponent<Image>());
+            UICollection.AlphaFadeImg(gameObject, true);
             colliderObj.isAllowDrag = true;
             try {
                 colliderObj.ChangeBindItem(this,spr);
@@ -51,7 +51,7 @@ public class CraftItem : MonoBehaviour
             }
         } else {
             gameObject.GetComponent<Image>().sprite = null;
-            gameObject.GetComponent<Image>().color = vecClear;
+            UICollection.AlphaFadeImg(gameObject, false);
 
             colliderObj.isAllowDrag = false;
         }
