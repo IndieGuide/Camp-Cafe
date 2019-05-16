@@ -97,7 +97,13 @@
     <Compile Include="Assets\Scripts\MenuScene\MenuSetting.cs" />
     <Compile Include="Assets\Scripts\MenuScene\TriggerButton.cs" />
     <Compile Include="Assets\Scripts\MenuScene\UIEffectManager.cs" />
+    <Compile Include="Assets\Scripts\Musics\CdBoxControl.cs" />
+    <Compile Include="Assets\Scripts\Musics\CdData.cs" />
+    <Compile Include="Assets\Scripts\Musics\MusicBoxControl.cs" />
+    <Compile Include="Assets\Scripts\Musics\MusicButtonArea.cs" />
+    <Compile Include="Assets\Scripts\Musics\MusicControlButton.cs" />
     <Compile Include="Assets\Scripts\Musics\MusicManager.cs" />
+    <Compile Include="Assets\Scripts\Musics\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Musics\MusicPlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\DrinkDataTest.cs" />
     <Compile Include="Assets\Scripts\PlayModeTests\MenuBoardTest.cs" />

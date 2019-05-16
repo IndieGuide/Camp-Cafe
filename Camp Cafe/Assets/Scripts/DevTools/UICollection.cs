@@ -162,7 +162,112 @@ public class UICollection : MonoBehaviour {
             isImageExists = v;
         }
     }
+    public class RotControl : MonoBehaviour {
+        internal enum RotTypeEnum {
+            RotTo,
+            RotStart,
+            RotStop
+        }
+        RotTypeEnum rotType;
+        RectTransform m_trans;
+        Vector3 targetAngle;
+        float speed = 0;
+        float speedNow = 0;
+        float speedAccLerp = 0.05f;
+        float speedLerp = 0.1f;
+        bool isClockWise = true;
+        bool isUseAcc = true;
+        bool isStopUseAcc = true;
+        private void Awake() {
+            m_trans = GetComponent<RectTransform>();
+            
+        }
+        public void SetRotControl(float speedlerp,float targetrot) {
+            rotType = RotTypeEnum.RotTo;
+            speedLerp = speedlerp;
+            targetAngle = new Vector3(m_trans.localEulerAngles.x, m_trans.localEulerAngles.y, targetrot);
+        }
 
+        internal void SetRotControl(float speed, bool isclockwise, bool isuseacc) {
+            rotType = RotTypeEnum.RotStart;
+            this.speed = speed;
+            isClockWise = isclockwise;
+            isUseAcc = isuseacc;
+            if (isclockwise)
+                this.speed = -Mathf.Abs(this.speed);
+            else
+                this.speed = Mathf.Abs(this.speed);
+
+        }
+        internal void DestroyController() {
+            Destroy(this);
+        }
+        private void Update() {
+            if (rotType == RotTypeEnum.RotTo) {
+                float nowRotZ = m_trans.localEulerAngles.z;
+                if (Mathf.Abs(nowRotZ - targetAngle.z) <= 0.1f) {
+                    m_trans.localEulerAngles = targetAngle;
+                    Destroy(this);
+                    return;
+                }
+                float newRotZ = Mathf.Lerp(m_trans.localEulerAngles.z, targetAngle.z, speedLerp);
+                m_trans.localEulerAngles = new Vector3(targetAngle.x, targetAngle.y, newRotZ);
+            }else if(rotType == RotTypeEnum.RotStart) {
+                if (isUseAcc) {
+                    speedNow = Mathf.Lerp(Mathf.Abs(speedNow), Mathf.Abs(speed), speedAccLerp);
+                    if (isClockWise)
+                        speedNow = -speedNow;
+                } else {
+                    speedNow = speed;
+                }
+                Vector3 nowAngle = m_trans.localEulerAngles;
+                m_trans.localEulerAngles = new Vector3(nowAngle.x, nowAngle.y, nowAngle.z + speedNow);
+            }else if(rotType == RotTypeEnum.RotStop) {
+                if (isStopUseAcc) {
+                    speedNow = Mathf.Lerp(Mathf.Abs(speedNow), 0, speedAccLerp);
+                    if (isClockWise)
+                        speedNow = -speedNow;
+                } else {
+                    speedNow = 0;
+                }
+                if(Mathf.Abs(speedNow) <= 0.02f) {
+                    Destroy(this);
+                    return;
+                }
+                Vector3 nowAngle = m_trans.localEulerAngles;
+                m_trans.localEulerAngles = new Vector3(nowAngle.x, nowAngle.y, nowAngle.z + speedNow);
+            }
+        }
+
+        internal void SetRotStop(bool isuseacc) {
+            rotType = RotTypeEnum.RotStop;
+            isStopUseAcc = isuseacc;
+        }
+    }
+
+    internal static void SetRotateTo(GameObject obj, float speedlerp, float targetrot) {
+        if (obj.GetComponent<RotControl>() != null) {
+            Destroy(obj.GetComponent<RotControl>());
+        }
+        RotControl rotControl = obj.AddComponent<RotControl>();
+        rotControl.SetRotControl(speedlerp, targetrot);
+    }
+
+    internal static void SetRotateStop(GameObject obj, bool isuseacc) {
+        if (obj.GetComponent<RotControl>() != null) {
+            RotControl rotControl = obj.GetComponent<RotControl>();
+            rotControl.SetRotStop(isuseacc);
+        } 
+        
+    }
+
+    internal static void SetRotateStart(GameObject obj, float speed, bool isclockwise, bool isuseacc) {
+        if (obj.GetComponent<RotControl>() != null) {
+            Destroy(obj.GetComponent<RotControl>());
+        }
+        RotControl rotControl = obj.AddComponent<RotControl>();
+        rotControl.SetRotControl(speed, isclockwise,isuseacc);
+    }
 
     public class PosControl : MonoBehaviour {
         RectTransform m_trans;

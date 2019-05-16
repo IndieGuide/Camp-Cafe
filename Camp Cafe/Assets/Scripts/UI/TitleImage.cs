@@ -6,27 +6,26 @@ using UnityEngine.UI;
 
 public class TitleImage : MonoBehaviour
 {
+    public GameObject discArea;
     Image titleImage;
     Color vecNormal = ColorCollection.GetVecNormal();
     Color vecClear = ColorCollection.GetVecClear();
-    public GameObject musicPlayer;
     public GameObject viewArea;
     public void OnPointerEnter(BaseEventData eventData) {
         //Debug.Log("指针进入");
         FxCollection.PlayButtonEnterFx();
-        titleImage.color = vecClear;
-        foreach(Image image in musicPlayer.GetComponentsInChildren<Image>()) {
-            image.color = vecNormal;
-        }
+
     }
     public void OnPointerExit(BaseEventData eventData) {
         FxCollection.PlayButtonUpFx();
         //Debug.Log("指针离开");
-        titleImage.color = vecNormal;
-        foreach (Image image in musicPlayer.GetComponentsInChildren<Image>()) {
-            image.color = vecClear;
+    }
+    public void MusicPlayerOnClick() {
+        if(discArea.active == false) {
+            discArea.SetActive(true);
+        } else {
+            discArea.SetActive(false);
         }
-
     }
     public void DrinkListOnClick() {
         FxCollection.PlayButtonClickFx();
@@ -51,10 +50,7 @@ public class TitleImage : MonoBehaviour
 
         titleImage = gameObject.GetComponent<Image>();
         viewArea.SetActive(false);
-        //开始时隐藏播放器
-        foreach (Image image in musicPlayer.GetComponentsInChildren<Image>()) {
-            image.color = vecClear;
-        }
+
     }
 
     // Update is called once per frame

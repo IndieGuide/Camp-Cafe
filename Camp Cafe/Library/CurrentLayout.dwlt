@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -44,10 +44,10 @@ MonoBehaviour:
     y: 30
     width: 2032
     height: 1005
-  m_MinSize: {x: 681, y: 324}
-  m_MaxSize: {x: 12006, y: 8024}
+  m_MinSize: {x: 581, y: 498}
+  m_MaxSize: {x: 14002, y: 14048}
   vertical: 0
-  controlID: 82
+  controlID: 64
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -63,12 +63,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1647
+    x: 1589
     y: 0
-    width: 385
+    width: 443
     height: 1005
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -93,10 +93,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 442
-    height: 636
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 307
+    height: 605
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -118,17 +118,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 636
-    width: 1647
-    height: 369
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 22}
+    y: 605
+    width: 1589
+    height: 400
+  m_MinSize: {x: 232, y: 274}
+  m_MaxSize: {x: 10002, y: 10024}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 22}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,7 +151,7 @@ MonoBehaviour:
     y: 0
     width: 2032
     height: 1055
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -215,12 +215,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1647
+    width: 1589
     height: 1005
-  m_MinSize: {x: 404, y: 324}
-  m_MaxSize: {x: 8004, y: 8024}
+  m_MinSize: {x: 306, y: 498}
+  m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 83
+  controlID: 65
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,12 +240,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1647
-    height: 636
-  m_MinSize: {x: 404, y: 224}
-  m_MaxSize: {x: 8004, y: 4024}
+    width: 1589
+    height: 605
+  m_MinSize: {x: 306, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 84
+  controlID: 46
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -261,21 +261,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 442
+    x: 307
     y: 0
-    width: 1205
-    height: 636
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
+    width: 1282
+    height: 605
+  m_MinSize: {x: 104, y: 124}
+  m_MaxSize: {x: 4004, y: 4024}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 21}
   - {fileID: 18}
   - {fileID: 13}
   - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 29134
+  m_LastSelectedObjectID: 12606
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -457,10 +457,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 449.6
+    x: 314.4
     y: 80.8
-    width: 1201
-    height: 616
+    width: 1278
+    height: 585
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 5b5d5148b52d90a47a377d8dcc71fe41
   m_SceneLighting: 1
@@ -468,9 +468,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.1206753, y: 0.82424825, z: 2056.2202}
+    m_Target: {x: 0.8889602, y: 0.10118338, z: 1208.5913}
     speed: 2
-    m_Value: {x: -2.1206753, y: 0.82424825, z: 2056.2202}
+    m_Value: {x: 0.8889602, y: 0.10118338, z: 1208.5913}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -502,9 +502,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.291766
+    m_Target: 4.641886
     speed: 2
-    m_Value: 7.291766
+    m_Value: 4.641886
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -536,9 +536,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1654.4
+    x: 1127.2001
     y: 80.8
-    width: 383
+    width: 910
     height: 985
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TestTypeToolbarIndex: 0
@@ -562,9 +562,9 @@ MonoBehaviour:
     - id: '[I:/Github repository/Camp-Cafe/Camp Cafe/Library/ScriptAssemblies/Assembly-CSharp.dll][suite]'
       name: Assembly-CSharp.dll
       fullName: I:/Github repository/Camp-Cafe/Camp Cafe/Library/ScriptAssemblies/Assembly-CSharp.dll
-      resultStatus: 2
-      duration: 1.105061
-      messages: One or more child tests had errors
+      resultStatus: 0
+      duration: 0
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -576,9 +576,9 @@ MonoBehaviour:
     - id: '[Tests][suite]'
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 0.899762
-      messages: One or more child tests had errors
+      resultStatus: 0
+      duration: 0
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -590,8 +590,8 @@ MonoBehaviour:
     - id: '[Assembly-CSharp][Tests.DrinkDataTest][suite]'
       name: DrinkDataTest
       fullName: Tests.DrinkDataTest
-      resultStatus: 1
-      duration: 0.2640107
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -604,18 +604,10 @@ MonoBehaviour:
     - id: "[Assembly-CSharp][Tests.DrinkDataTest.\u996E\u6599\u4E2D\u7684\u6750\u6599\u6570\u636E\u4E0E\u6750\u6599\u6570\u636E\u5E93\u4E2D\u7684\u6750\u6599\u540D\u662F\u5426\u5339\u914D]"
       name: "\u996E\u6599\u4E2D\u7684\u6750\u6599\u6570\u636E\u4E0E\u6750\u6599\u6570\u636E\u5E93\u4E2D\u7684\u6750\u6599\u540D\u662F\u5426\u5339\u914D"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u4E2D\u7684\u6750\u6599\u6570\u636E\u4E0E\u6750\u6599\u6570\u636E\u5E93\u4E2D\u7684\u6750\u6599\u540D\u662F\u5426\u5339\u914D"
-      resultStatus: 1
-      duration: 0.0940834
+      resultStatus: 0
+      duration: 0
       messages: 
-      output: "System.NullReferenceException: Object reference not set to an instance
-        of an object\r\n  at ItemManager.RenewItemBoard () [0x00014] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:55
-        \r\n  at ItemManager.Awake () [0x00083] in I:\\Github repository\\Camp-Cafe\\Camp
-        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:46 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at ItemManager.RenewItemBoard
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:55
-        \r\n  at ItemManager.Awake () [0x00083] in I:\\Github repository\\Camp-Cafe\\Camp
-        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:46 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -627,18 +619,10 @@ MonoBehaviour:
     - id: "[Assembly-CSharp][Tests.DrinkDataTest.\u996E\u6599\u4F7F\u7528\u6750\u6599\u603B\u6570\u6D4B\u8BD5]"
       name: "\u996E\u6599\u4F7F\u7528\u6750\u6599\u603B\u6570\u6D4B\u8BD5"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u4F7F\u7528\u6750\u6599\u603B\u6570\u6D4B\u8BD5"
-      resultStatus: 1
-      duration: 0.0692965
+      resultStatus: 0
+      duration: 0
       messages: 
-      output: "System.NullReferenceException: Object reference not set to an instance
-        of an object\r\n  at ItemManager.RenewItemBoard () [0x00014] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:55
-        \r\n  at ItemManager.Awake () [0x00083] in I:\\Github repository\\Camp-Cafe\\Camp
-        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:46 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at ItemManager.RenewItemBoard
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:55
-        \r\n  at ItemManager.Awake () [0x00083] in I:\\Github repository\\Camp-Cafe\\Camp
-        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:46 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -650,18 +634,10 @@ MonoBehaviour:
     - id: "[Assembly-CSharp][Tests.DrinkDataTest.\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5]"
       name: "\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5"
       fullName: "Tests.DrinkDataTest.\u996E\u6599\u8BF4\u660E\u683C\u5F0F\u6D4B\u8BD5"
-      resultStatus: 1
-      duration: 0.0653287
+      resultStatus: 0
+      duration: 0
       messages: 
-      output: "System.NullReferenceException: Object reference not set to an instance
-        of an object\r\n  at ItemManager.RenewItemBoard () [0x00014] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:55
-        \r\n  at ItemManager.Awake () [0x00083] in I:\\Github repository\\Camp-Cafe\\Camp
-        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:46 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at ItemManager.RenewItemBoard
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:55
-        \r\n  at ItemManager.Awake () [0x00083] in I:\\Github repository\\Camp-Cafe\\Camp
-        Cafe\\Assets\\Scripts\\DrinksCode\\ItemManager.cs:46 \r\n\u6750\u6599\u9762\u677F\u5237\u65B0\u5931\u8D25\r\nItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n"
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -673,8 +649,8 @@ MonoBehaviour:
     - id: '[Assembly-CSharp][Tests.MenuBoardTest][suite]'
       name: MenuBoardTest
       fullName: Tests.MenuBoardTest
-      resultStatus: 1
-      duration: 0.1356073
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -687,72 +663,10 @@ MonoBehaviour:
     - id: "[Assembly-CSharp][Tests.MenuBoardTest.\u83DC\u5355\u9762\u677F\u6309\u94AE\u6570\u91CF\u6D4B\u8BD5]"
       name: "\u83DC\u5355\u9762\u677F\u6309\u94AE\u6570\u91CF\u6D4B\u8BD5"
       fullName: "Tests.MenuBoardTest.\u83DC\u5355\u9762\u677F\u6309\u94AE\u6570\u91CF\u6D4B\u8BD5"
-      resultStatus: 1
-      duration: 0.120916
+      resultStatus: 0
+      duration: 0
       messages: 
-      output: "ItemManager\u5B9E\u4F8B\u672A\u6B63\u5E38\u83B7\u53D6\r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:202
-        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:202
-        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:202
-        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:202
-        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:202
-        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:202
-        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:202
-        \r\n\u5F97\u5230\u996E\u6599\u5E2E\u52A9\u5931\u8D25\r\nSystem.NullReferenceException:
-        Object reference not set to an instance of an object\r\n  at DrinkData+DrinkInfo.GetDrinkHelp
-        () [0x00014] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\DrinksCode\\DrinkData.cs:202
-        \r\nTag\u5217\u8868\u6570\u636E\u83B7\u53D6\u9519\u8BEF\r\nSystem.ArgumentException:
-        The Object you want to instantiate is null.\r\n  at UnityEngine.Object.CheckNullArgument
-        (System.Object arg, System.String message) [0x00008] in C:\\buildslave\\unity\\build\\Runtime\\Export\\UnityEngineObject.bindings.cs:383
-        \r\n  at UnityEngine.Object.Instantiate[T] (T original) [0x0000c] in C:\\buildslave\\unity\\build\\Runtime\\Export\\UnityEngineObject.bindings.cs:274
-        \r\n  at MenuManager.Start () [0x0005e] in I:\\Github repository\\Camp-Cafe\\Camp
-        Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:115 \r\nUnityEngine.MissingComponentException:
-        There is no 'RectTransform' attached to the \"MenuBoardObject\" game object,
-        but a script is trying to access it.\nYou probably need to add a RectTransform
-        to the game object \"MenuBoardObject\". Or your script needs to check if the
-        component is attached before using it.\r\n  at (wrapper managed-to-native)
-        UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x42ab6140 + 0x0006a> in
-        <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
-        in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
-        \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
-        to the \"MenuBoardObject\" game object, but a script is trying to access it.\nYou
-        probably need to add a RectTransform to the game object \"MenuBoardObject\".
-        Or your script needs to check if the component is attached before using it.\r\n
-        \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x42ab6140 + 0x0006a> in
-        <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
-        in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
-        \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
-        to the \"MenuBoardObject\" game object, but a script is trying to access it.\nYou
-        probably need to add a RectTransform to the game object \"MenuBoardObject\".
-        Or your script needs to check if the component is attached before using it.\r\n
-        \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x42ab6140 + 0x0006a> in
-        <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
-        in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
-        \r\nUnityEngine.MissingComponentException: There is no 'RectTransform' attached
-        to the \"MenuBoardObject\" game object, but a script is trying to access it.\nYou
-        probably need to add a RectTransform to the game object \"MenuBoardObject\".
-        Or your script needs to check if the component is attached before using it.\r\n
-        \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x42ab6140 + 0x0006a> in
-        <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
-        in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
-        \r\n"
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -764,18 +678,10 @@ MonoBehaviour:
     - id: '[Assembly-CSharp][Tests.ScriptActSystemTest][suite]'
       name: ScriptActSystemTest
       fullName: Tests.ScriptActSystemTest
-      resultStatus: 2
-      duration: 0.3305052
-      messages: One or more child tests had errors
-      output: "UnityEngine.MissingComponentException: There is no 'RectTransform'
-        attached to the \"MenuBoardObject\" game object, but a script is trying to
-        access it.\nYou probably need to add a RectTransform to the game object \"MenuBoardObject\".
-        Or your script needs to check if the component is attached before using it.\r\n
-        \ at (wrapper managed-to-native) UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x42ab6140 + 0x0006a> in
-        <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
-        in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
-        \r\n"
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -786,353 +692,11 @@ MonoBehaviour:
     - id: "[Assembly-CSharp][Tests.ScriptActSystemTest.\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5]"
       name: "\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5"
       fullName: "Tests.ScriptActSystemTest.\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5"
-      resultStatus: 2
-      duration: 0.2709453
-      messages: "  Expected: True\r\n  But was:  False\r\n"
-      output: "\u5904\u7406\u7684\u811A\u672C\u4E3ATexts/script1\r\nYou are trying
-        to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours
-        can only be added using AddComponent(). Alternatively, your script can inherit
-        from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-        are trying to create a MonoBehaviour using the 'new' keyword.  This is not
-        allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n\u7B26\u53F7\u9519\u8BEF\uFF0C\u884C\u5185\u5BB9\u4E3A\uFF1A1|Soda|0|\"\u6CA1\u4E8B\u6CA1\u4E8B\uFF0C\u6263\u6211\u7684~\r\nUnityEngine.MissingComponentException:
-        There is no 'RectTransform' attached to the \"MenuBoardObject\" game object,
-        but a script is trying to access it.\nYou probably need to add a RectTransform
-        to the game object \"MenuBoardObject\". Or your script needs to check if the
-        component is attached before using it.\r\n  at (wrapper managed-to-native)
-        UnityEngine.Transform.get_localPosition_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n
-        \ at UnityEngine.Transform.get_localPosition () <0x42ab6140 + 0x0006a> in
-        <d616be05755d41a089810b5c14e4dd50>:0 \r\n  at MenuManager.MoveArea () [0x00002]
-        in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\UI\\MenuManager.cs:58
-        \r\n"
-      stacktrace: "at Tests.ScriptActSystemTest.ResolveNextText () [0x0039e] in I:\\Github
-        repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\PlayModeTests\\ScriptActSystemTest.cs:108\r\nat
-        Tests.ScriptActSystemTest.\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5
-        () [0x00001] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\PlayModeTests\\ScriptActSystemTest.cs:32\r\n"
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1140,202 +704,8 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentID: '[Assembly-CSharp][Tests.ScriptActSystemTest][suite]'
-    m_ResultText: "\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5 (0.271s)\n---\nExpected:
-      True\r\n  But was:  False\n---\nat Tests.ScriptActSystemTest.ResolveNextText
-      () [0x0039e] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\PlayModeTests\\ScriptActSystemTest.cs:108\r\nat
-      Tests.ScriptActSystemTest.\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5 ()
-      [0x00001] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\PlayModeTests\\ScriptActSystemTest.cs:32\n---\n\u5904\u7406\u7684\u811A\u672C\u4E3ATexts/script1\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nYou are
-      trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.
-      \ MonoBehaviours can only be added using AddComponent(). Alternatively, your
-      script can inherit from ScriptableObject or no base class at all\r\nAnimationAct\u521D\u59CB\u5316\u6570\u636E\u5931\u8D25\r\nYou
-      are trying to create a Mono...\n\n---MESSAGE TRUNCATED AT 15000 CHARACTERS---"
-    m_ResultStacktrace: "at Tests.ScriptActSystemTest.ResolveNextText () [0x0039e]
-      in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\PlayModeTests\\ScriptActSystemTest.cs:108\r\nat
-      Tests.ScriptActSystemTest.\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5 ()
-      [0x00001] in I:\\Github repository\\Camp-Cafe\\Camp Cafe\\Assets\\Scripts\\PlayModeTests\\ScriptActSystemTest.cs:32\r\n"
+    m_ResultText: "\u5267\u60C5\u811A\u672C\u5185\u5BB9\u68C0\u67E5 (0.000s)"
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 90f69941
@@ -1479,9 +849,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1654.4
+    x: 1596
     y: 80.8
-    width: 383
+    width: 441
     height: 985
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -1489,7 +859,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: -426
+    m_CachedPref: 302
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -1567,9 +937,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 7.2000003
-    y: 716.8
-    width: 1645
-    height: 349
+    y: 685.60004
+    width: 1587
+    height: 380
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1583,20 +953,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Resources/Sprites/Background
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Resources/Sprites/Background
   m_LastFoldersGridSize: 60
   m_LastProjectPath: I:\Github repository\Camp-Cafe\Camp Cafe
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 452}
-    m_SelectedIDs: 602b0000
-    m_LastClickedID: 11104
-    m_ExpandedIDs: 00000000ea2600006e2700009e2700008e290000a02a0000b02a0000e42a00004c2b00007a2b0000dc2b0000462c00006c2c0000fa2c0000202d0000302d0000bc2d0000522e0000b033000000ca9a3b
+    scrollPos: {x: 0, y: 223}
+    m_SelectedIDs: e6290000
+    m_LastClickedID: 10726
+    m_ExpandedIDs: 00000000cc260000502700008427000090290000b62a0000c62a0000fe2a00006e2b00009e2b0000002c00006a2c0000902c0000262d00004e2d00005e2d0000f22d0000882e0000dc33000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1624,7 +994,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ea2600006e2700009c2700009e2700008e290000a02a0000b02a0000e42a00004c2b00007a2b0000dc2b0000462c00006c2c0000fa2c0000202d0000302d0000bc2d0000522e0000b0330000
+    m_ExpandedIDs: 00000000cc260000502700008427000090290000b62a0000c62a0000fe2a00006e2b00009e2b0000002c00006a2c0000902c0000262d00004e2d00005e2d0000f22d0000882e0000dc330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1649,10 +1019,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 9c2a0000
-    m_LastClickedInstanceID: 10908
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c4fbfbff5a26000092260000aa260000ce2500009825000074250000fc250000162500002025000028260000ba2600004226000000000000f0270000e8280000fab90000d8c10000042a0000ba340000fa27000086ce00008ece000092290000fe690000026a00001a2a00004e100000
+    m_ExpandedInstanceIDs: c4fbfbff5a26000092260000aa260000ce2500009825000074250000fc250000162500002025000028260000ba2600004226000000000000e8280000fab90000d8c10000042a0000ba340000fa27000086ce00008ece000092290000fe690000026a00001a2a00004e1000004c3400003834000054340000c62d000074290000c22d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1702,29 +1072,29 @@ MonoBehaviour:
     serializedVersion: 2
     x: 7.2000003
     y: 80.8
-    width: 440
-    height: 616
+    width: 305
+    height: 585
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: ce280000
       m_LastClickedID: 0
-      m_ExpandedIDs: 5af3feff6cf3feff16f5feff10f6feff2a39ffff5c45ffffb06dffffba80ffffc080ffffe685ffff448fffffc690ffffd493ffffbafbfffff4ffffff862f0000be30000026310000f2310000ee6d00001472000094730000c0890000ca8c000032bd00003cc000006aca000074cd0000
+      m_ExpandedIDs: 9a8cfeffae8cfeffb08cfeff948dfeffd88dfeffec8dfeff3c8ffeff2e90feffc2fbffff602f0000762f0000882f000050300000ac300000b6300000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: BlockText
-        m_OriginalName: BlockText
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -29512
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -1755,10 +1125,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 449.6
+    x: 314.4
     y: 80.8
-    width: 1201
-    height: 616
+    width: 1278
+    height: 585
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -1782,7 +1152,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1791,25 +1161,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 1201
-      height: 599
-    m_Scale: {x: 0.693287, y: 0.693287}
-    m_Translation: {x: 600.5, y: 299.5}
+      width: 1278
+      height: 568
+    m_Scale: {x: 0.6574074, y: 0.6574074}
+    m_Translation: {x: 639, y: 284}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -866.16364
+      x: -972
       y: -432
-      width: 1732.3273
+      width: 1944
       height: 864
     m_MinimalGUI: 1
-  m_defaultScale: 0.693287
+  m_defaultScale: 0.6574074
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1501.25, y: 770}
+  m_LastWindowPixelSize: {x: 1597.5, y: 731.25}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -1836,7 +1206,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 7.2000003
-    y: 716.8
-    width: 1645
-    height: 349
+    y: 685.60004
+    width: 1587
+    height: 380
   m_PersistentViewDataDictionary: {fileID: 0}
