@@ -8,8 +8,8 @@ public class MusicPlayerControl : MonoBehaviour {
     internal AudioSource audioSource;
     private bool isPlaying = true;
     public List<AudioClip> musicList;
+    internal CdData.SoundTrack track;
     private int musicIndex = 0;
-
     public MusicControlButton pauseBtn;
     public Sprite pauseEnterSpr;
     public Sprite pauseUpSpr;
@@ -22,12 +22,14 @@ public class MusicPlayerControl : MonoBehaviour {
     public float needleRot = 5.0f;
     public Image needleImage;
     public Text musicNameText;
+
     private void Awake() {
         instance = this;
     }
     // Start is called before the first frame update
     void Start() {
-
+        
+        //初始化播放器及唱片机
         audioSource = GameObject.Find("MusicPlayer").GetComponent<AudioSource>();
         if (audioSource.isPlaying) {
             ChangeToPauseSpr();
@@ -35,6 +37,7 @@ public class MusicPlayerControl : MonoBehaviour {
         } else {
             ChangeToPlaySpr();
         }
+        
     }
 
     public void ClickPauseButton() {
@@ -104,6 +107,14 @@ public class MusicPlayerControl : MonoBehaviour {
     }
 
     public void ChangeDisc(CdBoxControl control) {
+        //切换歌曲列表
+        track = control.track;
+        musicList.Clear();
+        foreach (CdData.OneMusic music in track.musicList) {
+            AudioClip clip = Resources.Load<AudioClip>("Musics/"+music.musicName);
+            musicList.Add(clip);
+        }
+
         Image cdSmallImage = control.cdSmallImage;
         StartCoroutine(DelayToInvoke.DelayToInvokeDo(() => {
             UICollection.MoveToPos(cdSmallImage.gameObject, control.MoveTargetPos, 0.2f);
@@ -112,17 +123,14 @@ public class MusicPlayerControl : MonoBehaviour {
             UICollection.AlphaFadeImg(cdSmallImage.gameObject, false);
         }, 0.2f));
         StartCoroutine(DelayToInvoke.DelayToInvokeDo(() => {
-            //obj,速度，方向，是否加速
-            //UICollection.SetRotateStart(discImage.gameObject,speed,true,true);
-            //obj，是否加速
-            //UICollection.SetRotateStop(discImage.gameObject,true);
-            //obj，速度，是否加速,目标角度
+
             NeedleOut();
             UICollection.AlphaFadeImg(discImage.gameObject, false);
             DiscStopRotating();
         }, 1f));
         StartCoroutine(DelayToInvoke.DelayToInvokeDo(() => {
             NeedleIn(5.0f);
+            UICollection.SetImage(control.cdSmallImage.sprite, discImage);
             UICollection.AlphaFadeImg(discImage.gameObject, true);
             control.isChanging = false;
             control.isSelected = true;

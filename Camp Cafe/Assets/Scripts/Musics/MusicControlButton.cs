@@ -23,7 +23,7 @@ public class MusicControlButton : MonoBehaviour
 
     public void OnMouseEnter(BaseEventData e) {
         UICollection.SetImage(enterSpr, GetComponent<Image>());
-        Debug.Log("enter");
+        //Debug.Log("enter");
     }
     public void OnMouseUp(BaseEventData e) {
         SetImageUp();

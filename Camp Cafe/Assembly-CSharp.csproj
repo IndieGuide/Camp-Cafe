@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scripts\MenuScene\UIEffectManager.cs" />
     <Compile Include="Assets\Scripts\Musics\CdBoxControl.cs" />
     <Compile Include="Assets\Scripts\Musics\CdData.cs" />
+    <Compile Include="Assets\Scripts\Musics\CdManager.cs" />
     <Compile Include="Assets\Scripts\Musics\MusicBoxControl.cs" />
     <Compile Include="Assets\Scripts\Musics\MusicButtonArea.cs" />
     <Compile Include="Assets\Scripts\Musics\MusicControlButton.cs" />
@@ -129,10 +130,12 @@
     <None Include="Assets\Scripts\Shader\ShaderForTest.shader" />
     <None Include="Assets\Resources\Texts\MakingRule.txt" />
     <None Include="Assets\Resources\Texts\script1.txt" />
+    <None Include="Assets\Resources\Texts\TrackData.txt" />
     <None Include="Assets\Scripts\Shader\NewSurfaceShader.shader" />
     <None Include="Assets\Resources\Texts\ItemData.txt" />
     <None Include="Assets\2D Mesh with Waves\Documentation.txt" />
     <None Include="Assets\Resources\Texts\DrinkTagData.txt" />
+    <None Include="Assets\Resources\Texts\MusicData.txt" />
     <None Include="Assets\Resources\Texts\DrinkData.txt" />
     <None Include="Assets\Resources\Texts\TagData.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
